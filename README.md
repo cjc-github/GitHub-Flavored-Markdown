@@ -340,9 +340,9 @@ a__粗体__b（无效规则）
 
 注意事项：
 
-1. 在使用Latex公式来显示下划线和上划线的时候，可能会出现显示异常
+1. 在使用 `LaTeX` 的 `\underline{}` 和 `\overline{}` 命令来显示下划线和上划线时，可能会出现划线不完整的显示异常；
 
-2. 可以使用Latex公式中其他的方式实现相关的上下划线
+2. 在 GitHub Flavored Markdown (GFM) 中使用 `LaTeX` 时，某些需要额外 `LaTeX` 包的划线命令无法正常渲染，例如 `\underbracket{}` 命令需要mathtools包, 但是GFM不支持；
 
 <br/>
 
