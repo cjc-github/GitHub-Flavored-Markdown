@@ -340,20 +340,20 @@ a__粗体__b（无效规则）
 
 在使用Latex公式来显示下划线和上划线的时候，可能会出现显示异常，即
 
+案例：
+
 ```
-$\underline{第一行\\
-第二行\\
-第三行}$
-
-
 $\underline{\underline{双下划线文本}}$
-
+$\underline{\underline{\underline{三下划线文本}}}$
 $\underbrace{这是大括号下划线}$
+$\underleftarrow{这是左箭头下划线}$
+$\underrightarrow{这是左箭头下划线}$
+$\underleftrightarrow{这是左右箭头下划线}$
+$\underline{\text{这是大括号下划线}}$
+$$\underline{\text{这是下划线公式}}$$
 ```
 
-$\underline{第一行\\
-第二行\\
-第三行}$
+显示效果如下：
 
 $\underline{\underline{双下划线文本}}$
 
@@ -361,9 +361,27 @@ $\underline{\underline{\underline{三下划线文本}}}$
 
 $\underbrace{这是大括号下划线}$
 
+$\underleftarrow{这是左箭头下划线}$
+
+$\underrightarrow{这是左箭头下划线}$
+
+$\underleftrightarrow{这是左右箭头下划线}$
+
 $\underline{\text{这是大括号下划线}}$
 
-$$\underline{\text{完整文本}}$$
+$$\underline{\text{这是下划线公式}}$$
+
+$\sout{222}$
+
+$\uuline{333}$
+
+$\dashuline{333}$
+
+$\dotuline{333}$
+
+$\dashuline{333}$
+
+
 
 ## 2.6 上下标
 
