@@ -341,16 +341,29 @@ a__粗体__b（无效规则）
 在使用Latex公式来显示下划线和上划线的时候，可能会出现显示异常，即
 
 ```
+$\underline{第一行\\
+第二行\\
+第三行}$
+
+
 $\underline{\underline{双下划线文本}}$
 
 $\underbrace{这是大括号下划线}$
 ```
 
+$\underline{第一行\\
+第二行\\
+第三行}$
+
 $\underline{\underline{双下划线文本}}$
+
+$\underline{\underline{\underline{三下划线文本}}}$
 
 $\underbrace{这是大括号下划线}$
 
 $\underline{\text{这是大括号下划线}}$
+
+$$\underline{\text{完整文本}}$$
 
 ## 2.6 上下标
 
