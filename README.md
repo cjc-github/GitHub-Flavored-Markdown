@@ -314,8 +314,6 @@ a__粗体__b（无效规则）
 
 这是 $\underline{下划线}$ 使用`$\underline{下划线}$`Latex公式实现
 
-$\underline{\text{这是一段很长的文本，现在整个都有下划线}}$
-
 <br/>
 
 ### 2.4.2 上划线
@@ -342,6 +340,15 @@ $\underline{\text{这是一段很长的文本，现在整个都有下划线}}$
 
 在使用Latex公式来显示下划线和上划线的时候，可能会出现显示异常，即
 
+```
+$\underline{\underline{双下划线文本}}$
+
+$\underbrace{这是大括号下划线}$
+```
+
+$\underline{\underline{双下划线文本}}$
+
+$\underbrace{这是大括号下划线}$
 
 ## 2.6 上下标
 
