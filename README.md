@@ -350,6 +350,8 @@ $\underline{\underline{双下划线文本}}$
 
 $\underbrace{这是大括号下划线}$
 
+$\underline{\phantom{这是大括号下划线}}$
+
 ## 2.6 上下标
 
 
