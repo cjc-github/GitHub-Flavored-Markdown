@@ -309,7 +309,7 @@ a__粗体__b（无效规则）
 
 这是 <ins>下划线</ins> 使用`<ins>`标签
 
-这是 $\underline{下划线}$ 使用`$\underline{下划线}$`Latex公式实现
+这是 $\underline{\text{下划线}}$ 使用`$\underline{下划线}$`Latex公式实现
 
 <br/>
 
