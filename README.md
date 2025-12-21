@@ -799,34 +799,94 @@ Markdown语法中存在多种样式来显示字体颜色：
 
 1. 使用HTML中`<font>`标签, GFM不支持
 2. 使用HTML中的`<span>`标签, GFM不支持
-3. 使用Latex公式的`color`命令
+3. 使用HTML中的`<div>`标签
+4. 使用Latex公式的`color`或`textcolor`命令
 
+<br/>
+
+注意：颜色支持
+
+```
+颜色名: 例如red
+rgb颜色: 例如rgb(255, 0, 0)
+十六进制颜色值: #FF0000
+```
+
+<br/>
+
+案例：
 
 ```
 这是<font color="red">红色</font>
 
-这是<span style="color:red">红色</span>
+这是<span style="color:rgb(255, 0, 0)">红色</span>
 
-这是 $\color{red}{\mathtt{红色}}$
+这是 $\color{#FF0000}{\mathtt{红色}}$
+
+<div style="color: red;">
+  这是一个字体为红色的块，可以包含多行文本。
+</div>
 
 这是 $\textcolor{red}{\mathtt{红色}}$
 ```
+
+<br/>
 
 显示效果如下：
 
 > 这是<font color="red">红色</font>
 > 
-> 这是<span style="color:red">红色</span>
-> 
-> 这是 $\color{red}{\mathtt{红色}}$
+> 这是<span style="color:rgb(255, 0, 0)">红色</span>
 >
+> <div style="color: red;">
+>   这是一个字体为红色的块，可以包含多行文本。
+> </div>
+> 
+> 这是 $\color{#FF0000}{\mathtt{红色}}$
+> 
 > 这是 $\textcolor{red}{\mathtt{红色}}$
 
+<br/>
 
 
 ### 2.12.2 背景颜色
 
+Markdown语法中存在多种样式来显示字体背景颜色：
 
+1. 使用HTML中`<font>`标签, GFM不支持
+2. 使用HTML中的`<span>`标签, GFM不支持
+3. 使用HTML中的`<div>`标签
+4. 使用Latex公式的`color`或`textcolor`命令
+
+
+案例：
+
+```
+这是 <font style="background: red"> 背景为红色</font>
+
+这是 <span style="background-color: red"> 背景为红色</span>
+
+<div style="background: red;">
+  这是一个有背景色的块，可以包含多行文本。
+</div>
+```
+
+<br/>
+
+
+显示效果如下：
+
+这是 <font style="background: red"> 背景为红色</font>
+
+这是 <span style="background-color: red"> 背景为红色</span>
+
+<div style="background: red;">
+  这是一个有背景色的块，可以包含多行文本。
+</div>
+
+
+
+<br/>
 
 
 # 三、列表
