@@ -797,9 +797,9 @@ ___
 
 Markdown语法中存在多种样式来显示字体颜色：
 
-1. 使用HTML font标签
-2. 使用HTML span标签
-3. 使用Latex公式的color
+1. 使用HTML中`<font>`标签, GFM不支持
+2. 使用HTML中的`<span>`标签, GFM不支持
+3. 使用Latex公式的`color`命令
 
 
 ```
@@ -807,7 +807,9 @@ Markdown语法中存在多种样式来显示字体颜色：
 
 这是<span style="color:red">红色</span>
 
-这是$\color{red}{\mathtt{红色}}$
+这是 $\color{red}{\mathtt{红色}}$
+
+这是 $\textcolor{red}{\mathtt{红色}}$
 ```
 
 显示效果如下：
@@ -817,6 +819,9 @@ Markdown语法中存在多种样式来显示字体颜色：
 > 这是<span style="color:red">红色</span>
 > 
 > 这是 $\color{red}{\mathtt{红色}}$
+>
+> 这是 $\textcolor{red}{\mathtt{红色}}$
+
 
 
 ### 2.12.2 背景颜色
