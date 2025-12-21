@@ -805,22 +805,27 @@ Github中存在块引用的扩展，高亮显示注释、警告的选项
 
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
+> 
 > 突出显示用户应该考虑的信息，即使在略读时也是如此。
 
 > [!TIP]
 > Optional information to help a user be more successful.
+> 
 > 可选信息，帮助用户更成功。
 
 > [!IMPORTANT]  
 > Crucial information necessary for users to succeed.
+> 
 > 用户成功所需的关键信息。
 
 > [!WARNING]  
 > Critical content demanding immediate user attention due to potential risks.
+> 
 > 由于潜在风险需要用户立即关注的关键内容。
 
 > [!CAUTION]
 > Negative potential consequences of an action.
+> 
 > 一个动作的负面潜在后果。
 
 
