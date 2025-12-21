@@ -1,3 +1,5 @@
+
+
 # GitHub Flavored Markdown (GFM) 语法文档
 
 本文档系统性地整理了 GitHub Flavored Markdown (GFM) 的语法规范，并特别标注了与标准 Markdown 语法的差异。
@@ -108,6 +110,8 @@ Markdown标题有两种格式：
 
 1. 使用 `=` 和 `-` 符号来标记一级和二级标题，在GFM中显示是正常的，但是在一些Markdown编辑器中可能渲染失败，例如Typora。推荐使用 `#` 号标记来创建标题。
 
+
+
 <br/>
 
 案例：
@@ -122,6 +126,15 @@ Markdown标题有两种格式：
 <br/>
 
 显示效果如下：
+
+
+
+> 一级标题
+> =
+> 二级标题
+> -
+
+运行截图如下：
 
 ![image-20251221121446147](README.assets/image-20251221121446147.png)
 
@@ -149,6 +162,17 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 <br/>
 
 显示效果如下：
+
+> # 一级标题
+> ## 二级标题
+> ### 三级标题
+> #### 四级标题
+> ##### 五级标题
+> ###### 六级标题
+
+
+
+运行截图如下：
 
 ![image-20251221121507849](README.assets/image-20251221121507849.png)
 
@@ -236,13 +260,14 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 
 操作步骤：
 
-搜索 `Markdown All in One` 图片：
-
-![image-20251221123718227](README.assets/image-20251221123718227.png)
-
-输入 `Create Table of Contents` 生成目录图片：
-
-![image-20251221123741190](README.assets/image-20251221123741190.png)
+> 搜索 `Markdown All in One` 图片：
+>
+> ![image-20251221123718227](README.assets/image-20251221123718227.png)
+>
+> 输入 `Create Table of Contents` 生成目录图片：
+>
+> ![image-20251221123741190](README.assets/image-20251221123741190.png)
+>
 
 # 二、文本格式
 
@@ -303,7 +328,6 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 >
 > 段落1\
 > 段落2
->
 
 
 <br/>
