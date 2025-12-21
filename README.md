@@ -95,18 +95,18 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
   - [3.2 有序列表](#32-有序列表)
   - [3.3 任务列表](#33-任务列表)
   - [3.4 列表嵌套](#34-列表嵌套)
-- [五、链接](#五链接)
-  - [5.1 网址链接](#51-网址链接)
-  - [5.2 文件链接](#52-文件链接)
-  - [5.3 图片链接/插入图片](#53-图片链接插入图片)
-  - [5.4 标题链接](#54-标题链接)
-- [六、表格](#六表格)
-  - [6.1 表格格式与对齐](#61-表格格式与对齐)
-- [七、数学公式](#七数学公式)
-- [八、Github常见的组件](#八github常见的组件)
-  - [8.1](#81)
-  - [8.1 徽章](#81-徽章)
-  - [8.2 star](#82-star)
+- [四、链接](#四链接)
+  - [4.1 网址链接](#41-网址链接)
+  - [4.2 文件链接](#42-文件链接)
+  - [4.3 图片链接/插入图片](#43-图片链接插入图片)
+  - [4.4 标题链接](#44-标题链接)
+- [五、表格](#五表格)
+  - [5.1 表格格式与对齐](#51-表格格式与对齐)
+- [六、数学公式](#六数学公式)
+- [七、Github常见的组件](#七github常见的组件)
+  - [7.1](#71)
+  - [7.1 徽章](#71-徽章)
+  - [7.2 star](#72-star)
 
 <br/>
 
@@ -803,22 +803,25 @@ Github中存在块引用的扩展，高亮显示注释、警告的选项
 
 显示效果如下：
 
-> > [!NOTE]  
-> > Highlights information that users should take into account, even when skimming.
->
-> > [!TIP]
-> > Optional information to help a user be more successful.
->
-> > [!IMPORTANT]  
-> > Crucial information necessary for users to succeed.
->
-> > [!WARNING]  
-> > Critical content demanding immediate user attention due to potential risks.
->
-> > [!CAUTION]
-> > Negative potential consequences of an action.
->
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+> 突出显示用户应该考虑的信息，即使在略读时也是如此。
 
+> [!TIP]
+> Optional information to help a user be more successful.
+> 可选信息，帮助用户更成功。
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+> 用户成功所需的关键信息。
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+> 由于潜在风险需要用户立即关注的关键内容。
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+> 一个动作的负面潜在后果。
 
 
 ## 2.11 代码块
@@ -1060,10 +1063,10 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 
 
-# 五、链接
+# 四、链接
 
 
-## 5.1 网址链接
+## 4.1 网址链接
 
 案例：
 
@@ -1077,7 +1080,7 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 <br/>
 
-## 5.2 文件链接
+## 4.2 文件链接
 
 案例：
 
@@ -1091,10 +1094,9 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 > 这是一个文件链接: [百度一下](./README.assets/baidu.gif)
 
-
 <br/>
 
-## 5.3 图片链接/插入图片
+## 4.3 图片链接/插入图片
 
 格式:
 
@@ -1125,7 +1127,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 <br/>
 
-## 5.4 标题链接
+## 4.4 标题链接
 
 案例：
 
@@ -1144,9 +1146,9 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 <br/>
 
 
-# 六、表格
+# 五、表格
 
-## 6.1 表格格式与对齐
+## 5.1 表格格式与对齐
 
 Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分隔表头和其他行。
 
@@ -1175,29 +1177,30 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 > | 表格单元 | 表格单元 |
 > | 表格单元 | 表格单元 |
 
+<br/>
+
+
+
+# 六、数学公式
 
 <br/>
 
 
-&#x2705;
-
-# 七、数学公式
-
-<br/>
-
-
-# 八、Github常见的组件
+# 七、Github常见的组件
 
 还有一些非Markdown语法，但是在Github中也很实用的组件
 
-## 8.1 
+
+
+## 7.1 
 
 
 
-## 8.1 徽章
+## 7.1 徽章
 
 
-## 8.2 star
+
+## 7.2 star
 
 Github仓库的star历史可以已有的网站：https://star-history.com/
 
