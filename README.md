@@ -816,7 +816,7 @@ Markdown语法中存在多种样式来显示字体颜色：
 > 
 > 这是<span style="color:red">红色</span>
 > 
-> 这是$\color{red}{\mathtt{红色}}$
+> 这是 $\color{red}{\mathtt{红色}}$
 
 
 ### 2.12.2 背景颜色
