@@ -85,6 +85,7 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
   - [2.8 高亮](#28-高亮)
   - [2.9 行内代码标记](#29-行内代码标记)
   - [2.10 块引用](#210-块引用)
+  - [2.10.1 Alerts](#2101-alerts)
   - [2.11 代码块](#211-代码块)
   - [2.12 颜色](#212-颜色)
     - [2.12.1 字体颜色](#2121-字体颜色)
@@ -100,7 +101,12 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
   - [5.3 图片链接/插入图片](#53-图片链接插入图片)
   - [5.4 标题链接](#54-标题链接)
 - [六、表格](#六表格)
+  - [6.1 表格格式与对齐](#61-表格格式与对齐)
 - [七、数学公式](#七数学公式)
+- [八、Github常见的组件](#八github常见的组件)
+  - [8.1](#81)
+  - [8.1 徽章](#81-徽章)
+  - [8.2 star](#82-star)
 
 <br/>
 
@@ -767,6 +773,54 @@ ___
 
 <br/>
 
+
+## 2.10.1 Alerts 
+
+Github中存在块引用的扩展，高亮显示注释、警告的选项
+
+
+
+案例：
+
+```
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+```
+
+
+
+显示效果如下：
+
+> > [!NOTE]  
+> > Highlights information that users should take into account, even when skimming.
+>
+> > [!TIP]
+> > Optional information to help a user be more successful.
+>
+> > [!IMPORTANT]  
+> > Crucial information necessary for users to succeed.
+>
+> > [!WARNING]  
+> > Critical content demanding immediate user attention due to potential risks.
+>
+> > [!CAUTION]
+> > Negative potential consequences of an action.
+>
+
+
+
 ## 2.11 代码块
 
 代码块使用三个反引号（即```）来显示。
@@ -1092,6 +1146,19 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 # 六、表格
 
+## 6.1 表格格式与对齐
+
+Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分隔表头和其他行。
+
+语法：
+1. 表头和数据行之间必须有分隔线
+2. 分隔线至少需要三个连字符 ---
+3. 两端的竖线 | 是可选的，但建议保留以提高可读性
+4. 通过修改分割线可以设置对齐
+    + `:---` 设置内容和标题栏居左对齐
+    + `---:` 设置内容和标题栏居右对齐
+    + `:---:` 设置内容和标题栏居中对齐
+
 案例：
 
 ```
@@ -1109,21 +1176,47 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 > | 表格单元 | 表格单元 |
 
 
-
 <br/>
 
+
+&#x2705;
 
 # 七、数学公式
 
 <br/>
 
 
+# 八、Github常见的组件
+
+还有一些非Markdown语法，但是在Github中也很实用的组件
+
+## 8.1 
 
 
 
+## 8.1 徽章
 
 
+## 8.2 star
+
+Github仓库的star历史可以已有的网站：https://star-history.com/
 
 
+使用方法：
+在上述网址中，输入需要显示star历史的git仓库地址，然后复制生成的链接即可。
 
 
+案例：
+
+```
+[![Star History Chart](https://api.star-history.com/svg?repos=cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)
+```
+
+<br/>
+
+显示效果如下：
+
+[![Star History Chart](https://api.star-history.com/svg?repos=cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)
+
+
+<br/>
