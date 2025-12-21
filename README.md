@@ -227,10 +227,8 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 
 显示效果如下：
 
-> [GitHub Flavored Markdown (GFM) 语法文档](#github-flavored-markdown-gfm-语法文档)
->
-> - [1.1 概述](#11-概述)
->
+> - [GitHub Flavored Markdown (GFM) 语法文档](#github-flavored-markdown-gfm-语法文档)
+>   - [1.1 概述](#11-概述)
 
 <br/>
 
