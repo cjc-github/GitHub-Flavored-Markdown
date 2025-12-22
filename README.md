@@ -2009,7 +2009,7 @@ Github的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 
 具体每一个表情的符号码，可以查询GitHub的官方网页<http://www.emoji-cheat-sheet.com>。
 
-但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./emoji.md)。
+但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./material/emoji.md)。
 
 <br/>
 
@@ -2021,7 +2021,7 @@ Github的Markdown语法支持添加HTML支持的字符引用
 
 来源：[参考网址](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references)
 
-但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看[entities](./entities.md)。
+但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看[entities](./material/entities.md)。
 
 
 <br/>
@@ -2149,7 +2149,6 @@ xxxx
     controls="controls" 
     style="width: 100%;"
     >
-
 </video>
 
 </div>
