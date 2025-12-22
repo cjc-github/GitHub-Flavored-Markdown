@@ -2092,6 +2092,15 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 
 ## 8.3 徽章
 
+案例：
+
+```
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+```
+
+显示效果如下：
+
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
 
 
 ## 8.4 star
