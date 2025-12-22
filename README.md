@@ -963,8 +963,9 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 1. 使用HTML中`<font>`标签, GFM不支持
 2. 使用HTML中的`<span>`标签, GFM不支持
-3. 使用HTML中的`<div>`标签,  GFM不支持
+3. 使用HTML中的`<div>`标签, GFM不支持
 4. 使用HTML中的`<mark>`标签
+5. 使用部分Markdown支持的高亮语法, `==文本==`, GFM不支持
 
 <br/>
 
@@ -981,7 +982,9 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 这是<mark>背景默认为黄色</mark>
 
-这是<mark style="background-color: red">背景为红色</mark>
+这是<mark style="background: red; color: blue">背景为红色</mark>
+
+这是 == 背景为红色 ==
 ```
 
 <br/>
@@ -996,11 +999,11 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 >   这是一个有背景色的块，可以包含多行文本。
 > </div>
 >
-> 这是<mark>背景为红色</mark>
+> 这是<mark>背景默认为黄色</mark>
 >
-> 这是<mark style="background: red">背景为红色</mark>
+> 这是<mark style="background: red; color: blue">背景为红色</mark>
 > 
-> == 背景为红色 ==
+> 这是 ==背景为红色==
 
 
 
