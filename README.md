@@ -998,7 +998,9 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 >
 > 这是<mark>背景为红色</mark>
 >
-> 这是<mark style="background-color: red">背景为红色</mark>
+> 这是<mark style="background: red">背景为红色</mark>
+> 
+> == 背景为红色 ==
 
 
 
