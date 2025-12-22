@@ -107,6 +107,7 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
   - [5.3 流程图](#53-流程图)
   - [5.4 时序图](#54-时序图)
   - [5.4 甘特图](#54-甘特图)
+  - [5.5 flow流程图](#55-flow流程图)
 - [六、表格](#六表格)
   - [6.1 表格格式与对齐](#61-表格格式与对齐)
 - [七、数学公式](#七数学公式)
@@ -1313,7 +1314,11 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 
 
-除此之外，Markdown还支持流程图、时序图、甘特图。
+除此之外，Markdown中还存在Mermaid，作为最流行的Markdown图表工具之一，它支持流程图（Flowchart）、时序图（Sequence Diagram）、甘特图（Gantt Chart）、饼图（Pie Chart）、类图（Class Diagram）、状态图（State Diagram）。
+
+
+
+此外，还有一些图也支持，例如flow流程图。
 
 
 
@@ -1338,6 +1343,10 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 
 具体的标签功能可以查看HTML的语法。
+
+
+
+
 
 ## 5.3 流程图
 
@@ -1461,6 +1470,139 @@ gantt
         Add to mermaid                      :1d
 ```
 
+## 5.5 饼图
+
+
+
+案例：
+
+````
+```mermaid
+pie
+    title 浏览器市场份额
+    "Chrome" : 65
+    "Safari" : 15
+    "Firefox" : 10
+    "其他" : 10
+```
+````
+
+
+
+显示效果如下：
+
+```mermaid
+pie
+    title 浏览器市场份额
+    "Chrome" : 65
+    "Safari" : 15
+    "Firefox" : 10
+    "其他" : 10
+```
+
+
+
+## 5.6 类图
+
+
+
+案例：
+
+````
+```mermaid
+classDiagram
+    class 用户 {
+        +用户名: string
+        +密码: string
+        +登录()
+    }
+    
+    class 订单 {
+        +订单号: int
+        +创建日期: date
+        +计算总价()
+    }
+    
+    用户 "1" --> "n" 订单
+```
+````
+
+
+
+显示效果如下：
+
+```mermaid
+classDiagram
+    class 用户 {
+        +用户名: string
+        +密码: string
+        +登录()
+    }
+    
+    class 订单 {
+        +订单号: int
+        +创建日期: date
+        +计算总价()
+    }
+    
+    用户 "1" --> "n" 订单
+```
+
+## 5.7 状态图
+
+案例：
+
+````
+```mermaid
+stateDiagram
+    状态1 --> 状态2: 咻~
+```
+````
+
+
+
+显示效果如下：
+
+```mermaid
+stateDiagram
+    状态1 --> 状态2: 咻~
+```
+
+
+
+## 5.8 flow流程图
+
+案例：
+
+````
+```flow
+st=>start: 开始框
+op=>operation: 处理框
+cond=>condition: 判断框(是或否?)
+sub1=>subroutine: 子流程
+io=>inputoutput: 输入输出框
+e=>end: 结束框
+st(right)->op(right)->cond
+cond(yes)->io(bottom)->e
+cond(no)->sub1(right)->op
+```
+````
+
+
+
+显示效果如下：
+
+```flow
+st=>start: 开始框
+op=>operation: 处理框
+cond=>condition: 判断框(是或否?)
+sub1=>subroutine: 子流程
+io=>inputoutput: 输入输出框
+e=>end: 结束框
+st(right)->op(right)->cond
+cond(yes)->io(bottom)->e
+cond(no)->sub1(right)->op
+```
 
 
 
