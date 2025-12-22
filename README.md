@@ -2092,15 +2092,36 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 
 ## 8.3 徽章
 
+
+
+GFM中特有的语法，制作徽章的网址：
+
++ https://shields.io/
+
+
 案例：
 
 ```
+# 基础徽章
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+
+# 为徽章添加百度链接
+[![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)](https://www.baidu.com)
+
 ```
 
 显示效果如下：
 
-![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+> 基础徽章
+>
+> ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+>
+> 
+>
+> 为徽章添加百度链接
+>
+> [![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)](https://www.baidu.com)
+
 
 
 ## 8.4 star
@@ -2180,7 +2201,9 @@ https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
 
 显示效果如下：
 
-https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
+> https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
+
+
 
 
 操作步骤的动画:
@@ -2195,6 +2218,8 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 
 注意：GFM不支持
 
+
+
 案例：
 
 ```
@@ -2203,6 +2228,8 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
   您的浏览器不支持HTML5 video标签。
 </video>
 ```
+
+
 
 显示效果如下：
 
@@ -2215,6 +2242,8 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 
 <br/>
 
+
+
 ## 8.7 音频
 
 ### 8.7.1 Github上传音频
@@ -2222,8 +2251,10 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，而是以文件链接的形式展示。
 
 
+
 **注意：**
 如果想展示音频组件的话，可以考虑上传包含调用音频的HTML文件，或者将音频文件转换为视频文件，然后采用上述方式来展示。
+
 
 
 案例：
@@ -2231,6 +2262,8 @@ Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，
 ```
 [test.mp3]([./material/test.mp3](https://github.com/user-attachments/files/24295048/test.mp3))
 ```
+
+
 
 显示效果如下：
 
@@ -2244,11 +2277,15 @@ Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，
 
 <br/>
 
+
+
 ### 8.7.2 HTML的音频标签
 
 HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不支持，一些Markdown编辑器（如Typora）支持。
 
 注意：GFM不支持
+
+
 
 案例：
 
@@ -2258,6 +2295,8 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
   您的浏览器不支持HTML5 audio标签。
 </audio>
 ```
+
+
 
 显示效果如下：
 
@@ -2269,6 +2308,8 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 > </audio>
 
 <br/>
+
+
 
 # 九、杂项
 
