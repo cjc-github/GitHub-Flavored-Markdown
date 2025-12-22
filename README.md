@@ -117,7 +117,7 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
   - [8.4 star](#84-star)
   - [8.5 折叠](#85-折叠)
   - [8.6 视频](#86-视频)
-    - [8.7.1 Github上传视频](#871-github上传视频)
+    - [8.6.1 Github上传视频](#861-github上传视频)
     - [8.6.2 HTML的视频标签](#862-html的视频标签)
   - [8.7 音频](#87-音频)
     - [8.7.1 Github上传音频](#871-github上传音频)
@@ -2145,14 +2145,19 @@ xxxx
 
 ## 8.6 视频
 
-### 8.7.1 Github上传视频
+### 8.6.1 Github上传视频
+
+
+在Github上将文件上传到md, issues, pull requests, comments时，实际会将文件上传到Amazon S3 bucket, 并提供一个URL（URL格式: `https://github.com/user-attachments/assets/<ID>`）以供访问，而GFM支持嵌入这种形式的视频。
+
+
 
 案例：
 
 ```
 https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
-
 ```
+
 显示效果如下：
 
 https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
@@ -2194,15 +2199,18 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 
 ### 8.7.1 Github上传音频
 
+Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，而是以文件链接的形式展示。
+
+
 案例：
 
 ```
-[test.mp3](https://github.com/user-attachments/files/24295048/test.mp3)
+[test.mp3]([./material/test.mp3](https://github.com/user-attachments/files/24295048/test.mp3))
 ```
 
 显示效果如下：
 
-[test.mp3](https://github.com/user-attachments/files/24295048/test.mp3)
+[test.mp3]([./material/test.mp3](https://github.com/user-attachments/files/24295048/test.mp3))
 
 
 
