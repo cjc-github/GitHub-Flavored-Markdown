@@ -2140,6 +2140,7 @@ xxxx
 
 ## 8.6
 
+<div>
 <video class="player" 
     src="media/realEstateAD.mp4" 
     poster="https://p9-dy.byteimg.com/img/tos-cn-p-0015/7bb4669a00c7480889e0023ddd59c875_1585735351~c5_300x400.jpeg?from=2563711402_large"
@@ -2150,3 +2151,7 @@ xxxx
     >
 
 </video>
+
+</div>
+
+<br/>
