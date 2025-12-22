@@ -107,7 +107,10 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
   - [5.3 流程图](#53-流程图)
   - [5.4 时序图](#54-时序图)
   - [5.4 甘特图](#54-甘特图)
-  - [5.5 flow流程图](#55-flow流程图)
+  - [5.5 饼图](#55-饼图)
+  - [5.6 类图](#56-类图)
+  - [5.7 状态图](#57-状态图)
+  - [5.8 flow流程图](#58-flow流程图)
 - [六、表格](#六表格)
   - [6.1 表格格式与对齐](#61-表格格式与对齐)
 - [七、数学公式](#七数学公式)
@@ -1314,7 +1317,8 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 
 
-除此之外，Markdown中还存在Mermaid，作为最流行的Markdown图表工具之一，它支持流程图（Flowchart）、时序图（Sequence Diagram）、甘特图（Gantt Chart）、饼图（Pie Chart）、类图（Class Diagram）、状态图（State Diagram）。
+除此之外，Markdown中还支持Mermaid，Mermaid作为最流行的Markdown图表工具之一，它支持流程图（Flowchart）、时序图（Sequence Diagram）、甘特图（Gantt Chart）、饼图（Pie Chart）、类图（Class Diagram）、状态图（State Diagram）。
+详情见5.3-5.7节。
 
 
 
@@ -1571,6 +1575,10 @@ stateDiagram
 
 
 ## 5.8 flow流程图
+
+
+Mermaid不支持下面语法，但是部分Markdown编辑器支持，例如Typora。
+
 
 案例：
 
