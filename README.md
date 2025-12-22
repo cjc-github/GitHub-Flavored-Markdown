@@ -1,14 +1,6 @@
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-
 # GitHub Flavored Markdown (GFM) 语法文档
 
 本文档系统性地整理了 GitHub Flavored Markdown (GFM) 的语法规范，并特别标注了与标准 Markdown 语法的差异。
-
-
 
 ## 1.1 概述
 
@@ -21,13 +13,11 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 我们可以将Markdown支持的格式分为几个层次：
 
 1. 原生Markdown语法（CommonMark标准）
-   
 2. GFM（GitHub Flavored Markdown）扩展语法
-   
 3. 内嵌HTML标签
-   
 4. LaTeX数学公式（非标准，但许多Markdown编辑器或通过MathJax等支持）
 
+<br/>
 
 ## 1.2 文档特色
 
@@ -37,7 +27,7 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 2. **明确标注语法差异**，对比 GFM 与标准 Markdown 的不同实现
 3. **提供实用参考**，帮助开发者高效撰写 GitHub 平台上的各类文档
 
-
+<br/>
 
 ## 1.3 相关资源
 
@@ -46,14 +36,14 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 - Github官方文档：https://github.github.com/gfm/
 - 社区维护的GFM参考：https://github.com/cjc-github/GitHub-Flavored-Markdown
 
-
+<br/>
 
 ### 1.3.2 标准Markdown资源
 
 - CommonMark 规范：https://commonmark.org/
 - 社区维护的 Markdown 指南：https://github.com/younghz/Markdown
 
-
+<br/>
 
 # 目录
 
@@ -149,8 +139,6 @@ Markdown标题有两种格式：
 注意：
 
 1. 使用 `=` 和 `-` 符号来标记一级和二级标题，在GFM中显示是正常的，但是在一些Markdown编辑器中可能渲染失败，例如Typora。推荐使用 `#` 号标记来创建标题。
-
-
 
 <br/>
 
@@ -320,7 +308,6 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 2. 软换行：在段落间添加一个空行，推荐
 3. 标签换行：使用HTML的换行标签`<br>`，`<br/>` 或 `<br />`
 4. 反斜杠，在行位添加反斜杠加上回撤，GFM不支持
-
 
 <br/>
 
