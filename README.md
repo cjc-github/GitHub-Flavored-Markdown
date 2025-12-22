@@ -1185,6 +1185,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 > 这是一个URL链接: [https://www.baidu.com](https://www.baidu.com "悬停显示: 百度一下")
 
 
+<br/>
 
 **省略方法：**
 
@@ -1210,7 +1211,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 注意：这种方式适用于URL网址，Email地址等场景
 
-
+<br/>
 
 ## 4.2 文件链接
 
@@ -1316,16 +1317,38 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 使用图片链接的方法是目前还没有办法指定图片的高度和宽度，因此，如果需要指定图片宽度和高度的话，可以使用`<img>`标签。
 
 
+<br/>
 
-除此之外，Markdown中还支持Mermaid，Mermaid作为最流行的Markdown图表工具之一，它支持流程图（Flowchart）、时序图（Sequence Diagram）、甘特图（Gantt Chart）、饼图（Pie Chart）、类图（Class Diagram）、状态图（State Diagram）。
-详情见5.3-5.7节。
+Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法生成专业图表，完全兼容 Markdown。它支持多种图表类型，是当前最流行的 Markdown 图表工具之一。
 
+支持的图表类型
+
+- **流程图** (Flowchart) - 展示流程和决策路径
+- **时序图** ( Sequence Diagram) - 显示对象间交互的时间顺序
+- **甘特图** (Gantt Chart) - 项目管理和时间规划
+- **饼图** (Pie Chart) - 数据占比可视化
+- **类图** (Class Diagram) - 面向对象系统结构
+- **状态图** (State Diagram) - 系统状态转换
+- 更多图表类型详见 5.3-5.7 节
+
+<br/>
+
+安装步骤：
+
+1. 打开VS Code
+2. 进入扩展市场（快捷键：Ctrl+Shift+X）
+3. 在搜索栏中输入 `Mermaid`, 推荐安装插件`MArkdown Preview Mermaid Support`，然后点击安装
+4. 重新启动VS Code, 在Markdown文件，点击预览即可出现对应的图表
+
+运行截图如下：
+
+![image-20251222155818507](README.assets/image-20251222155818507.png)
 
 
 此外，还有一些图也支持，例如flow流程图。
 
 
-
+<br/>
 
 ## 5.1 图片链接
 
@@ -1333,19 +1356,17 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 <br/>
 
-
 ## 5.2 HTML标签
-
 
 案例：
 
 ```
-<img src="README.assets/baidu.gif" width="100%" height="100%" alt="baidu">
+<img src="README.assets/baidu.gif" width="50%" height="50%" alt="baidu" title="悬停展示： 百度一下">
 ```
 
 显示效果如下：
 
-> <img src="README.assets/baidu.gif" width="100%" height="100%" alt="baidu">
+> <img src="README.assets/baidu.gif" width="50%" height="50%" alt="baidu" title="悬停展示： 百度一下">
 
 
 具体的标签功能可以查看HTML的语法。
@@ -1522,18 +1543,28 @@ pie
 ```mermaid
 classDiagram
     class 用户 {
-        +用户名: string
-        +密码: string
-        +登录()
+        -id: int
+        -username: string
+        -password: string
+        +login()
+        +logout()
+    }
+    
+    class 管理员 {
+        -权限等级: int
+        +管理用户()
+        +删除内容()
     }
     
     class 订单 {
-        +订单号: int
-        +创建日期: date
-        +计算总价()
+        -订单号: string
+        -金额: float
+        +创建订单()
+        +取消订单()
     }
     
-    用户 "1" --> "n" 订单
+    用户 <|-- 管理员 : 继承
+    用户 "1" --> "*" 订单 : 拥有
 ```
 ````
 
@@ -1544,18 +1575,28 @@ classDiagram
 ```mermaid
 classDiagram
     class 用户 {
-        +用户名: string
-        +密码: string
-        +登录()
+        -id: int
+        -username: string
+        -password: string
+        +login()
+        +logout()
+    }
+    
+    class 管理员 {
+        -权限等级: int
+        +管理用户()
+        +删除内容()
     }
     
     class 订单 {
-        +订单号: int
-        +创建日期: date
-        +计算总价()
+        -订单号: string
+        -金额: float
+        +创建订单()
+        +取消订单()
     }
     
-    用户 "1" --> "n" 订单
+    用户 <|-- 管理员 : 继承
+    用户 "1" --> "*" 订单 : 拥有
 ```
 
 <br/>
