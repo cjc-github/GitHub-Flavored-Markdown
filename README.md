@@ -104,6 +104,9 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 - [五、图片](#五图片)
   - [5.1 图片链接](#51-图片链接)
   - [5.2 HTML标签](#52-html标签)
+  - [5.3 流程图](#53-流程图)
+  - [5.4 时序图](#54-时序图)
+  - [5.4 甘特图](#54-甘特图)
 - [六、表格](#六表格)
   - [6.1 表格格式与对齐](#61-表格格式与对齐)
 - [七、数学公式](#七数学公式)
@@ -1306,14 +1309,157 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 + 图片链接：具体实现详见4.3节
 + HTML标签：使用`<img>`标签
 
+使用图片链接的方法是目前还没有办法指定图片的高度和宽度，因此，如果需要指定图片宽度和高度的话，可以使用`<img>`标签。
+
+
+
+除此之外，Markdown还支持流程图、时序图、甘特图。
+
+
 
 
 ## 5.1 图片链接
 
+详见4.3节
 
 
 ## 5.2 HTML标签
 
+
+案例：
+
+```
+<img src="README.assets/baidu.gif" width="100%" height="100%" alt="baidu">
+```
+
+显示效果如下：
+
+> <img src="README.assets/baidu.gif" width="100%" height="100%" alt="baidu">
+
+
+具体的标签功能可以查看HTML的语法。
+
+## 5.3 流程图
+
+案例：
+
+````
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->E;
+    E-->F;
+    D-->F;
+    F-->G;
+```
+````
+
+显示效果如下：
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->E;
+    E-->F;
+    D-->F;
+    F-->G;
+```
+
+## 5.4 时序图
+
+案例：
+
+````
+```mermaid
+sequenceDiagram
+    participant z as 洋葱猴 A
+    participant l as 洋葱猴 B
+    loop 日复一日
+        z->>l: 敲代码了吗今天？
+        l-->>z: 敲了，您呢？
+        activate z
+        Note left of z: 想了一下
+        alt 还没呢
+            z-xl: 还没呢，正准备打开 CODING
+        else 敲了，正遛弯儿呢
+            z-xl: 我也敲了，哈哈
+        end
+        opt 大过年的
+            l-->z: 祝您新年好啊
+        end
+    end
+```
+````
+
+显示效果如下：
+
+```mermaid
+sequenceDiagram
+    participant z as 洋葱猴 A
+    participant l as 洋葱猴 B
+    loop 日复一日
+        z->>l: 敲代码了吗今天？
+        l-->>z: 敲了，您呢？
+        activate z
+        Note left of z: 想了一下
+        alt 还没呢
+            z-xl: 还没呢，正准备打开 CODING
+        else 敲了，正遛弯儿呢
+            z-xl: 我也敲了，哈哈
+        end
+        opt 大过年的
+            l-->z: 祝您新年好啊
+        end
+    end
+```
+
+## 5.4 甘特图
+
+案例：
+
+````
+```mermaid
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+```
+````
+
+显示效果如下：
+
+```mermaid
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+```
 
 
 
