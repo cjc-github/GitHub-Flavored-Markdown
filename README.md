@@ -2147,7 +2147,7 @@ xxxx
 
 HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不支持，一些Markdown编辑器（如Typora）支持。
 
-
+注意：GFM不支持
 
 案例：
 
@@ -2158,8 +2158,6 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 </video>
 ```
 
-
-
 显示效果如下：
 
 > 显示
@@ -2169,11 +2167,7 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 >   您的浏览器不支持HTML5 video标签。
 > </video>
 
-
-
-
 <br/>
-
 
 ## 8.7 音频
 
@@ -2181,7 +2175,7 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 
 HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不支持，一些Markdown编辑器（如Typora）支持。
 
-
+注意：GFM不支持
 
 案例：
 
@@ -2192,8 +2186,6 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 </audio>
 ```
 
-
-
 显示效果如下：
 
 > 显示 
@@ -2202,7 +2194,5 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 >   <source src="./material/test.mp3" type="audio/mpeg">
 >   您的浏览器不支持HTML5 audio标签。
 > </audio>
-
-
 
 <br/>
