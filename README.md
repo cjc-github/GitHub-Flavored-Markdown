@@ -1802,13 +1802,20 @@ $$
 显示效果如下：
 
 $$
-  \begin{align}
+\begin{align}
   f(x) &= ax^2 + bx + c \\
   f'(x)  &= 2ax + b \\
   f''(x)  &= 2a
   \end{align}
 $$
 
+$$
+\begin{align}
+f(x) &= ax^2 + bx + c \label{eq:quadratic} \\
+f'(x) &= 2ax + b \label{eq:derivative1} \\
+f''(x) &= 2a \label{eq:derivative2}
+\end{align}
+$$
 
 
 <br/>
