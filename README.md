@@ -1786,6 +1786,7 @@ $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 
 使用 align 环境创建多行对齐公式
 
+
 案例：
 
 ```
@@ -1809,11 +1810,12 @@ $$
   \end{align}
 $$
 
+
 $$
 \begin{align}
-f(x) &= ax^2 + bx + c \label{eq:quadratic} \\
-f'(x) &= 2ax + b \label{eq:derivative1} \\
-f''(x) &= 2a \label{eq:derivative2}
+y5=x5+z5 \label{Za}\\
+y6=x6+z6 \notag \\
+y7=x7+z7 \label{Zb}
 \end{align}
 $$
 
