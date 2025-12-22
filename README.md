@@ -2039,8 +2039,7 @@ Github的Markdown语法支持添加HTML支持的字符引用
 
 来源：[参考网址](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references)
 
-但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看[entities](./entities.json)。
-
+但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看[entities](./entities.md)。
 
 
 <br/>
@@ -2052,9 +2051,9 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 参考链接：
 1. https://www.iamwawa.cn/fuhao.html
 2. https://m.weixinbiaoqing.com/
-3. 
 
 
+<br/>
 
 ## 8.2 diff语法
 
