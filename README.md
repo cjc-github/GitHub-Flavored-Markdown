@@ -1845,6 +1845,11 @@ PV &= nRT \label{eq:ideal-gas}
 $$
 
 
+$$
+x^2 + y^2 = r^2 \tag{1}
+$$
+
+
 <br/>
 
 
