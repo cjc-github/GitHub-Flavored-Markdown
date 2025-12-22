@@ -1811,6 +1811,12 @@ $$
 $$
 
 
+$$E = mc^2  \tag{2} $$
+
+$$\begin{align\\*}
+E = mc^2  \tag{2}
+\end{align\\*}$$
+
 $$
 \begin{align}
 y5=x5+z5 \label{Za}\\
@@ -1822,6 +1828,15 @@ $$
 $$
 \begin{align}
 f'(x) = 2ax + b \tag{2} \\
+\end{align}
+$$
+
+
+$$
+\begin{align}
+E &= mc^2 \label{eq:emc2} \\
+F &= ma \label{eq:fma} \\
+PV &= nRT \label{eq:ideal-gas}
 \end{align}
 $$
 
