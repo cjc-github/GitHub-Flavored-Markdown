@@ -1819,6 +1819,10 @@ y7=x7+z7 \label{Zb}
 \end{align}
 $$
 
+$$
+f'(x) = 2ax + b \tag{2}
+$$
+
 
 <br/>
 
