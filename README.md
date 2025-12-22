@@ -1820,7 +1820,9 @@ y7=x7+z7 \label{Zb}
 $$
 
 $$
-f'(x) = 2ax + b \tag{2}
+\begin{align}
+f'(x) = 2ax + b \tag{2} \\
+\end{align}
 $$
 
 
