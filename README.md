@@ -1331,6 +1331,8 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 详见4.3节
 
+<br/>
+
 
 ## 5.2 HTML标签
 
@@ -1348,9 +1350,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 具体的标签功能可以查看HTML的语法。
 
-
-
-
+<br/>
 
 ## 5.3 流程图
 
@@ -1381,6 +1381,8 @@ graph TD;
     D-->F;
     F-->G;
 ```
+
+<br/>
 
 ## 5.4 时序图
 
@@ -1430,6 +1432,8 @@ sequenceDiagram
     end
 ```
 
+<br/>
+
 ## 5.4 甘特图
 
 案例：
@@ -1474,6 +1478,8 @@ gantt
         Add to mermaid                      :1d
 ```
 
+<br/>
+
 ## 5.5 饼图
 
 
@@ -1504,7 +1510,7 @@ pie
     "其他" : 10
 ```
 
-
+<br/>
 
 ## 5.6 类图
 
@@ -1552,6 +1558,8 @@ classDiagram
     用户 "1" --> "n" 订单
 ```
 
+<br/>
+
 ## 5.7 状态图
 
 案例：
@@ -1572,7 +1580,7 @@ stateDiagram
     状态1 --> 状态2: 咻~
 ```
 
-
+<br/>
 
 ## 5.8 flow流程图
 
@@ -1612,6 +1620,7 @@ cond(yes)->io(bottom)->e
 cond(no)->sub1(right)->op
 ```
 
+<br/>
 
 
 # 六、表格
