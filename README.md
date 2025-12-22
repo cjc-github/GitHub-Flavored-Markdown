@@ -116,6 +116,7 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
   - [8.3 徽章](#83-徽章)
   - [8.4 star](#84-star)
   - [8.5 折叠](#85-折叠)
+  - [8.6](#86)
 
 <br/>
 
@@ -2136,3 +2137,16 @@ xxxx
 
 <br/>
 
+
+## 8.6
+
+<video class="player" 
+    src="media/realEstateAD.mp4" 
+    poster="https://p9-dy.byteimg.com/img/tos-cn-p-0015/7bb4669a00c7480889e0023ddd59c875_1585735351~c5_300x400.jpeg?from=2563711402_large"
+    type="video/mp4" 
+    preload="auto" 
+    controls="controls" 
+    style="width: 100%;"
+    >
+
+</video>
