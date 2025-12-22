@@ -17,8 +17,6 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 3. 内嵌HTML标签
 4. LaTeX数学公式（非标准，但许多Markdown编辑器或通过MathJax等支持）
 
-<br/>
-
 ## 1.2 文档特色
 
 考虑到 GFM 与标准 Markdown 在语法细节上存在显著差异，本仓库致力于：
@@ -27,8 +25,6 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 2. **明确标注语法差异**，对比 GFM 与标准 Markdown 的不同实现
 3. **提供实用参考**，帮助开发者高效撰写 GitHub 平台上的各类文档
 
-<br/>
-
 ## 1.3 相关资源
 
 ### 1.3.1 GFM官方与社区资源
@@ -36,14 +32,10 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 - Github官方文档：https://github.github.com/gfm/
 - 社区维护的GFM参考：https://github.com/cjc-github/GitHub-Flavored-Markdown
 
-<br/>
-
 ### 1.3.2 标准Markdown资源
 
 - CommonMark 规范：https://commonmark.org/
 - 社区维护的 Markdown 指南：https://github.com/younghz/Markdown
-
-<br/>
 
 # 目录
 
