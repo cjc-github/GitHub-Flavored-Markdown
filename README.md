@@ -2152,11 +2152,9 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 案例：
 
 ```
-<video class="player" 
-    src="./material/test.mp4" 
-    type="video/mp4" 
-    >
-    您的浏览器不支持HTML5 video标签。
+<video controls width="600">
+  <source src="./material/test.mp4" type="video/mp4">
+  您的浏览器不支持HTML5 video标签。
 </video>
 ```
 
@@ -2164,12 +2162,13 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 
 显示效果如下：
 
-> <video class="player" 
->     src="./material/test.mp4" 
->     type="video/mp4" 
->     >
->     您的浏览器不支持HTML5 video标签。
+> 显示
+>
+> <video controls width="600">
+>   <source src="./material/test.mp4" type="video/mp4">
+>   您的浏览器不支持HTML5 video标签。
 > </video>
+
 
 
 
@@ -2197,6 +2196,8 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 
 显示效果如下：
 
+> 显示 
+> 
 > <audio controls>
 >   <source src="./material/test.mp3" type="audio/mpeg">
 >   您的浏览器不支持HTML5 audio标签。
