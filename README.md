@@ -122,6 +122,7 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
   - [7.1 行内公式](#71-行内公式)
   - [7.2 块级公式](#72-块级公式)
   - [7.3 多行公式](#73-多行公式)
+  - [7.4 公式编号](#74-公式编号)
 - [八、Github常见的组件](#八github常见的组件)
   - [8.1](#81)
   - [8.1 徽章](#81-徽章)
@@ -1815,11 +1816,49 @@ $$
 $$
 
 
+## 7.4 公式编号
+
+
+案例：
+
+```
+# 公式1
 $$E = mc^2  \tag{2} $$
 
-$$\begin{align\\*}
-E = mc^2  \tag{2}
-\end{align\\*}$$
+# 公式2
+$$
+\begin{align}
+f'(x) = 2ax + b \tag{2} \\
+\end{align}
+$$
+
+# 公式3: Latex公式，但不显示编号
+$$
+\begin{align}
+y5=x5+z5 \label{Za}\\
+y6=x6+z6 \notag \\
+y7=x7+z7 \label{Zb}
+\end{align}
+$$
+
+```
+
+
+显示效果如下：
+
+公式1
+
+$$E = mc^2  \tag{1} $$
+
+公式2
+
+$$
+\begin{align}
+f'(x) = 2ax + b \tag{2} \\
+\end{align}
+$$
+
+公式3
 
 $$
 \begin{align}
@@ -1829,25 +1868,7 @@ y7=x7+z7 \label{Zb}
 \end{align}
 $$
 
-$$
-\begin{align}
-f'(x) = 2ax + b \tag{2} \\
-\end{align}
-$$
-
-
-$$
-\begin{align}
-E &= mc^2 \label{eq:emc2} \\
-F &= ma \label{eq:fma} \\
-PV &= nRT \label{eq:ideal-gas}
-\end{align}
-$$
-
-
-$$
-x^2 + y^2 = r^2 \tag{1}
-$$
+公式4
 
 $$
 \begin{align*}
@@ -1857,6 +1878,7 @@ f''(x) &= 2a \hfill \text{（二阶导数）}
 \end{align*}
 $$
 
+公式5
 
 $$
 \begin{align*}
@@ -1866,6 +1888,7 @@ f''(x) &= 2a && \text{（二阶导数）}
 \end{align*}
 $$
 
+公式6
 
 $$
 \begin{align*}
@@ -1874,6 +1897,8 @@ f'(x) &= 2ax + b \hfill && \text{（一阶导数）} \\
 f''(x) &= 2a \hfill && \text{（二阶导数）}
 \end{align*}
 $$
+
+公式7
 
 $$
 \begin{align*}
