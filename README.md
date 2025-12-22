@@ -128,8 +128,11 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 - [八、Github常见的组件](#八github常见的组件)
   - [8.1 表情](#81-表情)
   - [8.2 diff语法](#82-diff语法)
-  - [8.1 徽章](#81-徽章)
-  - [8.2 star](#82-star)
+  - [8.3 徽章](#83-徽章)
+  - [8.4 star](#84-star)
+  - [8.5 折叠](#85-折叠)
+        - [编译](#编译)
+        - [安装](#安装)
 
 <br/>
 
@@ -2051,14 +2054,13 @@ $$
 
 <br/>
 
-## 8.1 徽章
+## 8.3 徽章
 
 
 
-## 8.2 star
+## 8.4 star
 
 Github仓库的star历史可以已有的网站：https://star-history.com/
-
 
 使用方法：
 在上述网址中，输入需要显示star历史的git仓库地址，然后复制生成的链接即可。
@@ -2078,3 +2080,37 @@ Github仓库的star历史可以已有的网站：https://star-history.com/
 
 
 <br/>
+
+## 8.5 折叠
+
+Markdown作为一种轻量级标记语言，虽然支持HTML语言，但是不鼓励大量使用，但是有些时候HTML的语法可以在写Markdown的时候作为一个合适的补充。HTML语言中的`<details>`标签实现折叠功能。
+
+
+
+案例：
+
+```html
+<details>
+<summary>Linux环境</summary>
+
+##### 编译
+xxxx
+
+##### 安装
+xxxx
+</details>
+```
+
+
+
+显示效果如下：
+
+> <details>
+> <summary>Linux环境</summary>
+>
+> ##### 编译
+> xxxx
+>
+> ##### 安装
+> xxxx
+> </details>
