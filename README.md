@@ -1849,6 +1849,40 @@ $$
 x^2 + y^2 = r^2 \tag{1}
 $$
 
+$$
+\begin{align*}
+f(x) &= ax^2 + bx + c \hfill \text{（二次函数）} \\
+f'(x) &= 2ax + b \hfill \text{（一阶导数）} \\
+f''(x) &= 2a \hfill \text{（二阶导数）}
+\end{align*}
+$$
+
+
+$$
+\begin{align*}
+f(x) &= ax^2 + bx + c && \text{（二次函数）} \\
+f'(x) &= 2ax + b && \text{（一阶导数）} \\
+f''(x) &= 2a && \text{（二阶导数）}
+\end{align*}
+$$
+
+
+$$
+\begin{align*}
+f(x) &= ax^2 + bx + c \hfill && \text{（二次函数）} \\
+f'(x) &= 2ax + b \hfill && \text{（一阶导数）} \\
+f''(x) &= 2a \hfill && \text{（二阶导数）}
+\end{align*}
+$$
+
+$$
+\begin{align*}
+f(x) &= ax^2 + bx + c \hspace{5cm} \text{（二次函数）} \\
+f'(x) &= 2ax + b \hspace{5cm} \text{（一阶导数）} \\
+f''(x) &= 2a \hspace{5cm} \text{（二阶导数）}
+\end{align*}
+$$
+
 
 <br/>
 
