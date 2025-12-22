@@ -1868,49 +1868,52 @@ $$
 ```
 
 
+
 显示效果如下：
 
-公式1: `\tag{}` 会乱码
+> 公式1: `\tag{}` 会乱码
+>
+> $$E = mc^2  \tag{1} $$
+>
+> 公式2: `\tag{}` 会乱码
+>
+> $$
+> \begin{align}
+> f'(x) = 2ax + b \tag{2} \\
+> \end{align}
+> $$
+>
+> 公式3: `\label{}` 在Github上不显示
+>
+> $$
+> \begin{align}
+> y5=x5+z5 \label{Za}\\
+> y6=x6+z6 \notag \\
+> y7=x7+z7 \label{Zb}
+> \end{align}
+> $$
+>
+> 公式4: `&&` 来间隔公式，Github支持; `\hfill`在Github不支持
+>
+> $$
+> \begin{align*}
+> f(x) &= ax^2 + bx + c && \text{（二次函数）} \\
+> f'(x) &= 2ax + b \hfill && \text{（一阶导数）} \\
+> f''(x) &= 2a && \text{（二阶导数）}
+> \end{align*}
+> $$
+>
+> 公式5: `\hspace{}`来间隔2个文本，Github支持，但不推荐
+>
+> $$
+> \begin{align*}
+> f(x) &= ax^2 + bx + c \hspace{5cm} \text{（二次函数）} \\
+> f'(x) &= 2ax + b \hspace{5cm} \text{（一阶导数）} \\
+> f''(x) &= 2a \hspace{5cm} \text{（二阶导数）}
+> \end{align*}
+> $$
+>
 
-$$E = mc^2  \tag{1} $$
-
-公式2: `\tag{}` 会乱码
-
-$$
-\begin{align}
-f'(x) = 2ax + b \tag{2} \\
-\end{align}
-$$
-
-公式3: `\label{}` 在Github上不显示
-
-$$
-\begin{align}
-y5=x5+z5 \label{Za}\\
-y6=x6+z6 \notag \\
-y7=x7+z7 \label{Zb}
-\end{align}
-$$
-
-公式4: `&&` 来间隔公式，Github支持; `\hfill`在Github不支持
-
-$$
-\begin{align*}
-f(x) &= ax^2 + bx + c && \text{（二次函数）} \\
-f'(x) &= 2ax + b \hfill && \text{（一阶导数）} \\
-f''(x) &= 2a && \text{（二阶导数）}
-\end{align*}
-$$
-
-公式5: `\hspace{}`来间隔2个文本，Github支持，但不推荐
-
-$$
-\begin{align*}
-f(x) &= ax^2 + bx + c \hspace{5cm} \text{（二次函数）} \\
-f'(x) &= 2ax + b \hspace{5cm} \text{（一阶导数）} \\
-f''(x) &= 2a \hspace{5cm} \text{（二阶导数）}
-\end{align*}
-$$
 
 
 <br/>
