@@ -1020,8 +1020,6 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 > 
 > 这是 ==背景为红色==
 
-
-
 # 三、列表
 
 ## 3.1 无序列表
@@ -1053,15 +1051,11 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 <br/>
 
-
-
 ## 3.2 有序列表
 
 有序列表使用数字并加上 . 号来表示。
 
 注意：Markdown 会自动修正数字顺序, 但会以第一个数字开始。
-
-
 
 案例：
 
@@ -1073,8 +1067,6 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 6. 有序列表（修正，实际显示为4）
 ```
 
-
-
 显示效果如下：
 
 > 2. 有序列表
@@ -1085,8 +1077,6 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 >
 
 <br/>
-
-
 
 ## 3.3 任务列表
 
@@ -1134,11 +1124,7 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 >   1. 有序列表
 >     - [x] 已完成的任务
 
-
-
 <br/>
-
-
 
 # 四、链接
 
@@ -1156,15 +1142,11 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 - title表示鼠标悬停在网址链接时的显示文本（注意这里要加引号）
 
-
-
 案例：
 
 ```
 这是一个URL链接: [百度一下](https://www.baidu.com "悬停显示: 百度一下")
 ```
-
-
 
 显示效果如下：
 
@@ -1172,13 +1154,9 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 <br/>
 
-
-
 ### 4.1.1 网址链接扩展
 
 如果想展示URL的链接地址的话，虽然可以使用上述的网址链接`[alt](url title)`, 将alt的值改成url的网址链接。
-
-
 
 案例：
 
@@ -1186,22 +1164,15 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 这是一个URL链接: [https://www.baidu.com](https://www.baidu.com "悬停显示: 百度一下")
 ```
 
-
-
 显示效果如下：
 
 > 这是一个URL链接: [https://www.baidu.com](https://www.baidu.com "悬停显示: 百度一下")
-
 
 <br/>
 
 **省略方法：**
 
-
-
 使用尖括号可以很方便地把URL或者email地址变成可点击的链接。使用这种方式可以快速达到上述要求。
-
-
 
 案例：
 
@@ -1209,13 +1180,9 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 这是一个URL链接: <https://www.baidu.com>
 ```
 
-
-
 显示效果如下：
 
 > 这是一个URL链接: <https://www.baidu.com>
-
-
 
 注意：这种方式适用于URL网址，Email地址等场景
 
@@ -1234,23 +1201,17 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 - alt表示文件链接显示失败时的替换文本
 - title表示鼠标悬停在文件链接时的显示文本（注意这里要加引号）
 
-
-
 案例：
 
 ```
 这是一个文件链接: [百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")
 ```
 
-
-
 显示效果如下：
 
 > 这是一个文件链接: [百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")
 
 <br/>
-
-
 
 ## 4.3 图片链接/插入图片
 
@@ -1266,23 +1227,17 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 - title表示鼠标悬停在图片时的显示文本（注意这里要加引号）
 
-
-
 案例：
 
 ```
 这是一个文件链接: ![百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")
 ```
 
-
-
 显示效果如下：
 
 > 这是一个文件链接: ![百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")
 
 <br/>
-
-
 
 ### 4.3.1 给图片加链接
 
@@ -1297,21 +1252,15 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 - alt表示图片显示失败时的替换文本
 - title表示鼠标悬停在图片时的显示文本（注意这里要加引号）
 
-
-
 案例：
 
 ```
 这是一个文件链接: [![百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")](https://www.baidu.com)
 ```
 
-
-
 显示效果如下：
 
 > 这是一个文件链接: [![百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")](https://www.baidu.com)
-
-
 
 ## 4.4 标题链接
 
@@ -1326,23 +1275,17 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 - alt表示标题链接显示失败时的替换文本
 - title表示鼠标悬停在标题链接时的显示文本（注意这里要加引号）
 
-
-
 案例：
 
 ```
 标题链接: [1.1 概述](#11-概述 "跳转到1.1节")
 ```
 
-
-
 显示效果如下：
 
 >  标题链接: [1.1 概述](#11-概述 "跳转到1.1节")
 
 <br/>
-
-
 
 # 五、图片
 
@@ -1352,7 +1295,6 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 + HTML标签：使用`<img>`标签
 
 使用图片链接的方法是目前还没有办法指定图片的高度和宽度，因此，如果需要指定图片宽度和高度的话，可以使用`<img>`标签。
-
 
 <br/>
 
@@ -1383,7 +1325,6 @@ Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法
 
 
 此外，还有一些图也支持，例如flow流程图。
-
 
 <br/>
 
@@ -1540,8 +1481,6 @@ gantt
 
 ## 5.5 饼图
 
-
-
 案例：
 
 ````
@@ -1554,8 +1493,6 @@ pie
     "其他" : 10
 ```
 ````
-
-
 
 显示效果如下：
 
@@ -1571,8 +1508,6 @@ pie
 <br/>
 
 ## 5.6 类图
-
-
 
 案例：
 
@@ -1604,8 +1539,6 @@ classDiagram
     用户 "1" --> "*" 订单 : 拥有
 ```
 ````
-
-
 
 显示效果如下：
 
@@ -1649,8 +1582,6 @@ stateDiagram
 ```
 ````
 
-
-
 显示效果如下：
 
 ```mermaid
@@ -1662,9 +1593,7 @@ stateDiagram
 
 ## 5.8 flow流程图
 
-
 Mermaid不支持下面语法，但是部分Markdown编辑器支持，例如Typora。
-
 
 案例：
 
@@ -1682,8 +1611,6 @@ cond(no)->sub1(right)->op
 ```
 ````
 
-
-
 显示效果如下：
 
 ```flow
@@ -1700,14 +1627,11 @@ cond(no)->sub1(right)->op
 
 <br/>
 
-
 # 六、表格
 
 ## 6.1 表格格式与对齐
 
 Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分隔表头和其他行。
-
-
 
 语法：
 
@@ -1719,8 +1643,6 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
     + `---:` 设置内容和标题栏居右对齐
     + `:---:` 设置内容和标题栏居中对齐
 
-
-
 案例：
 
 ```
@@ -1730,8 +1652,6 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 | 表格单元   | 表格单元   |
 ```
 
-
-
 显示效果如下：
 
 > | 表头1    | 表头2    |
@@ -1739,15 +1659,11 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 > | 表格单元 | 表格单元 |
 > | 表格单元 | 表格单元 |
 
-
-
 <br/>
 
 ## 6.2 HTML表格
 
 复杂表格的创建可以使用 HTML 语法来实现更高级的功能，如单元格合并、自定义样式等
-
-
 
 案例：
 
@@ -1781,8 +1697,6 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 </table>
 ```
 
-
-
 显示效果如下：
 
 > <table>
@@ -1813,29 +1727,21 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 >   </tbody>
 > </table>
 
-
-
 <br/>
 
 # 七、数学公式
 
 在 Markdown 中，数学公式通过 LaTeX 语法来表示。
 
-
-
 ## 7.1 行内公式
 
 行内公式使用单个美元符号 `$` 包围，公式会嵌入到文本中
-
-
 
 案例：
 
 ```
 文本中的变量 $x = 5$ 和函数 $f(x) = x^2 + 2x + 1$。
 ```
-
-
 
 显示效果如下：
 
@@ -1847,8 +1753,6 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 
 块级公式使用双美元符号 `$$` 包围，公式会独立成行并居中显示
 
-
-
 案例：
 
 ```
@@ -1856,8 +1760,6 @@ $$E = mc^2$$
 
 $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 ```
-
-
 
 显示效果如下：
 
@@ -1884,7 +1786,6 @@ $$
 $$
 ```
 
-
 显示效果如下：
 
 $$
@@ -1900,7 +1801,6 @@ $$
 ## 7.4 公式编号
 
 GFM不支持 `\tag{}`, `\label{}` 和 `\hfill` 来显示公式编号, 但可以使用`&&` 和 `\hspace{}`来实现公式编号的显示。
-
 
 案例：
 
@@ -1947,8 +1847,6 @@ f''(x) &= 2a \hspace{5cm} \text{（二阶导数）}
 \end{align*}
 $$
 ```
-
-
 
 显示效果如下：
 
@@ -1997,12 +1895,9 @@ $$
 
 <br/>
 
-
 # 八、Github常见的组件
 
 还有一些非Markdown语法，但是在Github中也很实用的组件
-
-
 
 ## 8.1 表情和符号
 
@@ -2044,13 +1939,9 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 
 <br/>
 
-
-
 ## 8.2 diff语法
 
 在GFM中经常看到代码差异的显示，这是通过一种特殊的标记来实现的，这种标记可以高亮显示代码的增删改。
-
-
 
 在GFM中，我们可以通过以下方式来插入一个diff代码块：
 1. 使用三个反引号（```）开始一个代码块，然后在反引号后面写上“diff”
@@ -2076,7 +1967,6 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 ```
 ````
 
-
 显示效果如下：
 
 > ```diff
@@ -2088,13 +1978,9 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 > @@ -1,5 +1,5 @@ 
 > ```
 
-
-
 <br/>
 
 ## 8.3 徽章
-
-
 
 GFM中特有的语法，制作徽章的网址：
 
@@ -2124,15 +2010,12 @@ GFM中特有的语法，制作徽章的网址：
 >
 > [![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)](https://www.baidu.com)
 
-
-
 ## 8.4 star
 
 Github仓库的star历史可以已有的网站：https://star-history.com/
 
 使用方法：
 在上述网址中，输入需要显示star历史的git仓库地址，然后复制生成的链接即可。
-
 
 案例：
 
@@ -2144,16 +2027,13 @@ Github仓库的star历史可以已有的网站：https://star-history.com/
 
 显示效果如下：
 
-[![Star History Chart](https://api.star-history.com/svg?repos=cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)
-
+> [![Star History Chart](https://api.star-history.com/svg?repos=cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)
 
 <br/>
 
 ## 8.5 折叠
 
 Markdown作为一种轻量级标记语言，虽然支持HTML语言，但是不鼓励大量使用，但是有些时候HTML的语法可以在写Markdown的时候作为一个合适的补充。HTML语言中的`<details>`标签实现折叠功能。
-
-
 
 案例：
 
@@ -2169,8 +2049,6 @@ xxxx
 </details>
 ```
 
-
-
 显示效果如下：
 
 > <details>
@@ -2185,15 +2063,11 @@ xxxx
 
 <br/>
 
-
 ## 8.6 视频
 
 ### 8.6.1 Github上传视频
 
-
 在Github上将文件上传到md, issues, pull requests, comments时，实际会将文件上传到Amazon S3 bucket, 并提供一个URL（URL格式: `https://github.com/user-attachments/assets/<ID>`）以供访问，而GFM支持嵌入这种形式的视频。
-
-
 
 案例：
 
@@ -2204,9 +2078,6 @@ https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
 显示效果如下：
 
 > https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
-
-
-
 
 操作步骤的动画:
 
@@ -2220,8 +2091,6 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 
 注意：GFM不支持
 
-
-
 案例：
 
 ```
@@ -2230,8 +2099,6 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
   您的浏览器不支持HTML5 video标签。
 </video>
 ```
-
-
 
 显示效果如下：
 
@@ -2244,20 +2111,14 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 
 <br/>
 
-
-
 ## 8.7 音频
 
 ### 8.7.1 Github上传音频
 
 Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，而是以文件链接的形式展示。
 
-
-
 **注意：**
 如果想展示音频组件的话，可以考虑上传包含调用音频的HTML文件，或者将音频文件转换为视频文件，然后采用上述方式来展示。
-
-
 
 案例：
 
@@ -2265,12 +2126,9 @@ Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，
 [test.mp3]([./material/test.mp3](https://github.com/user-attachments/files/24295048/test.mp3))
 ```
 
-
-
 显示效果如下：
 
 [test.mp3]([./material/test.mp3](https://github.com/user-attachments/files/24295048/test.mp3))
-
 
 
 操作步骤的动画:
@@ -2279,15 +2137,11 @@ Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，
 
 <br/>
 
-
-
 ### 8.7.2 HTML的音频标签
 
 HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不支持，一些Markdown编辑器（如Typora）支持。
 
 注意：GFM不支持
-
-
 
 案例：
 
@@ -2297,8 +2151,6 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
   您的浏览器不支持HTML5 audio标签。
 </audio>
 ```
-
-
 
 显示效果如下：
 
@@ -2310,8 +2162,6 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 > </audio>
 
 <br/>
-
-
 
 # 九、杂项
 
