@@ -2112,7 +2112,7 @@ github-repo-blue?logo=github
 
 <br/>
 
-以https://github.com/cjc-github/GitHub-Flavored-Markdown为例，各个参数为：
+以 <https://github.com/cjc-github/GitHub-Flavored-Markdown> 为例，各个参数为：
 
 + user: cjc-github
 + repo: GitHub-Flavored-Markdown
@@ -2197,6 +2197,12 @@ github-repo-blue?logo=github
 
 ### 8.3.5 兼容性信息
 
+[![Project Page](https://img.shields.io/badge/Project-Page-blue?logo=microsoft)](https://microsoft.github.io/VibeVoice)
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-Collection-orange?logo=huggingface)](https://huggingface.co/collections/microsoft/vibevoice-68a2ef24a875c44be47b034f)
+[![Technical Report](https://img.shields.io/badge/Technical-Report-red?logo=adobeacrobatreader)](https://arxiv.org/pdf/2508.19205)
+
+<img src="https://img.shields.io/badge/Status-New-brightgreen?style=flat" alt="New" />
+<img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" />
 
 
 ### 8.3.6 文档与聊天渠道
