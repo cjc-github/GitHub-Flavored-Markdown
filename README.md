@@ -1289,12 +1289,51 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 # 五、图片
 
+
+
+在Markdown中，除了用`![alt](url)`语法插入静态图片外，还可以用Mermaid语法绘制可编辑的图表，这类图表是“代码生成”的，在渲染时动态生成图片。
+
+
+
+## 5.1 插入静态图片
+
+
+
 在Markdown中插入图片存在以下方式：
 
 + 图片链接：具体实现详见4.3节
 + HTML标签：使用`<img>`标签
 
 使用图片链接的方法是目前还没有办法指定图片的高度和宽度，因此，如果需要指定图片宽度和高度的话，可以使用`<img>`标签。
+
+
+
+### 5.1.1 图片链接
+
+详见4.3节
+
+<br/>
+
+### 5.1.2 HTML标签
+
+案例：
+
+```
+<img src="README.assets/baidu.gif" width="50%" height="50%" alt="baidu" title="悬停展示： 百度一下">
+```
+
+显示效果如下：
+
+> <img src="README.assets/baidu.gif" width="50%" height="50%" alt="baidu" title="悬停展示： 百度一下">
+
+
+具体的标签功能可以查看HTML的语法。
+
+<br/>
+
+
+
+## 5.2 插入动态图片
 
 <br/>
 
@@ -1308,7 +1347,7 @@ Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法
 - **饼图** (Pie Chart) - 数据占比可视化
 - **类图** (Class Diagram) - 面向对象系统结构
 - **状态图** (State Diagram) - 系统状态转换
-- 更多图表类型详见 5.3-5.7 节
+- 更多图表类型详见 5.2.1-5.2.6 节
 
 <br/>
 
@@ -1328,30 +1367,9 @@ Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法
 
 <br/>
 
-## 5.1 图片链接
-
-详见4.3节
-
-<br/>
-
-## 5.2 HTML标签
-
-案例：
-
-```
-<img src="README.assets/baidu.gif" width="50%" height="50%" alt="baidu" title="悬停展示： 百度一下">
-```
-
-显示效果如下：
-
-> <img src="README.assets/baidu.gif" width="50%" height="50%" alt="baidu" title="悬停展示： 百度一下">
 
 
-具体的标签功能可以查看HTML的语法。
-
-<br/>
-
-## 5.3 流程图
+### 5.2.1 流程图
 
 案例：
 
@@ -1383,7 +1401,7 @@ graph TD;
 
 <br/>
 
-## 5.4 时序图
+### 5.2.2 时序图
 
 案例：
 
@@ -1433,7 +1451,7 @@ sequenceDiagram
 
 <br/>
 
-## 5.4 甘特图
+### 5.2.3 甘特图
 
 案例：
 
@@ -1479,7 +1497,7 @@ gantt
 
 <br/>
 
-## 5.5 饼图
+### 5.2.4 饼图
 
 案例：
 
@@ -1507,7 +1525,7 @@ pie
 
 <br/>
 
-## 5.6 类图
+### 5.2.5 类图
 
 案例：
 
@@ -1571,7 +1589,7 @@ classDiagram
 
 <br/>
 
-## 5.7 状态图
+### 5.2.6 状态图
 
 案例：
 
@@ -1591,7 +1609,7 @@ stateDiagram
 
 <br/>
 
-## 5.8 flow流程图
+### 5.2.7 flow流程图
 
 Mermaid不支持下面语法，但是部分Markdown编辑器支持，例如Typora。
 
@@ -2162,6 +2180,7 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 > </audio>
 
 <br/>
+
 
 # 九、杂项
 
