@@ -1645,6 +1645,14 @@ cond(no)->sub1(right)->op
 
 <br/>
 
+
+
+## 5.3 特殊图片
+
+
+
+
+
 # 六、表格
 
 ## 6.1 表格格式与对齐
@@ -2027,6 +2035,24 @@ GFM中特有的语法，制作徽章的网址：
 > 为徽章添加百度链接
 >
 > [![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)](https://www.baidu.com)
+
+
+
+常见的徽章使用场景包括：
+
++ 构建与集成状态（CI/CD)，例如`BUILD: PASSING`， `CI: passing`
++ 测试覆盖率与质量
++ 版本与发布信息，例如React版本，python版本，License版本， release版本等
++ 下载量与流行度，例如star数量，issue数量（开放的数量，关闭的数量），fork数量，贡献者的数量，下载数量等
++ 兼容性信息，支持ubuntu啥的
++ 文档与聊天渠道，例如docs，微信群，知乎，微博，新浪，gitlab等
++ 其他用途，例如demo，sponsor(赞赏)等
+
+
+
+
+
+
 
 ## 8.4 star
 
