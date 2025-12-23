@@ -2058,26 +2058,81 @@ GFM中特有的语法，制作徽章的网址：
 + 文档与聊天渠道，例如docs，微信群，知乎，微博，新浪，gitlab等
 + 其他用途，例如demo，sponsor(赞赏)等
 
-
 ### 8.3.1 构建与集成状态
+
 
 
 ### 8.3.2 测试覆盖率与质量
 
 
+
 ### 8.3.3 版本与发布信息
+
 
 
 ### 8.3.4 Github仓库数据
 
 
+
+在 `shield.io` 网址中，点击Badges -> Social，在这个列表中可以看到对应的Github仓库数据徽章制作方式
+
+
+以https://github.com/cjc-github/GitHub-Flavored-Markdown为例，各个参数为：
+
++ user: cjc-github
++ repo: GitHub-Flavored-Markdown
++ org: cjc-github
+
+然后获取生成的Markdown语法，复制到MD文件中。
+
+案例：
+
+```
+# Github followers
+![GitHub followers](https://img.shields.io/github/followers/cjc-github)
+
+# Github forks
+![GitHub forks](https://img.shields.io/github/forks/cjc-github/GitHub-Flavored-Markdown)
+
+# Github Org's stars
+![GitHub Org's stars](https://img.shields.io/github/stars/cjc-github)
+
+# GitHub Repo stars
+![GitHub Repo stars](https://img.shields.io/github/stars/cjc-github/GitHub-Flavored-Markdown)
+
+# GitHub User's stars
+![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)
+
+# GitHub watchers
+![GitHub watchers](https://img.shields.io/github/watchers/cjc-github/GitHub-Flavored-Markdown)
+```
+
+
+显示效果如下：
+
+> ![GitHub followers](https://img.shields.io/github/followers/cjc-github)
+> ![GitHub forks](https://img.shields.io/github/forks/cjc-github/GitHub-Flavored-Markdown)
+> ![GitHub Org's stars](https://img.shields.io/github/stars/cjc-github)
+> ![GitHub Repo stars](https://img.shields.io/github/stars/cjc-github/GitHub-Flavored-Markdown)
+> ![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)
+> ![GitHub watchers](https://img.shields.io/github/watchers/cjc-github/GitHub-Flavored-Markdown)
+
+
+
+
+
 ### 8.3.5 兼容性信息
+
 
 
 ### 8.3.6 文档与聊天渠道
 
 
+
+
 ### 8.3.7 其他用途
+
+
 
 
 
