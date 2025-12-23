@@ -2060,15 +2060,78 @@ GFM中特有的语法，制作徽章的网址：
 
 ### 8.3.1 构建与集成状态
 
+![GitHub License](https://img.shields.io/badge/github-repo-blue?logo=github)
 
+<br/>
 
 ### 8.3.2 测试覆盖率与质量
 
+在 `shield.io` 网址中, 
++ 点击Badges -> Static Badge，在这个列表中可以看到对应的Github仓库数据徽章制作方式
 
+案例：
+
+```
+badgeContent:
+
+build-passing-brightgreen?style=for-the-badge
+coverage-95%25-orange
+just%20the%20message-8A2BE2
+any_text-you_like-blue
+github-repo-blue?logo=github
+```
+
+显示效果如下：
+
+> ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+> ![Static Badge](https://img.shields.io/badge/coverage-95%25-orange)
+> ![Static Badge](https://img.shields.io/badge/just%20the%20message-8A2BE2)
+> ![Static Badge](https://img.shields.io/badge/any_text-you_like-blue)
+> ![Static Badge](https://img.shields.io/badge/github-repo-blue?logo=github)
+
+<br/>
 
 ### 8.3.3 版本与发布信息
 
+在 `shield.io` 网址中, 
++ 点击Badges -> License，在这个列表中可以看到对应的Github仓库数据徽章制作方式
++ 点击Badges -> Funding -> GitHub Sponsors，
 
+<br/>
+
+以https://github.com/cjc-github/GitHub-Flavored-Markdown为例，各个参数为：
+
++ user: cjc-github
++ repo: GitHub-Flavored-Markdown
++ org: cjc-github
+
+然后获取生成的Markdown语法，复制到MD文件中。
+
+
+<br/>
+
+案例：
+
+```
+# License
+![GitHub License](https://img.shields.io/github/license/cjc-github/GitHub-Flavored-Markdown)
+# Github sponsors
+![GitHub Sponsors](https://img.shields.io/github/sponsors/cjc-github)
+
+# Next.js版本 + 跳转链接
+[![Next.js](https://img.shields.io/badge/Next.js-16.x-black)](https://nextjs.org/)
+# react版本 + 跳转链接
+[![React](https://img.shields.io/badge/React-19.x-61dafb)](https://react.dev/)
+```
+
+显示效果如下：
+
+> ![GitHub License](https://img.shields.io/github/license/cjc-github/GitHub-Flavored-Markdown)
+> ![GitHub Sponsors](https://img.shields.io/github/sponsors/cjc-github)
+> [![Next.js](https://img.shields.io/badge/Next.js-16.x-black)](https://nextjs.org/)
+> [![React](https://img.shields.io/badge/React-19.x-61dafb)](https://react.dev/)
+
+<br/>
 
 ### 8.3.4 Github仓库数据
 
@@ -2117,9 +2180,7 @@ GFM中特有的语法，制作徽章的网址：
 > ![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)
 > ![GitHub watchers](https://img.shields.io/github/watchers/cjc-github/GitHub-Flavored-Markdown)
 
-
-
-
+<br/>
 
 ### 8.3.5 兼容性信息
 
