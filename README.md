@@ -2167,7 +2167,6 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 
 ## 9.1 github markdown暂不支持的功能
 
-+ 目前github暂时不支持markdown流程控制语法
 + 目前github暂时不支持css语法，如字体颜色、字体等
 + 目前github不支持文本块行号显示
 + 目前github不支持代码块自动换行、行号显示
