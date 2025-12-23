@@ -2060,7 +2060,22 @@ GFM中特有的语法，制作徽章的网址：
 
 ### 8.3.1 构建与集成状态
 
-![GitHub License](https://img.shields.io/badge/github-repo-blue?logo=github)
+在 `shield.io` 网址中, 
++ 点击Badges -> Static Badge，在这个列表中可以看到对应的Github仓库数据徽章制作方式
+
+案例：
+
+```
+badgeContent:
+
+build-passing-brightgreen?style=for-the-badge
+build-failed-brightgreen?style=for-the-badge
+```
+
+显示效果如下：
+
+> ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+> ![Static Badge](https://img.shields.io/badge/build-failed-brightgreen?style=for-the-badge)
 
 <br/>
 
@@ -2074,7 +2089,6 @@ GFM中特有的语法，制作徽章的网址：
 ```
 badgeContent:
 
-build-passing-brightgreen?style=for-the-badge
 coverage-95%25-orange
 just%20the%20message-8A2BE2
 any_text-you_like-blue
@@ -2083,7 +2097,6 @@ github-repo-blue?logo=github
 
 显示效果如下：
 
-> ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
 > ![Static Badge](https://img.shields.io/badge/coverage-95%25-orange)
 > ![Static Badge](https://img.shields.io/badge/just%20the%20message-8A2BE2)
 > ![Static Badge](https://img.shields.io/badge/any_text-you_like-blue)
