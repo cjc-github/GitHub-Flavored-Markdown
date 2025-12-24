@@ -2041,7 +2041,6 @@ GFM中特有的语法，制作徽章的网址：
 > 基础徽章
 >
 > ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
->
 > 
 >
 > 为徽章添加百度链接
@@ -2052,7 +2051,7 @@ GFM中特有的语法，制作徽章的网址：
 
 常见的徽章使用场景包括：
 
-+ 构建与集成状态（CI/CD)，例如`BUILD: PASSING`， `CI: passing`
++ 构建与集成状态（CI/CD)，例如 `BUILD: PASSING`， `CI: passing`
 + 测试覆盖率与质量
 + 版本与发布信息，例如React版本，python版本，License版本， release版本等
 + 下载量与流行度，例如star数量，issue数量（开放的数量，关闭的数量），fork数量，贡献者的数量，下载数量等
@@ -2063,7 +2062,7 @@ GFM中特有的语法，制作徽章的网址：
 ### 8.3.1 构建与集成状态
 
 在 `shield.io` 网址中, 
-+ 点击Badges -> Static Badge，在这个列表中可以看到对应的Github仓库数据徽章制作方式
++ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的Github仓库数据徽章制作方式
 
 案例：
 
@@ -2084,7 +2083,7 @@ build-failed-brightgreen?style=for-the-badge
 ### 8.3.2 测试覆盖率与质量
 
 在 `shield.io` 网址中, 
-+ 点击Badges -> Static Badge，在这个列表中可以看到对应的Github仓库数据徽章制作方式
++ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的Github仓库数据徽章制作方式
 
 案例：
 
@@ -2109,8 +2108,8 @@ github-repo-blue?logo=github
 ### 8.3.3 版本与发布信息
 
 在 `shield.io` 网址中, 
-+ 点击Badges -> License，在这个列表中可以看到对应的Github仓库数据徽章制作方式
-+ 点击Badges -> Funding -> GitHub Sponsors，
++ 点击 `Badges` -> `License`，在这个列表中可以看到对应的Github仓库数据徽章制作方式
++ 点击 `Badges` -> `Funding` -> `GitHub Sponsors`，在这个页面可以看到对应的Github仓库贡献者数量徽章制作方法
 
 <br/>
 
@@ -2152,10 +2151,10 @@ github-repo-blue?logo=github
 
 
 
-在 `shield.io` 网址中，点击Badges -> Social，在这个列表中可以看到对应的Github仓库数据徽章制作方式
+在 `shield.io` 网址中，点击 `Badges` -> `Social`，在这个列表中可以看到对应的Github仓库数据徽章制作方式
 
 
-以https://github.com/cjc-github/GitHub-Flavored-Markdown为例，各个参数为：
+以 <https://github.com/cjc-github/GitHub-Flavored-Markdown> 为例，各个参数为：
 
 + user: cjc-github
 + repo: GitHub-Flavored-Markdown
@@ -2194,6 +2193,20 @@ github-repo-blue?logo=github
 > ![GitHub Repo stars](https://img.shields.io/github/stars/cjc-github/GitHub-Flavored-Markdown)
 > ![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)
 > ![GitHub watchers](https://img.shields.io/github/watchers/cjc-github/GitHub-Flavored-Markdown)
+
+<br/>
+
+
+注意：这些徽章一般会和对应的链接组合使用，以用户star为例
+
+```
+# 在Gtihub上面获取到star的链接地址
+[![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)](https://github.com/cjc-github/GitHub-Flavored-Markdown/stargazers)
+```
+
+显示效果如下：
+
+[![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)](https://github.com/cjc-github/GitHub-Flavored-Markdown/stargazers)
 
 <br/>
 
@@ -2247,10 +2260,11 @@ Github仓库的star历史可以已有的网站：https://star-history.com/
 Github仓库的contribution贡献可以已有的网站：https://contrib.rocks/
 
 使用方法：
-在上述网址中，输入需要显示star历史的git仓库地址，然后复制生成的链接即可。
+在上述网址中，输入需要显示 `user/repo` 的github仓库地址，然后复制生成的链接即可。
 
+<br/>
 
-以https://github.com/cjc-github/GitHub-Flavored-Markdown为例，各个参数为：
+以 <https://github.com/cjc-github/GitHub-Flavored-Markdown> 为例，各个参数为：
 
 + user: cjc-github
 + repo: GitHub-Flavored-Markdown
@@ -2258,6 +2272,7 @@ Github仓库的contribution贡献可以已有的网站：https://contrib.rocks/
 
 然后输入 `cjc-github/GitHub-Flavored-Markdown` 获取生成的Markdown语法，复制到MD文件中。
 
+<br/>
 
 案例：
 
@@ -2274,6 +2289,8 @@ Github仓库的contribution贡献可以已有的网站：https://contrib.rocks/
 >   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" />
 > </a>
 
+
+注意：这个贡献图会自动跳转到Github仓库的 `/graphs/contributors` 路径
 
 
 <br/>
