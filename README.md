@@ -124,7 +124,9 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
     - [8.3.5 兼容性信息](#835-兼容性信息)
     - [8.3.6 文档与聊天渠道](#836-文档与聊天渠道)
     - [8.3.7 其他用途](#837-其他用途)
-  - [8.4 star](#84-star)
+  - [8.4 Github数据图](#84-github数据图)
+    - [8.4.1 star历史图](#841-star历史图)
+    - [8.4.2 contribution贡献图](#842-contribution贡献图)
   - [8.5 折叠](#85-折叠)
   - [8.6 视频](#86-视频)
     - [8.6.1 Github上传视频](#861-github上传视频)
@@ -2217,7 +2219,9 @@ github-repo-blue?logo=github
 
 
 
-## 8.4 star
+## 8.4 Github数据图
+
+### 8.4.1 star历史图
 
 Github仓库的star历史可以已有的网站：https://star-history.com/
 
@@ -2235,6 +2239,42 @@ Github仓库的star历史可以已有的网站：https://star-history.com/
 显示效果如下：
 
 > [![Star History Chart](https://api.star-history.com/svg?repos=cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)
+
+<br/>
+
+### 8.4.2 contribution贡献图
+
+Github仓库的contribution贡献可以已有的网站：https://contrib.rocks/
+
+使用方法：
+在上述网址中，输入需要显示star历史的git仓库地址，然后复制生成的链接即可。
+
+
+以https://github.com/cjc-github/GitHub-Flavored-Markdown为例，各个参数为：
+
++ user: cjc-github
++ repo: GitHub-Flavored-Markdown
++ org: cjc-github
+
+然后输入 `cjc-github/GitHub-Flavored-Markdown` 获取生成的Markdown语法，复制到MD文件中。
+
+
+案例：
+
+```
+<a href="https://github.com/cjc-github/GitHub-Flavored-Markdown/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" />
+</a>
+```
+
+
+显示效果如下：
+
+> <a href="https://github.com/cjc-github/GitHub-Flavored-Markdown/graphs/contributors">
+>   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" />
+> </a>
+
+
 
 <br/>
 
