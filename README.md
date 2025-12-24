@@ -2199,7 +2199,7 @@ github-repo-blue?logo=github
 
 注意：这些徽章一般会和对应的链接组合使用，以用户star为例
 
-```
+```markdown
 # 在Gtihub上面获取到star的链接地址
 [![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)](https://github.com/cjc-github/GitHub-Flavored-Markdown/stargazers)
 ```
