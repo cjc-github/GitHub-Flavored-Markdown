@@ -156,7 +156,7 @@ Markdown标题有两种格式：
 
 案例：
 
-```
+```markdown
 一级标题
 =
 二级标题
@@ -190,7 +190,7 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 
 案例：
 
-```
+```markdown
 # 一级标题
 ## 二级标题
 ### 三级标题
@@ -230,7 +230,7 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 
 案例：
 
-```
+```markdown
 [TOC]
 ```
 
@@ -250,7 +250,7 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 
 语法：
 
-```
+```markdown
 [标题显示名称](#标题实际跳转的名称)
 ```
 
@@ -258,7 +258,7 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 
 案例：
 
-```
+```markdown
 - [GitHub Flavored Markdown (GFM) 语法文档](#github-flavored-markdown-gfm-语法文档)
   - [1.1 概述](#11-概述)
 ```
@@ -325,7 +325,7 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 
 案例：
 
-```
+```markdown
 # 方法一：硬换行（Github不生效）
 段落1  # 这里添加2个空格
 段落2
@@ -378,7 +378,7 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 
 案例：
 
-```
+```markdown
 这是**粗体文字**使用星号
 这是 __粗体文字__ 使用下划线
 ```
@@ -389,7 +389,7 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 
 案例：
 
-```
+```markdown
 这是*斜体文字*使用星号
 这是 _斜体文字_ 使用下划线
 ```
@@ -400,7 +400,7 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 
 案例：
 
-```
+```markdown
 这是*斜体文本*使用星号
 这是 _斜体文本_ 使用下划线
 
@@ -456,7 +456,7 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 
 案例：
 
-```
+```markdown
 文本__粗体__文本（无效规则）
 文本 __粗体__ 文本（有效规则，前后为空格）
 __粗体__。（有效规则，前为行首，后为标点）
@@ -494,7 +494,7 @@ a__粗体__b（无效规则）
 
 案例：
 
-```
+```markdown
 这是~~删除线~~使用波浪号
 
 这是<del>删除线</del>使用波浪号
@@ -527,7 +527,7 @@ a__粗体__b（无效规则）
 
 案例：
 
-```
+```markdown
 # 方法一
 这是 <u>下划线</u> 使用`<u>`标签
 # 方法二
@@ -563,7 +563,7 @@ a__粗体__b（无效规则）
 
 案例：
 
-```
+```markdown
 这是 $\overline{上划线}$ 使用`$\overline{上划线}$`Latex公式实现
 ```
 <br/>
@@ -590,7 +590,7 @@ a__粗体__b（无效规则）
 
 案例：
 
-```
+```markdown
 $\underline{\underline{双下划线文本}}$
 $\underline{\underline{\underline{三下划线文本}}}$
 $\underbrace{这是大括号下划线}$
@@ -634,7 +634,7 @@ $$\underline{\text{这是下划线公式}}$$
 
 案例：
 
-```
+```markdown
 # 方法一
 这是^上标^显示
 # 方法二
@@ -668,7 +668,7 @@ $这是^{上标}显示$
 
 案例：
 
-```
+```markdown
 # 方法一
 这是~下标~显示
 # 方法二
@@ -699,7 +699,7 @@ $这是_{下标}显示$
 
 案例：
 
-```
+```markdown
 ---
 ***
 ___
@@ -721,7 +721,7 @@ ___
 
 案例：
 
-```
+```markdown
 这是一个脚注[^note]。
 
 [^note]: 这是带标签的脚注内容。
@@ -746,7 +746,7 @@ ___
 
 案例：
 
-```
+```markdown
 # 方法一：扩展, GFM不支持，但Typora等Markdown编辑器支持
 这是==高亮文本==
 
@@ -767,7 +767,7 @@ ___
 
 案例：
 
-```
+```markdown
 这是`行内代码标记`
 
 <code>行内代码标记</code>
@@ -785,7 +785,7 @@ ___
 
 案例：
 
-```
+```markdown
 下面是块引用
 > 块引用内容
 >> 二级块引用内容
@@ -818,7 +818,7 @@ Github中存在块引用的扩展，高亮显示注释、警告的选项，这�
 
 案例：
 
-```
+```markdown
 > [!NOTE]  
 > Highlights information that users should take into account, even when skimming.
 > 
@@ -888,7 +888,7 @@ Github中存在块引用的扩展，高亮显示注释、警告的选项，这�
 
 案例：
 
-````
+````markdown
 # 普通代码块
 ```
 这是代码块
@@ -942,7 +942,7 @@ Markdown语法中存在多种样式来显示字体颜色：
 
 注意：颜色支持
 
-```
+```markdown
 颜色名: 例如red
 rgb颜色: 例如rgb(255, 0, 0)
 十六进制颜色值: #FF0000
@@ -952,7 +952,7 @@ rgb颜色: 例如rgb(255, 0, 0)
 
 案例：
 
-```
+```markdown
 这是<font color="red">红色</font>
 
 这是<span style="color:rgb(255, 0, 0)">红色</span>
@@ -998,7 +998,7 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 案例：
 
-```
+```markdown
 这是 <font style="background: red"> 背景为红色</font>
 
 这是 <span style="background-color: red"> 背景为红色</span>
@@ -1042,7 +1042,7 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 案例：
 
-```
+```markdown
 + 无序列表，使用加号
 
 * 无序列表，使用星号
@@ -1071,7 +1071,7 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 案例：
 
-```
+```markdown
 2. 有序列表（实际显示为2）
 
 3. 有序列表（修正，实际显示为3）
@@ -1098,7 +1098,7 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 案例：
 
-```
+```markdown
 - [ ] 未完成的任务
 - [x] 已完成的任务
 - [ ] 另一个未完成的任务
@@ -1122,7 +1122,7 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 案例：
 
-```
+```markdown
 + 无序列表，使用加号
   1. 有序列表
     - [x] 已完成的任务
@@ -1144,7 +1144,7 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 
 格式:
 
-```
+```markdown
 [alt](URL title)
 ```
 
@@ -1156,7 +1156,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 案例：
 
-```
+```markdown
 这是一个URL链接: [百度一下](https://www.baidu.com "悬停显示: 百度一下")
 ```
 
@@ -1172,7 +1172,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 案例：
 
-```
+```markdown
 这是一个URL链接: [https://www.baidu.com](https://www.baidu.com "悬停显示: 百度一下")
 ```
 
@@ -1188,7 +1188,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 案例：
 
-```
+```markdown
 这是一个URL链接: <https://www.baidu.com>
 ```
 
@@ -1204,7 +1204,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 格式:
 
-```
+```markdown
 [alt](URL title)
 ```
 
@@ -1215,7 +1215,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 案例：
 
-```
+```markdown
 这是一个文件链接: [百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")
 ```
 
@@ -1229,7 +1229,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 格式:
 
-```
+```markdown
 ![alt](URL title)
 ```
 
@@ -1241,7 +1241,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 案例：
 
-```
+```markdown
 这是一个文件链接: ![百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")
 ```
 
@@ -1255,7 +1255,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 格式:
 
-```
+```markdown
 [![alt](图片URL title)](链接URL)
 ```
 
@@ -1266,7 +1266,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 案例：
 
-```
+```markdown
 这是一个文件链接: [![百度一下](./README.assets/baidu.gif "悬停显示: 百度一下")](https://www.baidu.com)
 ```
 
@@ -1278,7 +1278,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 格式:
 
-```
+```markdown
 [alt](URL title)
 ```
 
@@ -1289,7 +1289,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 案例：
 
-```
+```markdown
 标题链接: [1.1 概述](#11-概述 "跳转到1.1节")
 ```
 
@@ -1330,7 +1330,7 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 案例：
 
-```
+```markdown
 <img src="README.assets/baidu.gif" width="50%" height="50%" alt="baidu" title="悬停展示： 百度一下">
 ```
 
@@ -1385,7 +1385,7 @@ Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法
 
 案例：
 
-````
+````markdown
 ```mermaid
 graph TD;
     A-->B;
@@ -1417,7 +1417,7 @@ graph TD;
 
 案例：
 
-````
+````markdown
 ```mermaid
 sequenceDiagram
     participant z as 洋葱猴 A
@@ -1467,7 +1467,7 @@ sequenceDiagram
 
 案例：
 
-````
+````markdown
 ```mermaid
 gantt
         dateFormat  YYYY-MM-DD
@@ -1513,7 +1513,7 @@ gantt
 
 案例：
 
-````
+````markdown
 ```mermaid
 pie
     title 浏览器市场份额
@@ -1541,7 +1541,7 @@ pie
 
 案例：
 
-````
+````markdown
 ```mermaid
 classDiagram
     class 用户 {
@@ -1605,7 +1605,7 @@ classDiagram
 
 案例：
 
-````
+````markdown
 ```mermaid
 stateDiagram
     状态1 --> 状态2: 咻~
@@ -1627,7 +1627,7 @@ Mermaid不支持下面语法，但是部分Markdown编辑器支持，例如Typor
 
 案例：
 
-````
+````markdown
 ```flow
 st=>start: 开始框
 op=>operation: 处理框
@@ -1683,7 +1683,7 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 
 案例：
 
-```
+```markdown
 | 表头1  | 表头2|
 | ---------- | -----------|
 | 表格单元   | 表格单元   |
@@ -1777,7 +1777,7 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 
 案例：
 
-```
+```markdown
 文本中的变量 $x = 5$ 和函数 $f(x) = x^2 + 2x + 1$。
 ```
 
@@ -1793,7 +1793,7 @@ Markdown 制作表格使用 `|` 来分隔不同的单元格，使用 `-` 来分�
 
 案例：
 
-```
+```markdown
 $$E = mc^2$$
 
 $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
@@ -1814,7 +1814,7 @@ $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 
 案例：
 
-```
+```markdown
 $$
   \begin{align}
   f(x) &= ax^2 + bx + c \\
@@ -1842,7 +1842,7 @@ GFM不支持 `\tag{}`, `\label{}` 和 `\hfill` 来显示公式编号, 但可以�
 
 案例：
 
-```
+```markdown
 公式1: `\tag{}` 会乱码
 
 $$E = mc^2  \tag{1} $$
@@ -1994,7 +1994,7 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 
 案例：
 
-````
+````markdown
 ```diff
 古诗
 + 人闲桂花落，
@@ -2027,7 +2027,7 @@ GFM中特有的语法，制作徽章的网址：
 
 案例：
 
-```
+```markdown
 # 基础徽章
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
 
@@ -2066,7 +2066,7 @@ GFM中特有的语法，制作徽章的网址：
 
 案例：
 
-```
+```markdown
 badgeContent:
 
 build-passing-brightgreen?style=for-the-badge
@@ -2087,7 +2087,7 @@ build-failed-brightgreen?style=for-the-badge
 
 案例：
 
-```
+```markdown
 badgeContent:
 
 coverage-95%25-orange
@@ -2126,7 +2126,7 @@ github-repo-blue?logo=github
 
 案例：
 
-```
+```markdown
 # License
 ![GitHub License](https://img.shields.io/github/license/cjc-github/GitHub-Flavored-Markdown)
 # Github sponsors
@@ -2164,7 +2164,7 @@ github-repo-blue?logo=github
 
 案例：
 
-```
+```markdown
 # Github followers
 ![GitHub followers](https://img.shields.io/github/followers/cjc-github)
 
@@ -2243,7 +2243,7 @@ Github仓库的star历史可以已有的网站：https://star-history.com/
 
 案例：
 
-```
+```markdown
 [![Star History Chart](https://api.star-history.com/svg?repos=cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)
 ```
 
@@ -2276,7 +2276,7 @@ Github仓库的contribution贡献可以已有的网站：https://contrib.rocks/
 
 案例：
 
-```
+```markdown
 <a href="https://github.com/cjc-github/GitHub-Flavored-Markdown/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" />
 </a>
@@ -2337,7 +2337,7 @@ xxxx
 
 案例：
 
-```
+```markdown
 https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
 ```
 
@@ -2359,7 +2359,7 @@ HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不�
 
 案例：
 
-```
+```markdown
 <video controls width="600">
   <source src="./material/test.mp4" type="video/mp4">
   您的浏览器不支持HTML5 video标签。
@@ -2388,7 +2388,7 @@ Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，
 
 案例：
 
-```
+```markdown
 [test.mp3]([./material/test.mp3](https://github.com/user-attachments/files/24295048/test.mp3))
 ```
 
@@ -2411,7 +2411,7 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 
 案例：
 
-```
+```markdown
 <audio controls>
   <source src="./material/test.mp3" type="audio/mpeg">
   您的浏览器不支持HTML5 audio标签。
