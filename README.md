@@ -2277,6 +2277,8 @@ Github仓库的contribution贡献可以已有的网站：https://contrib.rocks/
 案例：
 
 ```markdown
+Thanks to all contributors:
+
 <a href="https://github.com/cjc-github/GitHub-Flavored-Markdown/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" />
 </a>
