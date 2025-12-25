@@ -2609,3 +2609,4 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 + 目前github markdown不支持文本块行号显示
 + 目前github markdown不支持代码块自动换行、行号显示
 + 目前github markdown不支持嵌入音频组件显示
++ 目前github markwodn不支持对公式进行编号
