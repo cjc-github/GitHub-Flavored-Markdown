@@ -2271,7 +2271,7 @@ github-repo-blue?logo=github
 
 案例：
 
-```
+```markdown
 # Django兼容性
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
 
@@ -2305,7 +2305,7 @@ github-repo-blue?logo=github
 
 案例：
 
-```
+```markdown
 # QQ
 ![Static Badge](https://img.shields.io/badge/QQ-123456789-black?style=plastic&logo=qq)
 
@@ -2370,7 +2370,7 @@ github-repo-blue?logo=github
 <img src="https://img.shields.io/badge/Status-New-brightgreen?style=flat" alt="New" />
 
 # feature-realtime徽章
-<img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" 
+<img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" />
 ```
 
 显示效果如下：
@@ -2379,7 +2379,7 @@ github-repo-blue?logo=github
 > [![Hugging Face](https://img.shields.io/badge/HuggingFace-Collection-orange?logo=huggingface)](https://huggingface.co/collections/microsoft/vibevoice-68a2ef24a875c44be47b034f)
 > [![Technical Report](https://img.shields.io/badge/Technical-Report-red?logo=adobeacrobatreader)](https://arxiv.org/pdf/2508.19205)
 > <img src="https://img.shields.io/badge/Status-New-brightgreen?style=flat" alt="New" />
-> <img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" 
+> <img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" />
 
 <br/>
 
