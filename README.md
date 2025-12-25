@@ -17,6 +17,12 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 3. 内嵌HTML标签
 4. LaTeX数学公式（非标准，但许多Markdown编辑器或通过MathJax等支持）
 
+$$
+\begin{equation}
+E = mc^2
+\end{equation}
+$$
+
 ## 1.2 文档特色
 
 考虑到 GFM 与标准 Markdown 在语法细节上存在显著差异，本仓库致力于：
