@@ -2121,14 +2121,14 @@ GFM中特有的语法，制作徽章的网址：
 
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
 
-![Static Badge](https://img.shields.io/badge/build-passing-red?style=for-the-badge&logo=github)
+![Static Badge](https://img.shields.io/badge/build-failed-red?style=for-the-badge&logo=github)
 
 ```
 
 显示效果如下：
 
 > ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
-> ![Static Badge](https://img.shields.io/badge/build-passing-red?style=for-the-badge&logo=github)
+> ![Static Badge](https://img.shields.io/badge/build-failed-red?style=for-the-badge&logo=github)
 
 
 
