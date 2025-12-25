@@ -2052,6 +2052,7 @@ GFM中特有的语法，制作徽章的网址：
 
 + https://shields.io/
 
+<br/>
 
 案例：
 
@@ -2076,6 +2077,7 @@ GFM中特有的语法，制作徽章的网址：
 > [![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)](https://img.shields.io)
 
 
+<br/>
 
 常见的徽章使用场景包括：
 
@@ -2086,6 +2088,8 @@ GFM中特有的语法，制作徽章的网址：
 + 兼容性信息，支持ubuntu啥的
 + 文档与聊天渠道，例如docs，微信群，知乎，微博，新浪，gitlab等
 + 其他用途，例如demo，sponsor(赞赏)等
+
+<br/>
 
 ### 8.3.1 构建与集成状态
 
