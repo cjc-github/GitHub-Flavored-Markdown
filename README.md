@@ -2276,8 +2276,54 @@ github-repo-blue?logo=github
 
 ### 8.3.6 文档与聊天渠道
 
+案例：
 
+```
+# QQ
+![Static Badge](https://img.shields.io/badge/QQ-123456789-black?style=plastic&logo=qq)
 
+# 微信
+![Static Badge](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-123456789-black?logo=wechat)
+
+# 知乎
+![Static Badge](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-123456789-black%20?style=plastic&logo=zhihu)
+
+# 微博
+![Static Badge](https://img.shields.io/badge/%E5%BE%AE%E5%8D%9A-123456789-black?style=plastic&logo=sinaweibo)
+
+# github
+![Static Badge](https://img.shields.io/badge/GitHub-123456789-black?style=plastic&logo=github)
+
+# 小红书
+![Static Badge](https://img.shields.io/badge/%E5%B0%8F%E7%BA%A2%E4%B9%A6-123456789-black?style=plastic&logo=xiaohongshu)
+
+# 豆瓣
+![Static Badge](https://img.shields.io/badge/%E8%B1%86%E7%93%A3-123456789-black?style=plastic&logo=douban)
+
+# 抖音
+![Static Badge](https://img.shields.io/badge/%E6%8A%96%E9%9F%B3-123456789-black?style=plastic&logo=tiktok)
+
+# B站
+![Static Badge](https://img.shields.io/badge/B%E7%AB%99-123456789-black?style=plastic&logo=bilibili)
+
+# 快手
+![Static Badge](https://img.shields.io/badge/%E5%BF%AB%E6%89%8B-123456789-black?style=plastic&logo=kuaishou)
+```
+
+显示效果如下：
+
+> ![Static Badge](https://img.shields.io/badge/QQ-123456789-black?style=plastic&logo=qq)
+> ![Static Badge](https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-123456789-black?logo=wechat)
+> ![Static Badge](https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-123456789-black%20?style=plastic&logo=zhihu)
+> ![Static Badge](https://img.shields.io/badge/%E5%BE%AE%E5%8D%9A-123456789-black?style=plastic&logo=sinaweibo)
+> ![Static Badge](https://img.shields.io/badge/GitHub-123456789-black?style=plastic&logo=github)
+> ![Static Badge](https://img.shields.io/badge/%E5%B0%8F%E7%BA%A2%E4%B9%A6-123456789-black?style=plastic&logo=xiaohongshu)
+> ![Static Badge](https://img.shields.io/badge/%E8%B1%86%E7%93%A3-123456789-black?style=plastic&logo=douban)
+> ![Static Badge](https://img.shields.io/badge/%E6%8A%96%E9%9F%B3-123456789-black?style=plastic&logo=tiktok)
+> ![Static Badge](https://img.shields.io/badge/B%E7%AB%99-123456789-black?style=plastic&logo=bilibili)
+> ![Static Badge](https://img.shields.io/badge/%E5%BF%AB%E6%89%8B-123456789-black?style=plastic&logo=kuaishou)
+
+<br/>
 
 ### 8.3.7 其他用途
 
