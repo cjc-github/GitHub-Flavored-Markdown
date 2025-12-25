@@ -15,13 +15,14 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 1. 原生Markdown语法（CommonMark标准）
 2. GFM（GitHub Flavored Markdown）扩展语法
 3. 内嵌HTML标签
-4. LaTeX数学公式（非标准，但许多Markdown编辑器或通过MathJax等支持）
+4. LaTeX数学公式（GFM通过通过MathJax引擎渲染LaTeX数学表达式）
 
-$$
-\begin{equation}
-E = mc^2
-\end{equation}
-$$
+<br/>
+
+> Github支持LaTex来源：
+> 
+> https://docs.github.com/zh/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions
+
 
 ## 1.2 文档特色
 
@@ -1856,17 +1857,33 @@ $$
   f''(x)  &= 2a
   \end{align}
 $$
+
+$$
+\begin{equation}
+E = mc^2
+\end{equation}
+$$
 ```
 
 显示效果如下：
 
-$$
-\begin{align}
-  f(x) &= ax^2 + bx + c \\
-  f'(x)  &= 2ax + b \\
-  f''(x)  &= 2a
-  \end{align}
-$$
+> align
+> 
+> $$
+> \begin{align}
+>   f(x) &= ax^2 + bx + c \\
+>   f'(x)  &= 2ax + b \\
+>   f''(x)  &= 2a
+>   \end{align}
+> $$
+> 
+> equation
+> 
+> $$
+> \begin{equation}
+> E = mc^2
+> \end{equation}
+> $$
 
 <br/>
 
