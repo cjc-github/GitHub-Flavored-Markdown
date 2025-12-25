@@ -2266,15 +2266,42 @@ github-repo-blue?logo=github
 
 ### 8.3.5 兼容性信息
 
-[![Project Page](https://img.shields.io/badge/Project-Page-blue?logo=microsoft)](https://microsoft.github.io/VibeVoice)
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-Collection-orange?logo=huggingface)](https://huggingface.co/collections/microsoft/vibevoice-68a2ef24a875c44be47b034f)
-[![Technical Report](https://img.shields.io/badge/Technical-Report-red?logo=adobeacrobatreader)](https://arxiv.org/pdf/2508.19205)
 
-<img src="https://img.shields.io/badge/Status-New-brightgreen?style=flat" alt="New" />
-<img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" />
+直观展示该Git仓库的一些软件或者系统的兼容性。
+
+案例：
+
+```
+# Django兼容性
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
+
+# Node.js兼容性
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D12.0.0-brightgreen.svg)](https://nodejs.org)
+
+# python3.7+兼容性
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org)
+
+# 各个版本的兼容性
+[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)]()
+```
+
+
+显示效果如下：
+
+> ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
+> [![Node.js Version](https://img.shields.io/badge/node-%3E%3D12.0.0-brightgreen.svg)](https://nodejs.org)
+> [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org)
+> [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)]()
+
+
+<br/>
 
 
 ### 8.3.6 文档与聊天渠道
+
+
+在 GitHub 的 Markdown 中使用社交媒体与社区徽章的核心作用是通过视觉化徽章引导用户进入项目社区，从而提高该Git仓库参与度和社区活跃度。这些徽章不仅仅是装饰，而是关键的聊天入口。
+
 
 案例：
 
@@ -2327,9 +2354,34 @@ github-repo-blue?logo=github
 
 ### 8.3.7 其他用途
 
+徽章还可以实现各种各样的用途，例如：
 
+```markdown
+# project徽章
+[![Project Page](https://img.shields.io/badge/Project-Page-blue?logo=microsoft)](https://microsoft.github.io/VibeVoice)
 
+# hugging face徽章
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-Collection-orange?logo=huggingface)](https://huggingface.co/collections/microsoft/vibevoice-68a2ef24a875c44be47b034f)
 
+# teachnical report徽章
+[![Technical Report](https://img.shields.io/badge/Technical-Report-red?logo=adobeacrobatreader)](https://arxiv.org/pdf/2508.19205)
+
+# status new徽章
+<img src="https://img.shields.io/badge/Status-New-brightgreen?style=flat" alt="New" />
+
+# feature-realtime徽章
+<img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" 
+```
+
+显示效果如下：
+
+> [![Project Page](https://img.shields.io/badge/Project-Page-blue?logo=microsoft)](https://microsoft.github.io/VibeVoice)
+> [![Hugging Face](https://img.shields.io/badge/HuggingFace-Collection-orange?logo=huggingface)](https://huggingface.co/collections/microsoft/vibevoice-68a2ef24a875c44be47b034f)
+> [![Technical Report](https://img.shields.io/badge/Technical-Report-red?logo=adobeacrobatreader)](https://arxiv.org/pdf/2508.19205)
+> <img src="https://img.shields.io/badge/Status-New-brightgreen?style=flat" alt="New" />
+> <img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" 
+
+<br/>
 
 
 ## 8.4 Github数据图
