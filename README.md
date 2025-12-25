@@ -2355,32 +2355,29 @@ Thanks to all contributors:
 
 ## 8.5 折叠
 
-Markdown作为一种轻量级标记语言，虽然支持HTML语言，但是不鼓励大量使用，但是有些时候HTML的语法可以在写Markdown的时候作为一个合适的补充。HTML语言中的`<details>`标签实现折叠功能。
+
+折叠作为一种常见的UI交互模式，指的是通过交互控制部分内容的显示与隐藏。Markdown中虽然不支持，但可以使用HTML语言中的`<details>`标签实现折叠功能。可以将非核心内容默认隐藏，使界面更简洁，非常适合FAQ、长文档、设置面板等场景。
 
 案例：
 
 ```html
 <details>
-<summary>Linux环境</summary>
+<summary>问题1: 折叠功能如何使用？</summary>
 
-##### 编译
-xxxx
+ 回答：
 
-##### 安装
-xxxx
+ 就是这么使用的
 </details>
 ```
 
 显示效果如下：
 
 > <details>
-> <summary>Linux环境</summary>
->
-> ##### 编译
-> xxxx
->
-> ##### 安装
-> xxxx
+> <summary>问题1: 折叠功能如何使用？</summary>
+> 
+>  回答：
+> 
+>  就是这么使用的
 > </details>
 
 <br/>
