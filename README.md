@@ -2117,8 +2117,7 @@ GFM中特有的语法，制作徽章的网址：
 案例：
 
 ```markdown
-设置了logo和style的徽章：
-
+# 设置了logo和style的徽章
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
 
 ![Static Badge](https://img.shields.io/badge/build-failed-red?style=for-the-badge&logo=github)
@@ -2142,8 +2141,7 @@ GFM中特有的语法，制作徽章的网址：
 案例：
 
 ```markdown
-badgeContent:
-
+# badgeContent案例：
 coverage-95%25-orange
 just%20the%20message-8A2BE2
 any_text-you_like-blue
@@ -2185,7 +2183,6 @@ github-repo-blue?logo=github
 ![GitHub License](https://img.shields.io/github/license/cjc-github/GitHub-Flavored-Markdown)
 # Github sponsors
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/cjc-github)
-
 # Next.js版本 + 跳转链接
 [![Next.js](https://img.shields.io/badge/Next.js-16.x-black)](https://nextjs.org/)
 # react版本 + 跳转链接
@@ -2260,7 +2257,7 @@ github-repo-blue?logo=github
 
 显示效果如下：
 
-[![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)](https://github.com/cjc-github/GitHub-Flavored-Markdown/stargazers)
+> [![GitHub User's stars](https://img.shields.io/github/stars/cjc-github)](https://github.com/cjc-github/GitHub-Flavored-Markdown/stargazers)
 
 <br/>
 
