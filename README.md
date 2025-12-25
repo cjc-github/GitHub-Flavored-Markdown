@@ -2057,10 +2057,10 @@ GFM中特有的语法，制作徽章的网址：
 
 ```markdown
 # 基础徽章
-![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
 
-# 为徽章添加百度链接
-[![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)](https://www.baidu.com)
+# 为徽章添加 img.shield.io 链接
+[![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)](https://img.shields.io)
 
 ```
 
@@ -2068,12 +2068,12 @@ GFM中特有的语法，制作徽章的网址：
 
 > 基础徽章
 >
-> ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+> ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
 > 
 >
-> 为徽章添加百度链接
+> 为徽章添加 img.shield.io 链接
 >
-> [![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)](https://www.baidu.com)
+> [![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)](https://img.shields.io)
 
 
 
@@ -2092,19 +2092,41 @@ GFM中特有的语法，制作徽章的网址：
 在 `shield.io` 网址中, 
 + 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的Github仓库数据徽章制作方式
 
+<br/>
+
+语法：
+
++ `badgeContent (必选)` : 一般由左侧的标签和右侧的消息组成, 标签，消息，颜色中间用破折号分割: label-message-color。
++ `style (可选)` : 可选，---，flat（扁平）, flat-square（扁平方形）, plastic（塑料质感）, for-the-badge（徽章专用样式）, social（社交风格）。
++ `logo (可选)` : 图标标识符（slug）来自 simple-icons。您可以通过点击 simple-icons 网站上的图标标题来复制其标识符，也可在 simple-icons 代码库的 slugs.md 文件中找到。来源于 <https://simpleicons.org/>。
++ `logoColor (可选)` : 该颜色适用于Logo（支持十六进制、RGB、RGBA、HSL、HSLA格式及CSS命名颜色）。此功能适用于simple-icons图标库的Logo，不适用于自定义Logo。
++ `logoSize (可选)` : 通过设置 auto来使图标自适应调整大小。这对一些较宽的Logo（如AMD和AMG）非常有用。此功能适用于 `simple-icons` 的Logo，不适用于自定义Logo。
++ `label (可选)` : 覆盖默认的左侧文本（空格或特殊字符需进行URL编码！）
++ `labelColor (可选)` : 左侧部分的背景颜色（支持十六进制、RGB、RGBA、HSL、HSLA格式及CSS命名颜色）。
++ `color (可选)` : 右侧部分的背景颜色（支持十六进制、RGB、RGBA、HSL、HSLA格式及CSS命名颜色）。
++ `cacheSeconds (可选)` : HTTP缓存生命周期（系统将根据每个徽章的规则自动推断默认值，任何低于该默认值的设置将被忽略）。
++ `link (可选)` : 指定点击徽章左侧/右侧时应执行的操作。请注意，此功能仅在将徽章集成到 `<object>` HTML 标签中时有效，而在 `<img>` 标签或标记语言中无效。
+
+
+<br/>
+
 案例：
 
 ```markdown
-badgeContent:
+设置了logo和style的徽章：
 
-build-passing-brightgreen?style=for-the-badge
-build-failed-brightgreen?style=for-the-badge
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
+
+![Static Badge](https://img.shields.io/badge/build-passing-red?style=for-the-badge&logo=github)
+
 ```
 
 显示效果如下：
 
-> ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
-> ![Static Badge](https://img.shields.io/badge/build-failed-brightgreen?style=for-the-badge)
+> ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
+> ![Static Badge](https://img.shields.io/badge/build-passing-red?style=for-the-badge&logo=github)
+
+
 
 <br/>
 
