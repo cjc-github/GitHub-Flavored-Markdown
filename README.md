@@ -19,11 +19,10 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
 
 <br/>
 
-> Github支持LaTex来源：
+> Github支持LaTex来源 (2022-05-19)：
 > 
 > https://docs.github.com/zh/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions
-
-
+^
 ## 1.2 文档特色
 
 考虑到 GFM 与标准 Markdown 在语法细节上存在显著差异，本仓库致力于：
@@ -233,7 +232,7 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 
 案例：
 
-```
+```markdown
 <h1>一级标题</h1>
 <h2>二级标题</h2>
 <h3>三级标题</h3>
@@ -252,8 +251,7 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 > <h4>四级标题</h4>
 > <h5>五级标题</h5>
 > <h6>六级标题</h6>
-
-
+^
 ## 1.3 目录生成
 
 ### 1.3.1 TOC语法
@@ -342,7 +340,6 @@ Markdown 使用 `#` 号来创建标题，这是从 HTML 的 `<h1>` 到 `<h6>` �
 > 输入 `Create Table of Contents` 生成目录图片：
 >
 > ![image-20251221123741190](README.assets/image-20251221123741190.png)
->
 
 # 二、文本格式
 
@@ -402,8 +399,7 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 >
 > 段落1\
 > 段落2
-
-
+^
 <br/>
 
 ## 2.2 字体格式
@@ -476,15 +472,14 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 > 这是 ___粗斜体文本___ 使用下划线
 
 <br/>
-
-
+^
 ### 2.2.2 HTML中的粗体、斜体以及组合
 
 HTML也可以实现上述效果，`<b>`标签和`<strong>`标签效果相同，都是粗体，`<i>`标签和`<em>`标签效果相同，都是斜体。
 
 案例：
 
-```
+```markdown
 这是<b>粗体文本</b>
 这是<strong>粗体文本</strong>
 这是<i>斜体文本</i>
@@ -542,8 +537,6 @@ a__粗体__b（无效规则）
 >
 > a__粗体__b（无效规则）
 
-
-
 <br/>
 
 因此，在设置字体的粗体、斜体时**推荐**使用星号语法。如果使用下划线时，可以在下划线前后加上空格，标点，行首/行尾等。
@@ -554,8 +547,6 @@ a__粗体__b（无效规则）
 
 **删除线语法：** 使用两个波浪号 **~~** 或者`<del>`标签包围文字：
 
-
-
 案例：
 
 ```markdown
@@ -564,16 +555,11 @@ a__粗体__b（无效规则）
 这是<del>删除线</del>使用波浪号
 ```
 
-
-
 显示效果如下：
 
 > 这是~~删除线~~使用波浪号
 >
 > 这是<del>删除线</del>使用波浪号
->
-
-
 
 <br/>
 
@@ -586,8 +572,6 @@ a__粗体__b（无效规则）
 然而，传统的Markdown下划线语法`<u>`标签在Github的Markdown文件中不生效，应该使用`<ins>`标签或者Latex公式实现。
 
 <br/>
-
-
 
 案例：
 
@@ -604,8 +588,6 @@ a__粗体__b（无效规则）
 ```
 <br/>
 
-
-
 显示效果如下：
 
 > 这是 <u>下划线</u> 使用`<u>`标签
@@ -615,15 +597,11 @@ a__粗体__b（无效规则）
 > 这是 $\underline{下划线}$ 使用`$\underline{下划线}$`Latex公式实现
 >
 
-
-
 <br/>
 
 ### 2.4.2 上划线
 
 **上划线语法：** 标准Markdown和GFM需要通过Latex公式实现上划线
-
-
 
 案例：
 
@@ -632,13 +610,9 @@ a__粗体__b（无效规则）
 ```
 <br/>
 
-
-
 显示效果如下：
 
 > 这是 $\overline{上划线}$ 使用`$\overline{上划线}$`Latex公式实现
-
-
 
 <br/>
 
@@ -685,11 +659,6 @@ $$\underline{\text{这是下划线公式}}$$
 >
 > $$\underline{\text{这是下划线公式}}$$
 
-
-
-
-
-
 ## 2.5 上下标
 
 ### 2.5.1 上标
@@ -719,12 +688,9 @@ $这是^{上标}显示$
 >
 > $这是^{上标}显示$
 
-
-
 <br/>
 
 ### 2.5.2 下标
-
 
 下标语法：Markdown可以使用`<sub>`标签、Latex中的`_{text}`命令来实现下标显示
 
@@ -759,7 +725,6 @@ $这是_{下标}显示$
 ## 2.6 分割线
 
 **分割线：** 在单独一行上使用三个或多个星号（`***`）、破折号（`---`）或下划线（`___`），并且不能包含其他内容。
-
 
 案例：
 
@@ -806,8 +771,7 @@ ___
 <br/>
 
 ## 2.8 高亮
-
-
+^
 案例：
 
 ```markdown
@@ -827,8 +791,7 @@ ___
 <br/>
 
 ## 2.9 行内代码标记
-
-
+^
 案例：
 
 ```markdown
@@ -864,21 +827,18 @@ ___
 > > > 二级块引用内容
 
 <br/>
-
-
+^
 
 注意：
 
 1. 块引用支持嵌套使用，为了更好地凸显出显示效果，本文档中的所有显示效果均在块引用中展示。
 2. Alerts不支持在块引用显示。
-
-
+^
 
 ### 2.10.1 Alerts 
 
 Github中存在块引用的扩展，高亮显示注释、警告的选项，这种的在一些Markdown编辑器（如Typora）中不支持。
-
-
+^
 
 案例：
 
@@ -944,11 +904,7 @@ Github中存在块引用的扩展，高亮显示注释、警告的选项，这�
 
 代码块使用三个反引号（即```）来显示。这种的代码块方式被称为围栏式代码块，在这种围栏式代码块中，可以指定一个可选的语言标识符，在指定后，可以为代码块启动语法着色功能。
 
-
-
 注意：在代码块中想显示代码块符号的话，可以使用四个反引号（即````）来包裹。
-
-
 
 案例：
 
@@ -964,8 +920,6 @@ printf("hello world!");
 ```
 ````
 
-
-
 显示效果如下：
 
 > 普通代码块
@@ -978,10 +932,7 @@ printf("hello world!");
 > printf("hello world!");
 > ```
 
-
-
 <br/>
-
 
 ### 2.11.1 diff语法
 
@@ -989,11 +940,9 @@ printf("hello world!");
 
 具体实现如8.2节。
 
-
 ## 2.12 颜色
 
 ### 2.12.1 字体颜色
-
 
 Markdown语法中存在多种样式来显示字体颜色：
 
@@ -1182,12 +1131,10 @@ Markdown语法中存在多种样式来显示字体背景颜色：
 >   - [X] 二级已完成的任务
 > - [ ] 另一个未完成的任务
 
-
 <br/>
 
 注意： 方括号 `- [ ]` 与文本之间必须有一个空格，否则无法正确渲染
-
-
+^
 ```markdown
 # 正确用法
 - [ ] 未完成的任务 
@@ -1397,15 +1344,9 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 # 五、图片
 
-
-
 在Markdown中，除了用`![alt](url)`语法插入静态图片外，还可以用Mermaid语法绘制可编辑的图表，这类图表是“代码生成”的，在渲染时动态生成图片。
 
-
-
 ## 5.1 插入静态图片
-
-
 
 在Markdown中插入图片存在以下方式：
 
@@ -1413,8 +1354,6 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 + HTML标签：使用`<img>`标签
 
 使用图片链接的方法是目前还没有办法指定图片的高度和宽度，因此，如果需要指定图片宽度和高度的话，可以使用`<img>`标签。
-
-
 
 ### 5.1.1 图片链接
 
@@ -1434,16 +1373,11 @@ alt和title即对应HTML中的alt和title属性（都可省略）
 
 > <img src="README.assets/baidu.gif" width="50%" height="50%" alt="baidu" title="悬停展示： 百度一下">
 
-
 具体的标签功能可以查看HTML的语法。
 
 <br/>
 
-
-
 ## 5.2 插入动态图片
-
-<br/>
 
 Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法生成专业图表，完全兼容 Markdown。它支持多种图表类型，是当前最流行的 Markdown 图表工具之一。
 
@@ -1470,12 +1404,9 @@ Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法
 
 ![image-20251222155818507](README.assets/image-20251222155818507.png)
 
-
 此外，还有一些图也支持，例如flow流程图。
 
 <br/>
-
-
 
 ### 5.2.1 流程图
 
@@ -1753,14 +1684,8 @@ cond(no)->sub1(right)->op
 
 <br/>
 
-
-
 ## 5.3 特殊图片
-
-
-
-
-
+^
 # 六、表格
 
 ## 6.1 表格格式与对齐
@@ -1907,7 +1832,6 @@ $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 
 使用 align 环境创建多行对齐公式
 
-
 案例：
 
 ```markdown
@@ -2042,7 +1966,6 @@ $$
 > \end{align*}
 > $$
 
-
 <br/>
 
 # 八、Github常见的组件
@@ -2160,7 +2083,6 @@ GFM中特有的语法，制作徽章的网址：
 >
 > [![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)](https://img.shields.io)
 
-
 <br/>
 
 常见的徽章使用场景包括：
@@ -2195,7 +2117,6 @@ GFM中特有的语法，制作徽章的网址：
 + `cacheSeconds (可选)` : HTTP缓存生命周期（系统将根据每个徽章的规则自动推断默认值，任何低于该默认值的设置将被忽略）。
 + `link (可选)` : 指定点击徽章左侧/右侧时应执行的操作。请注意，此功能仅在将徽章集成到 `<object>` HTML 标签中时有效，而在 `<img>` 标签或标记语言中无效。
 
-
 <br/>
 
 案例：
@@ -2212,8 +2133,6 @@ GFM中特有的语法，制作徽章的网址：
 
 > ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
 > ![Static Badge](https://img.shields.io/badge/build-failed-red?style=for-the-badge&logo=github)
-
-
 
 <br/>
 
@@ -2257,7 +2176,6 @@ github-repo-blue?logo=github
 
 然后获取生成的Markdown语法，复制到MD文件中。
 
-
 <br/>
 
 案例：
@@ -2284,10 +2202,7 @@ github-repo-blue?logo=github
 
 ### 8.3.4 Github仓库数据
 
-
-
 在 `shield.io` 网址中，点击 `Badges` -> `Social`，在这个列表中可以看到对应的Github仓库数据徽章制作方式
-
 
 以 <https://github.com/cjc-github/GitHub-Flavored-Markdown> 为例，各个参数为：
 
@@ -2319,7 +2234,6 @@ github-repo-blue?logo=github
 ![GitHub watchers](https://img.shields.io/github/watchers/cjc-github/GitHub-Flavored-Markdown)
 ```
 
-
 显示效果如下：
 
 > ![GitHub followers](https://img.shields.io/github/followers/cjc-github)
@@ -2330,7 +2244,6 @@ github-repo-blue?logo=github
 > ![GitHub watchers](https://img.shields.io/github/watchers/cjc-github/GitHub-Flavored-Markdown)
 
 <br/>
-
 
 注意：这些徽章一般会和对应的链接组合使用，以用户star为例
 
@@ -2346,7 +2259,6 @@ github-repo-blue?logo=github
 <br/>
 
 ### 8.3.5 兼容性信息
-
 
 直观展示该Git仓库的一些软件或者系统的兼容性。
 
@@ -2366,7 +2278,6 @@ github-repo-blue?logo=github
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)]()
 ```
 
-
 显示效果如下：
 
 > ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
@@ -2374,15 +2285,11 @@ github-repo-blue?logo=github
 > [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org)
 > [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)]()
 
-
 <br/>
-
 
 ### 8.3.6 文档与聊天渠道
 
-
 在 GitHub 的 Markdown 中使用社交媒体与社区徽章的核心作用是通过视觉化徽章引导用户进入项目社区，从而提高该Git仓库参与度和社区活跃度。这些徽章不仅仅是装饰，而是关键的聊天入口。
-
 
 案例：
 
@@ -2472,7 +2379,6 @@ github-repo-blue?logo=github
 
 <br/>
 
-
 ## 8.4 Github数据图
 
 ### 8.4.1 star历史图
@@ -2525,7 +2431,6 @@ Thanks to all contributors:
 </a>
 ```
 
-
 显示效果如下：
 
 > Thanks to all contributors:
@@ -2534,14 +2439,11 @@ Thanks to all contributors:
 >   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" />
 > </a>
 
-
 注意：这个贡献图会自动跳转到Github仓库的 `/graphs/contributors` 路径
-
 
 <br/>
 
 ## 8.5 折叠
-
 
 折叠作为一种常见的UI交互模式，指的是通过交互控制部分内容的显示与隐藏。Markdown中虽然不支持，但可以使用HTML语言中的`<details>`标签实现折叠功能。可以将非核心内容默认隐藏，使界面更简洁，非常适合FAQ、长文档、设置面板等场景。
 
@@ -2635,8 +2537,7 @@ Github虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，
 显示效果如下：
 
 [test.mp3]([./material/test.mp3](https://github.com/user-attachments/files/24295048/test.mp3))
-
-
+^
 操作步骤的动画:
 
 ![操作动画](./material/save_mp3.gif)
@@ -2669,7 +2570,6 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 
 <br/>
 
-
 # 九、杂项
 
 ## 9.1 github markdown暂不支持的功能
@@ -2680,7 +2580,4 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 + 目前github markdown不支持嵌入音频组件显示
 + 目前github markwodn不支持对公式进行编号
 
-
 <br/>
-
-
