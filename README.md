@@ -2391,6 +2391,9 @@ github-repo-blue?logo=github
 
 # feature-realtime徽章
 <img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" />
+
+# 回到目录的徽章
+[![Static Badge](https://img.shields.io/badge/%E5%9B%9E%E5%88%B0%E7%9B%AE%E5%BD%95-blue?logo=readme)](#目录)
 ```
 
 显示效果如下：
@@ -2400,6 +2403,7 @@ github-repo-blue?logo=github
 > [![Technical Report](https://img.shields.io/badge/Technical-Report-red?logo=adobeacrobatreader)](https://arxiv.org/pdf/2508.19205)
 > <img src="https://img.shields.io/badge/Status-New-brightgreen?style=flat" alt="New" />
 > <img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" />
+> [![Static Badge](https://img.shields.io/badge/%E5%9B%9E%E5%88%B0%E7%9B%AE%E5%BD%95-blue?logo=readme)](#目录)
 
 <br/>
 
@@ -2610,3 +2614,8 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 + 目前github markdown不支持代码块自动换行、行号显示
 + 目前github markdown不支持嵌入音频组件显示
 + 目前github markwodn不支持对公式进行编号
+
+
+<br/>
+
+
