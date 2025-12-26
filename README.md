@@ -2394,6 +2394,9 @@ github-repo-blue?logo=github
 
 # 回到目录的徽章
 [![Static Badge](https://img.shields.io/badge/%E5%9B%9E%E5%88%B0%E7%9B%AE%E5%BD%95-blue?logo=readme)](#目录)
+
+# 回到目录的徽章
+[![Back to TOC](https://img.shields.io/badge/Back_to-TOC-2ea44f?logo=readme)](#目录)
 ```
 
 显示效果如下：
@@ -2404,6 +2407,7 @@ github-repo-blue?logo=github
 > <img src="https://img.shields.io/badge/Status-New-brightgreen?style=flat" alt="New" />
 > <img src="https://img.shields.io/badge/Feature-Realtime_TTS-blue?style=flat&logo=soundcharts" alt="Realtime TTS" />
 > [![Static Badge](https://img.shields.io/badge/%E5%9B%9E%E5%88%B0%E7%9B%AE%E5%BD%95-blue?logo=readme)](#目录)
+> [![Back to TOC](https://img.shields.io/badge/Back_to-TOC-2ea44f?logo=readme)](#目录)
 
 <br/>
 
