@@ -144,6 +144,7 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
     - [8.7.2 HTML的音频标签](#872-html的音频标签)
 - [九、杂项](#九杂项)
   - [9.1 github markdown暂不支持的功能](#91-github-markdown暂不支持的功能)
+  - [9.2 支持清空与实现方法总结](#92-支持清空与实现方法总结)
 
 <br/>
 
@@ -2579,3 +2580,285 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 + 目前github markwodn不支持对公式进行编号
 
 <br/>
+
+
+## 9.2 支持清空与实现方法总结
+
+本文系统梳理了下标功能在原生 Markdown 标准、GFM (GitHub Flavored Markdown)、HTML 以及各类 Markdown 编辑器中的支持情况与实现方法。
+
+<table border="1">
+  <tr>
+    <th>章节</th>
+    <th>功能点</th>
+    <th>Markdown标准</th>
+    <th>Github Flavored Markdown</th>
+    <th>HTML标签</th>
+    <th>Markdown编辑器</th>
+  </tr>
+  <tr>
+    <td>标题</td>
+    <td>-</td>
+    <td>
+    1. <code>=</code>为1级标题，<code>-</code>为2级标题；<br/>
+    2. <code>#</code>到<code>#######</code>代表1-6级标题；
+    </td>
+    <td>
+    同1
+    </td>
+    <td>
+      <code>&lt;h1&gt;</code>到<code>&lt;h6&gt;</code>代表1-6级标题；
+    </td>
+    <td>
+    同1
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="13">文本格式</td>
+  </tr>
+  <tr>
+    <td>换行</td>
+    <td>
+    1. 行尾2个空格+回车；<br/>
+    2. 行尾+空行；<br>
+    3. 行尾反斜杠+回车；</br>
+    </td>
+    <td>222</td>
+    <td>使用<code>&lt;br&gt;</code>标签；</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>字体格式</td>
+    <td>
+   <code>**</code>或<code>__</code>代表粗体，<code>*</code>或<code>_</code>代表斜体；
+   </td>
+    <td>222</td>
+    <td>
+    <code>&lt;b&gt;</code>和<code>&lt;strong&gt;</code>标签代表粗体，<code>&lt;i&gt;</code>和<code>&lt;em&gt;</code>标签代表斜体；
+    </td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>删除线</td>
+    <td><code>~~文本~~</code></td>
+    <td>-</td>
+    <td><code>&lt;del&gt;</code>标签</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>下划线和上划线</td>
+    <td>-</td>
+    <td>
+    <code>&lt;ins&gt;</code>标签代表下划线;
+    </td>
+    <td>
+    <code>&lt;u&gt;</code>和<code>&lt;ins&gt;</code>标签代表下划线;
+    </td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>上下标</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>分割线</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>脚注</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>高亮</td>
+        <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>行内代码标记</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>块引用</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>代码块</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>颜色</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td rowspan="4">列表</td>
+  </tr>
+  <tr>
+    <td>无序列表</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>有序列表</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td>任务列表</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+    <td>222</td>
+  </tr>
+  <tr>
+    <td  rowspan="4">链接</td>
+  </tr>
+    <tr>
+    <td>网址链接</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>文件链接</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>图片链接</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>标题链接</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td rowspan="4">图片</td>
+  </tr>
+  <tr>
+    <td>静态图片</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>动态图片</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>特殊图片</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>表格</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>数学公式</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td rowspan="8">Github常见的组件</td>
+  </tr>
+  <tr>
+    <td>表情和符号</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>diff语法</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>徽章</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Github数据图</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>折叠</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>视频</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>音频</td>
+    <td></td>
+    <td></td>
+    <td>
+    <code>&lt;audio&gt;</code>标签
+    </td>
+    <td>
+    <code>&lt;audio&gt;</code>标签
+    </td>
+  </tr>
+</table>
