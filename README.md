@@ -144,7 +144,7 @@ Markdown本身是一种轻量级标记语言，它支持一些简单的格式。
     - [8.7.2 HTML的音频标签](#872-html的音频标签)
 - [九、杂项](#九杂项)
   - [9.1 github markdown暂不支持的功能](#91-github-markdown暂不支持的功能)
-  - [9.2 支持清空与实现方法总结](#92-支持清空与实现方法总结)
+  - [9.2 支持情况与实现方法总结](#92-支持情况与实现方法总结)
 
 <br/>
 
@@ -2582,347 +2582,42 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 <br/>
 
 
-## 9.2 支持清空与实现方法总结
+## 9.2 支持情况与实现方法总结
 
 本文系统梳理了下标功能在原生 Markdown 标准、GFM (GitHub Flavored Markdown)、HTML 以及各类 Markdown 编辑器中的支持情况与实现方法。
 
-<table border="1">
-  <tr>
-    <th>章节</th>
-    <th>功能点</th>
-    <th>Markdown标准</th>
-    <th>Github Flavored Markdown</th>
-    <th>HTML标签</th>
-    <th>Markdown编辑器</th>
-  </tr>
-  <tr>
-    <td>标题</td>
-    <td>-</td>
-    <td>
-    1. <code>=</code>为1级标题，<code>-</code>为2级标题；<br/>
-    2. <code>#</code>到<code>#######</code>代表1-6级标题；
-    </td>
-    <td>
-    同1
-    </td>
-    <td>
-      <code>&lt;h1&gt;</code>到<code>&lt;h6&gt;</code>代表1-6级标题；
-    </td>
-    <td>
-    同1
-    </td>
-  </tr>
-  <tr>
-    <td rowspan="13">文本格式</td>
-  </tr>
-  <tr>
-    <td>换行</td>
-    <td>
-    1. 行尾2个空格+回车；<br/>
-    2. 行尾+空行；<br>
-    3. 行尾反斜杠+回车；</br>
-    </td>
-    <td>222</td>
-    <td>使用<code>&lt;br&gt;</code>标签；</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>字体格式</td>
-    <td>
-   <code>**</code>或<code>__</code>代表粗体，<code>*</code>或<code>_</code>代表斜体；
-   </td>
-    <td>222</td>
-    <td>
-    <code>&lt;b&gt;</code>和<code>&lt;strong&gt;</code>标签代表粗体，<code>&lt;i&gt;</code>和<code>&lt;em&gt;</code>标签代表斜体；
-    </td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>删除线</td>
-    <td><code>~~文本~~</code></td>
-    <td>-</td>
-    <td><code>&lt;del&gt;</code>标签</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>下划线和上划线</td>
-    <td>-</td>
-    <td>
-    <code>&lt;ins&gt;</code>标签代表下划线;
-    </td>
-    <td>
-    <code>&lt;u&gt;</code>和<code>&lt;ins&gt;</code>标签代表下划线;
-    </td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>上下标</td>
-    <td>
-    上标：无 <br>
-    下标：无 <br>
-   </code>
-    </td>
-    <td>
-    上标：
-    1. 使用<code>&lt;sup&gt;</code>标签;<br>
-    2. 使用<code>^{文本}</code>命令;<br>
-   下标:
-    1. 使用<code>&lt;sub&gt;</code>标签;<br>
-    2. 使用<code>_{文本}</code>命令;<br>
-    </td>
-    <td>
-    上标：使用<code>&lt;sup&gt;</code>标签;<br>
-    下标：使用<code>&lt;sub&gt;</code>标签;<br>
-    </td>
-    <td>
-    上标：使用<code>^{文本}</code>命令;<br>
-    下标：使用<code>_{文本}</code>命令;<br>
-    </td>
-  </tr>
-  <tr>
-    <td>分割线</td>
-    <td>
-    使用三个以上的<code>&lt;*&gt;</code>、<code>&lt;-&gt;</code><code>&lt;_&gt;</code>
-    </td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>脚注</td>
-    <td>
-    使用<code>[^note]</code>标签;
-    </td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>高亮</td>
-    <td>-</td>
-    <td>使用<code>&lt;mark&gt;</code>标签;</td>
-    <td>使用<code>&lt;mark&gt;</code>标签;</td>
-    <td>-</td>
-  </tr>
-  <tr>
-    <td>行内代码标记</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>块引用</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>代码块</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>颜色</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td rowspan="4">列表</td>
-  </tr>
-  <tr>
-    <td>无序列表</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>有序列表</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td>任务列表</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-    <td>222</td>
-  </tr>
-  <tr>
-    <td  rowspan="4">链接</td>
-  </tr>
-    <tr>
-    <td>网址链接</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td>文件链接</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td>图片链接</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td>标题链接</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td rowspan="4">图片</td>
-  </tr>
-  <tr>
-    <td>静态图片</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>动态图片</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>特殊图片</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td>表格</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-    <tr>
-    <td>数学公式</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td rowspan="8">Github常见的组件</td>
-  </tr>
-  <tr>
-    <td>表情和符号</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>diff语法</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>徽章</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Github数据图</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>折叠</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>视频</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>音频</td>
-    <td></td>
-    <td></td>
-    <td>
-    <code>&lt;audio&gt;</code>标签
-    </td>
-    <td>
-    <code>&lt;audio&gt;</code>标签
-    </td>
-  </tr>
-</table>
 
 
+| 序号 | **功能点**         | **Markdown标准语法**                                         | HTML标签                                                     | Latex公式                                                | **Github Flavored Markdown **(GFM)语法 | **Markdown编辑器**（以Typora为例） |
+| ---- | ------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------------------------------------------------------- | -------------------------------------- | ---------------------------------- |
+| 1    | 标题               | 1、`=`为1级标题，`-`为2级标题；<br /> 2、`#`到`#######`代表1-6级标题； | 1、使用`<h1>到<h6>`标签代表1-6级标题;                        |                                                          | 支持Markdown、HTML                     |                                    |
+| 2    | 换行               | 1、行尾2个空格+回车；<br/>2、 行尾+空行；<br/>3、行尾反斜杠+回车； | 1、使用`<br/>`标签；                                         |                                                          | 支持Markdown、HTML                     |                                    |
+| 3    | 字体格式-粗体      | 1、使用两个星号`**`包围；<br />2、使用两个下划线`__`包围；   | 1、使用`<b>`标签；<br />2、使用`<strong>`标签;               |                                                          | 支持Markdown、HTML                     |                                    |
+| 4    | 字体格式-斜体      | 1、使用一个星号`*`包围；<br />2、使用一个下划线`_`包围；     | 1、使用`<i>`标签；<br />2、使用`<em>`标签;                   | 1、使用`\textit{}`命令；                                 | 支持Markdown、HTML                     |                                    |
+| 5    | 删除线             | 1、使用两个波浪号`~~`包围；                                  | 1、使用`<del>`标签；<br />2、使用`<s>`标签；                 |                                                          | 支持Markdown、HTML                     |                                    |
+| 6    | 下划线             | 不支持                                                       | 1、使用`<u>`标签；<br />2、使用`<ins>`标签;                  | 1、使用`\underline{}`命令；                              | 支持Markdown、HTML                     |                                    |
+| 7    | 上划线             | 不支持                                                       | 不支持                                                       | 1、使用`\overline{}`命令；                               | 支持Markdown、HTML                     |                                    |
+| 8    | 下标               | 不支持                                                       | 1、使用`<sub>`标签；                                         | 1、使用`^{}`命令；                                       | 支持Markdown、HTML                     |                                    |
+| 9    | 上标               | 不支持                                                       | 1、使用`<sup>`标签；                                         | 1、使用`_{}`命令；                                       | 支持Markdown、HTML                     |                                    |
+| 10   | 分割线             | 1、单行使用三个或多个星号`*`；<br />2、单行使用三个或多个破折号`-`；<br />3、单行使用三个或多个下划线号`_`；<br /> | 1、使用`<hr>`标签；                                          |                                                          | 支持Markdown、HTML                     |                                    |
+| 11   | 脚注               | 1、使用`[^脚注标识]`；                                       |                                                              |                                                          | 支持Markdown、HTML                     |                                    |
+| 12   | 高亮               | 不支持                                                       | 1、使用`<mark>`标签；                                        |                                                          | 支持Markdown、HTML                     |                                    |
+| 13   | 行内代码标记       | 1、使用一个反引号`` `来包围；                                | 1、使用`<code>`标签；                                        |                                                          | 支持Markdown、HTML                     |                                    |
+| 14   | 块引用             | 1、使用`>`符号                                               | 1、使用`<blockquote>`标签；                                  |                                                          | 支持Markdown、HTML                     |                                    |
+| 15   | 代码块             | 1、使用三个反引号`````` ```来包围；                          | 1、使用`<code>`标签；                                        |                                                          | 支持Markdown、HTML                     |                                    |
+| 16   | 字体颜色           | 不支持                                                       | 1、使用`<font>`标签的`color`属性；<br />2、使用`<span>`标签的`color`属性;<br />3、使用`<div>`标签的`color`属性； | 1、使用`\color{}`命令；<br />2、使用`\textcolor{}`命令； | 支持Markdown、HTML                     |                                    |
+| 17   | 背景颜色           | 不支持                                                       | 1、使用`<font>`标签的`color`属性；<br />2、使用`<span>`标签的`color`属性;<br />3、使用`<div>`标签的`color`属性；<br />4、使用`<mark>`标签 |                                                          | 支持Markdown、HTML                     |                                    |
+| 18   | 无序列表           | 1、使用星号(`*`)加空格；<br />2、使用加号(`+`)加空格；<br />3、使用减号(`-`)加空格； | 1、使用`<ul>`标签；                                          |                                                          | 支持Markdown、HTML                     |                                    |
+| 19   | 有序列表           | 1、使用数字加.号；<br />                                     | 1、使用`<ol>`标签；                                          |                                                          | 支持Markdown、HTML                     |                                    |
+| 20   | 任务列表           | 1、使用`- [ ] `表示未选用；<br />2、使用`- [x] `表示已选用； | 1、使用`<ul>`和`<input>`标签组合使用；                       |                                                          | 支持Markdown、HTML                     |                                    |
+| 21   | 链接-网址/文件链接 | 1、使用`[alt](URL title)`语法；                              | 1、使用`<a href="URL">`标签；                                |                                                          | 支持Markdown、HTML                     |                                    |
+| 21   | 链接-图片链接      | 1、使用`![alt](URL title)`语法                               | 1、使用`<a href="URL">`包裹`<img>`标签；                     |                                                          | 支持Markdown、HTML                     |                                    |
+| 22   | 链接-标题链接      | 1、使用`[alt](URL title)`语法；                              | 1、使用`<a href="URL">`标签；                                |                                                          | 支持Markdown、HTML                     |                                    |
+| 23   | 图片               | 1、使用`[alt](URL title)`语法；                              | 1、使用`<img>`标签；                                         |                                                          | 支持Markdown、HTML                     |                                    |
+| 24   | 表格               | 1、使用`|`分割单元格，使用`-`分割表头和其他行；              | 1、使用`<table>`标签；                                       |                                                          | 支持Markdown、HTML                     |                                    |
+| 25   | 数学公式           | 1.行内公式：单个美元符号 `$` 包围；<br />2.块级公式：两个美元符号 `$$` 包围； |                                                              |                                                          | 支持Markdown、HTML                     |                                    |
+| 26   | 折叠               | 不支持                                                       | 1、使用`<detail>`标签；                                      |                                                          | 支持Markdown、HTML                     |                                    |
+| 27   | 视频               | 只支持`user-attachments`附件，但可以渲染成视频组件           | 1、使用`<video>`标签；                                       |                                                          | 支持Markdown、HTML                     |                                    |
+| 28   | 音频               | 支持`user-attachments`附件，但不可以渲染成音频组件           | 1、使用`<audio>`标签；                                       |                                                          | 支持Markdown、HTML                     |                                    |
 
-对应的Markdown文件
-
-| **章节**             | **功能点**       | **Markdown标准语法**                                         | HTML标签                    | **Github Flavored Markdown **(GFM)语法 | **Markdown编辑器**（以Typora为例） |
-| -------------------- | ---------------- | ------------------------------------------------------------ | --------------------------- | -------------------------------------- | ---------------------------------- |
-| 1. 标题              | 1.1 标题         | 1、`=`为1级标题，`-`为2级标题；<br /> 2、`#`到`#######`代表1-6级标题； | `<h1>H1</h1>到 <h6>H6</h6>` |                                        |                                    |
-| 2. 文本格式          | 2.1 换行         | 1、行尾2个空格+回车；<br/>2、 行尾+空行；<br/>3、行尾反斜杠+回车； | 1、使用<br/>标签；          |                                        |                                    |
-|                      | 2.2 字体格式     |                                                              |                             |                                        |                                    |
-|                      | 2.3 删除线       |                                                              |                             |                                        |                                    |
-|                      | 2.4 下划线       |                                                              |                             |                                        |                                    |
-|                      | 2.4 上划线       |                                                              |                             |                                        |                                    |
-|                      | 2.5 下标         |                                                              |                             |                                        |                                    |
-|                      | 2.5 上标         |                                                              |                             |                                        |                                    |
-|                      | 2.6 分割线       |                                                              |                             |                                        |                                    |
-|                      | 2.7 脚注         |                                                              |                             |                                        |                                    |
-|                      | 2.8 高亮         |                                                              |                             |                                        |                                    |
-|                      | 2.9 行内代码标记 |                                                              |                             |                                        |                                    |
-|                      | 2.10 块引用      |                                                              |                             |                                        |                                    |
-|                      | 2.11 代码块      |                                                              |                             |                                        |                                    |
-|                      | 2.12 字体颜色    |                                                              |                             |                                        |                                    |
-|                      | 2.12 背景颜色    |                                                              |                             |                                        |                                    |
-| 3. 列表              | 3.1 无序列表     |                                                              |                             |                                        |                                    |
-|                      | 3.2 有序列表     |                                                              |                             |                                        |                                    |
-|                      | 3.3 任务列表     |                                                              |                             |                                        |                                    |
-| 4. 链接              | 4.1 网址链接     |                                                              |                             |                                        |                                    |
-|                      | 4.2 文件链接     |                                                              |                             |                                        |                                    |
-|                      | 4.3 图片链接     |                                                              |                             |                                        |                                    |
-|                      | 4.4 标题链接     |                                                              |                             |                                        |                                    |
-| 5. 图片              | 5.1 图片         |                                                              |                             |                                        |                                    |
-| 6. 表格              | 6.1 表格         |                                                              |                             |                                        |                                    |
-| 7. 数学公式          | 7.1 数学公式     |                                                              |                             |                                        |                                    |
-| 8.  Github常见的组件 | 8.1 表情和符号   |                                                              |                             |                                        |                                    |
-|                      | 8.2 diff语法     |                                                              |                             |                                        |                                    |
-|                      | 8.3 徽章         |                                                              |                             |                                        |                                    |
-|                      | 8.4 Github数据图 |                                                              |                             |                                        |                                    |
-|                      | 8.5 折叠         |                                                              |                             |                                        |                                    |
-|                      | 8.6 视频         |                                                              |                             |                                        |                                    |
-|                      | 8.7 音频         |                                                              |                             |                                        |                                    |
-
-
-
+<br/>
