@@ -1436,7 +1436,7 @@ HTML中存在多种样式来显示字体背景颜色：
 
 这是<mark>背景默认为黄色</mark>
 
-这是<mark style="background: red; color: blue">背景为红色</mark>
+这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark>
 
 ```
 
@@ -1454,7 +1454,7 @@ HTML中存在多种样式来显示字体背景颜色：
 >
 > 这是<mark>背景默认为黄色</mark>
 >
-> 这是<mark style="background: red; color: blue">背景为红色</mark>
+> 这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark>
 
 <br/>
 
