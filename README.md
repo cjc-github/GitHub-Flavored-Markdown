@@ -1457,9 +1457,8 @@ HTML中存在多种样式来显示字体背景颜色：
 > 这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark>
 
 
-<div>这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark></div>
+注意：在HTML中支持对mark进行背景和字体颜色进行修改，但是GFM似乎采用默认的样式，无法进行配置。
 
-这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark>
 
 <br/>
 
