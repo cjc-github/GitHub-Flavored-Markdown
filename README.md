@@ -1456,6 +1456,11 @@ HTML中存在多种样式来显示字体背景颜色：
 >
 > 这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark>
 
+
+<div>这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark></div>
+
+这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark>
+
 <br/>
 
 # 三、列表
