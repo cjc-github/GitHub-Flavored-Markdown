@@ -1207,13 +1207,13 @@ HTML使用 `<blockquote>` 标签包裹内容（可嵌套）来实现块引用
 
 ### 2.10.3 Latex公式实现方式
 
-Latex使用`quote`，`quotation`来实现块引用
+Latex使用`quote`，`quotation`来实现块引用，但GFM不支持
 
 案例：
 
 ```markdown
 % 基础引用
-\begin{quote}
+$$\begin{quote}
 地铁活塞效应：列车在隧道中高速行驶时，像活塞一样挤压空气形成强气流。
 \end{quote}
 
@@ -1221,14 +1221,14 @@ Latex使用`quote`，`quotation`来实现块引用
 \begin{quotation}
 核心结论：活塞效应是车厢大风的主要来源。
 \begin{quote}补充：风速可达列车速度的0.6~0.8倍。\end{quote}
-\end{quotation}
+\end{quotation}$$
 ```
 
 
 显示效果如下：
 
 > % 基础引用
-> \begin{quote}
+> $$\begin{quote}
 > 地铁活塞效应：列车在隧道中高速行驶时，像活塞一样挤压空气形成强气流。
 > \end{quote}
 >
@@ -1236,7 +1236,7 @@ Latex使用`quote`，`quotation`来实现块引用
 > \begin{quotation}
 > 核心结论：活塞效应是车厢大风的主要来源。
 > \begin{quote}补充：风速可达列车速度的0.6~0.8倍。\end{quote}
-> \end{quotation}
+> \end{quotation}$$
 
 
 
