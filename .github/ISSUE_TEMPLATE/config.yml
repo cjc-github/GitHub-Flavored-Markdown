@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub官方写作文档
+    url: https://docs.github.com/get-started/writing-on-github
+    about: 查询GitHub平台当前支持的Markdown功能。

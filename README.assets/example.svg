@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="200" viewBox="0 0 640 200" role="img" aria-labelledby="title description">
+  <title id="title">GFM SVG示例</title>
+  <desc id="description">展示Markdown、GFM和GitHub平台功能三个层次的示意图。</desc>
+  <rect width="640" height="200" rx="20" fill="#0d1117"/>
+  <rect x="30" y="55" width="170" height="90" rx="12" fill="#238636"/>
+  <rect x="235" y="55" width="170" height="90" rx="12" fill="#1f6feb"/>
+  <rect x="440" y="55" width="170" height="90" rx="12" fill="#8957e5"/>
+  <g fill="#ffffff" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">
+    <text x="115" y="108">CommonMark</text>
+    <text x="320" y="108">GFM扩展</text>
+    <text x="525" y="96">GitHub</text>
+    <text x="525" y="122">平台功能</text>
+  </g>
+</svg>

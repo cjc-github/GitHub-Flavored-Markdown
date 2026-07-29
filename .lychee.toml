@@ -1,0 +1,11 @@
+accept = [200, 206, 429]
+cache = true
+max_retries = 3
+timeout = 20
+
+exclude = [
+  "^https://img\\.shields\\.io/",
+  "^https://github-readme-stats\\.vercel\\.app/",
+  "^https://api\\.star-history\\.com/",
+  "^https://www\\.baidu\\.com"
+]

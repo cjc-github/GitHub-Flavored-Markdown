@@ -1,0 +1,25 @@
+name: 内容补充
+description: 建议增加新的语法、示例或维护能力
+title: "[内容补充] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议内容
+      description: 说明需要补充的主题和适用场景。
+    validations:
+      required: true
+  - type: textarea
+    id: classification
+    attributes:
+      label: 分类依据
+      description: 说明它属于CommonMark、正式GFM、GitHub平台功能、HTML还是LaTeX。
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 官方来源
+      description: 请尽量提供规范或官方文档。

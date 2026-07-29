@@ -71,7 +71,7 @@ Emoji表情
 |`:feelsgood:`|:feelsgood:|`:finnadie:`|:finnadie:|`:goberserk:`|:goberserk:|
 |`:godmode:`|:godmode:|`:hurtrealbad:`|:hurtrealbad:|`:rage1:`|:rage1:|
 |`:rage2:`|:rage2:|`:rage3:`|:rage3:|`:rage4:`|:rage4:|
-|`:suspect:`|:suspect:|`:trollface:`|:trollface:||||
+|`:suspect:`|:suspect:|`:trollface:`|:trollface:|||
 
 ## 自然
 
@@ -115,7 +115,7 @@ Emoji表情
 |`:moon:`|:moon:|`:earth_africa:`|:earth_africa:|`:earth_americas:`|:earth_americas:|
 |`:earth_asia:`|:earth_asia:|`:volcano:`|:volcano:|`:milky_way:`|:milky_way:|
 |`:partly_sunny:`|:partly_sunny:|`:octocat:`|:octocat:|`:squirrel:`|:squirrel:|
-|`:waxing_gibbous_moon:`|:waxing_gibbous_moon:||||||
+|`:waxing_gibbous_moon:`|:waxing_gibbous_moon:|||||
 
 ## 物体
 
@@ -207,7 +207,7 @@ Emoji表情
 |`:strawberry:`|:strawberry:|`:peach:`|:peach:|`:melon:`|:melon:|
 |`:banana:`|:banana:|`:pear:`|:pear:|`:pineapple:`|:pineapple:|
 |`:sweet_potato:`|:sweet_potato:|`:eggplant:`|:eggplant:|`:tomato:`|:tomato:|
-|`:corn:`|:corn:||||||
+|`:corn:`|:corn:|||||
 
 ## 地点
 
@@ -248,7 +248,7 @@ Emoji表情
 |`:kr:`|:kr:|` :cn:`| :cn:|` :us:`| :us:|
 |` :fr:`| :fr:|`:es:`|:es:|` :it:`| :it:|
 |`:ru:`|:ru:|` :gb:`| :gb:|` :uk:`| :uk:|
-|`:de:`|:de:||||||
+|`:de:`|:de:|||||
 
 ## 符号
 
@@ -318,4 +318,4 @@ Emoji表情
 |` :black_circle:`| :black_circle:|` :white_circle:`| :white_circle:|` :red_circle:`| :red_circle:|
 |` :large_blue_circle:`| :large_blue_circle:|` :large_blue_diamond:`| :large_blue_diamond:|` :large_orange_diamond:`| :large_orange_diamond:|
 |` :small_blue_diamond:`| :small_blue_diamond:|` :small_orange_diamond:`| :small_orange_diamond:|` :small_red_triangle:`| :small_red_triangle:|
-|`:small_red_triangle_down:`|:small_red_triangle_down:|` :shipit:`| :shipit:||||
+|`:small_red_triangle_down:`|:small_red_triangle_down:|` :shipit:`| :shipit:|||

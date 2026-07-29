@@ -1,0 +1,37 @@
+name: 文档错误
+description: 报告错误描述、失效示例或平台支持差异
+title: "[文档错误] "
+labels:
+  - documentation
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 位置
+      description: 请填写文件路径、章节或行号。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 说明当前内容、实际渲染结果和期望结果。
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 内容分类
+      options:
+        - CommonMark基础语法
+        - 正式GFM扩展
+        - GitHub平台功能
+        - HTML或LaTeX
+        - 不确定
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 参考来源
+      description: 如有可能，请提供官方规范或文档地址。

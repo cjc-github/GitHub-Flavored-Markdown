@@ -1,0 +1,37 @@
+name: Docs
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check generated entity document
+        run: python material/parser_entities.py --check
+
+      - name: Check local links and assets
+        run: python scripts/check_local_links.py
+
+      - name: Run checker tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Check Markdown structure
+        run: npx --yes markdownlint-cli2@0.18.1 README.md CONTRIBUTING.md "docs/*.md" "material/*.md"
