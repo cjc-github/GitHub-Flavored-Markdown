@@ -64,9 +64,21 @@ HTML使用 `<ul>` 标签包裹列表，`<li>` 标签包裹列表项，嵌套直�
 
 <br/>
 
-### 3.1.3 LaTeX公式实现方式
+### 3.1.3 LaTeX实现方式
 
-暂无
+LaTeX使用`itemize`环境创建无序列表。
+
+```latex
+\begin{itemize}
+  \item 第一项
+  \item 第二项
+  \begin{itemize}
+    \item 嵌套项目
+  \end{itemize}
+\end{itemize}
+```
+
+该语法用于完整LaTeX文档，GitHub数学公式中不能创建正文列表环境。
 
 <br/>
 
@@ -154,9 +166,21 @@ HTML使用 `<ol>` 标签包裹列表，`<li>` 标签包裹列表项，嵌套直�
 
 <br/>
 
-### 3.2.3 LaTeX公式实现方式
+### 3.2.3 LaTeX实现方式
 
-暂无
+LaTeX使用`enumerate`环境创建有序列表。
+
+```latex
+\begin{enumerate}
+  \item 第一步
+  \item 第二步
+  \begin{enumerate}
+    \item 子步骤
+  \end{enumerate}
+\end{enumerate}
+```
+
+列表编号会由LaTeX自动维护，也可以配合`enumitem`宏包进行更复杂的编号配置。
 
 <br/>
 
@@ -164,7 +188,7 @@ HTML使用 `<ol>` 标签包裹列表，`<li>` 标签包裹列表项，嵌套直�
 
 ### 3.3.1 Markdown语法实现方式
 
-任务列表（又称复选框列表）是Markdown的扩展语法，常用于待办事项、项目计划等场景。
+任务列表（又称复选框列表）是正式GFM扩展语法，常用于待办事项、项目计划等场景。
 
 在无序列表项前加上方括号即可创建任务列表：
 + 方括号内为 小写字母`x`​ 或 大写字母`X`：表示任务已完成（已选中）
@@ -232,10 +256,21 @@ HTML使用 `<ol>` 标签包裹列表，`<li>` 标签包裹列表项，嵌套直�
 >   <li><input type="checkbox" checked> 整理空调通风系统原理</li>
 > </ul>
 
-注意：`<input>` 标签似乎无法渲染。
+注意：独立HTML页面可以使用交互式`<input>`，但GitHub会对Markdown中的表单控件进行限制，不能把它当作可提交的HTML表单使用。
 
-### 3.3.3 LaTeX公式实现方式
+### 3.3.3 LaTeX实现方式
 
-暂无
+LaTeX没有内置的交互式任务列表，可以在`itemize`中使用数学符号模拟复选框。下面的例子需要`amssymb`宏包。
+
+```latex
+\usepackage{amssymb}
+
+\begin{itemize}
+  \item[$\square$] 未完成的任务
+  \item[$\boxtimes$] 已完成的任务
+\end{itemize}
+```
+
+生成的PDF中这些符号通常不可交互，只用于视觉展示。
 
 <br/>

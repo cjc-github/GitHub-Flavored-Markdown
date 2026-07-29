@@ -2,7 +2,7 @@
 
 [返回文档首页](../README.md)
 
-在Markdown中，除了用`![alt](url)`语法插入静态图片外，还可以用Mermaid语法绘制可编辑的图表，这类图表是“代码生成”的，在渲染时动态生成图片。
+在Markdown中，除了用`![alt](url)`语法插入静态图片外，GitHub平台还可以渲染Mermaid、GeoJSON、TopoJSON和ASCII STL代码块。
 
 ## 5.1 插入静态图片
 
@@ -35,9 +35,29 @@
 
 <br/>
 
+### 5.1.3 LaTeX实现方式
+
+完整LaTeX文档使用`graphicx`宏包的`\includegraphics`插入静态图片。
+
+```latex
+\usepackage{graphicx}
+
+\includegraphics[width=0.5\textwidth]{example.png}
+```
+
+可以使用`width`、`height`、`scale`和`angle`等参数控制尺寸与旋转。GitHub数学公式不会执行`\includegraphics`，GitHub文档应继续使用Markdown或HTML图片语法。
+
 ## 5.2 插入动态图片
 
-Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法生成专业图表，完全兼容 Markdown。它支持多种图表类型，是当前最流行的 Markdown 图表工具之一。
+Mermaid是文本化图表语言。GitHub可以识别带有`mermaid`语言标识符的围栏代码块并渲染图表，但Mermaid不属于CommonMark或正式GFM规范。
+
+不同载体的实现方式如下：
+
+| 载体 | 推荐实现 |
+| --- | --- |
+| Markdown/GitHub | 使用`mermaid`、`geojson`、`topojson`或`stl`围栏代码块。 |
+| HTML | 使用导出的SVG/PNG，或在独立网页中加载对应JavaScript库；GitHub不会执行任意脚本。 |
+| LaTeX | 使用TikZ、PGFPlots等宏包重新绘制，或插入导出的PDF/PNG/SVG。 |
 
 支持的图表类型
 
@@ -55,7 +75,7 @@ Mermaid 是基于 JavaScript 的图表绘制工具，通过简单的文本语法
 
 1. 打开VS Code
 2. 进入扩展市场（快捷键：Ctrl+Shift+X）
-3. 在搜索栏中输入 `Mermaid`, 推荐安装插件`MArkdown Preview Mermaid Support`，然后点击安装
+3. 在搜索栏中输入 `Mermaid`，推荐安装插件`Markdown Preview Mermaid Support`，然后点击安装
 4. 重新启动VS Code, 在Markdown文件，点击预览即可出现对应的图表
 
 运行截图如下：

@@ -11,6 +11,10 @@
 3. **GitHub平台功能**：Alerts、脚注、数学公式、Mermaid、GeoJSON、TopoJSON和STL等。
 4. **HTML与LaTeX**：仅用于对比实现方式，不代表GitHub支持任意标签、属性或命令。
 
+## 示例编写约定
+
+各功能尽量给出Markdown/GFM、HTML和LaTeX实现。某种载体没有等价能力时，文档会明确标记“无原生实现”或“不适用”，并提供最接近的静态替代方案。
+
 ## 文档目录
 
 - [一、标题与目录](docs/01-headings.md)

@@ -2,7 +2,7 @@
 
 [返回文档首页](../README.md)
 
-在 Markdown 中，数学公式通过 LaTeX 语法来表示。
+Markdown和正式GFM规范本身没有定义数学公式。GitHub平台使用美元符号分隔数学内容，并解析其中受支持的LaTeX数学命令。
 
 ## 7.1 行内公式
 
@@ -86,7 +86,7 @@ $$
 
 ## 7.4 公式编号
 
-GFM不支持 `\tag{}`, `\label{}` 和 `\hfill` 来显示公式编号, 但可以使用`&&` 和 `\hspace{}`来实现公式编号的显示。
+GitHub数学渲染不提供完整LaTeX文档的公式编号和交叉引用能力。`\tag{}`、`\label{}`和`\hfill`的表现可能受限；`&&`和`\hspace{}`只能用于视觉对齐，不能建立真正的编号引用关系。
 
 案例：
 
@@ -179,3 +179,34 @@ $$
 > $$
 
 <br/>
+
+## 7.5 不同载体的实现方式
+
+| 载体 | 实现方式 | 适用范围 |
+| --- | --- | --- |
+| Markdown/CommonMark | 无原生数学语法 | 需要依赖目标渲染器扩展。 |
+| 正式GFM | 无数学扩展 | 数学公式不是正式GFM的一部分。 |
+| GitHub平台 | `$...$`、`$$...$$`和受支持的LaTeX数学命令 | 适合行内和块级数学表达式。 |
+| HTML | MathML，或由KaTeX/MathJax等库生成HTML | GitHub不会执行任意JavaScript库。 |
+| 完整LaTeX | `equation`、`align`、`gather`等环境 | 支持编号、标签、引用和宏包。 |
+
+HTML MathML示例：
+
+```html
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msup>
+    <mi>x</mi>
+    <mn>2</mn>
+  </msup>
+</math>
+```
+
+完整LaTeX交叉引用示例：
+
+```latex
+\begin{equation}\label{eq:energy}
+E = mc^2
+\end{equation}
+
+公式\ref{eq:energy}给出了质能关系。
+```

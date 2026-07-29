@@ -2,7 +2,14 @@
 
 [返回文档首页](../README.md)
 
-还有一些非Markdown语法，但是在GitHub中也很实用的组件
+本章介绍GitHub平台常见组件，其中很多内容不属于CommonMark或正式GFM。对于HTML和LaTeX没有等价交互能力的功能，应使用静态图片、普通链接或文字说明替代。
+
+| 功能 | Markdown/GitHub | HTML替代 | LaTeX/PDF替代 |
+| --- | --- | --- | --- |
+| Emoji和字符引用 | Emoji短代码、Unicode、HTML字符引用 | Unicode或字符引用 | 直接输入Unicode，或使用符号宏包 |
+| 徽章和数据图 | 图片加链接 | `<a>`包裹`<img>` | `\href`包裹`\includegraphics` |
+| 折叠 | 使用允许的`<details>`标签 | `<details>`和`<summary>` | 无原生交互折叠，可改用附录或分节 |
+| 视频和音频 | GitHub附件或普通文件链接 | `<video>`、`<audio>` | 通常使用外部链接或静态封面，不建议嵌入多媒体 |
 
 ## 8.1 表情和符号
 

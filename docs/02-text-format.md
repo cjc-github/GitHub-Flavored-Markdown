@@ -74,9 +74,19 @@ Markdown 段落没有特殊的格式，直接编写文字就好。
 > 段落1 </br> 段落2
 
 
-### 2.1.3 LaTeX公式实现方式
+### 2.1.3 LaTeX实现方式
 
-暂无
+完整LaTeX文档可以使用`\\`、`\newline`和`\par`控制换行与分段。
+
+```latex
+第一行\\
+第二行\newline
+第三行
+
+\par 新的段落
+```
+
+`\\`和`\newline`用于强制换行，空行或`\par`用于开始新段落。GitHub中的LaTeX仅用于数学表达式，不能替代Markdown正文换行。
 
 
 ## 2.2 字体格式
@@ -223,9 +233,19 @@ HTML也可以实现上述效果，`<b>`标签和`<strong>`标签效果相同，�
 
 <br/>
 
-### 2.2.3 LaTeX公式实现方式
+### 2.2.3 LaTeX实现方式
 
-暂无
+LaTeX提供了粗体、斜体、强调和等宽字体命令。
+
+```latex
+\textbf{粗体文本}
+\textit{斜体文本}
+\emph{强调文本}
+\textbf{\textit{粗斜体文本}}
+\texttt{等宽文本}
+```
+
+在GitHub数学公式中可以使用`\mathbf{}`、`\mathit{}`和`\mathtt{}`设置数学字符样式，但它们不等同于完整LaTeX正文排版。
 
 
 ## 2.3 删除线
@@ -233,6 +253,8 @@ HTML也可以实现上述效果，`<b>`标签和`<strong>`标签效果相同，�
 ### 2.3.1 Markdown语法实现方式
 
 **删除线语法：** 使用两个波浪号 **~~** 包围文字：
+
+删除线不是CommonMark基础语法，而是正式GFM扩展。
 
 案例：
 
@@ -262,21 +284,35 @@ HTML也可以实现上述效果，`<b>`标签和`<strong>`标签效果相同，�
 
 <br/>
 
-### 2.3.3 LaTeX公式实现方式
+### 2.3.3 LaTeX实现方式
 
-暂无
+完整LaTeX文档可以使用`ulem`宏包的`\sout{}`命令删除普通文本。
+
+```latex
+\usepackage[normalem]{ulem}
+
+这是\sout{删除线文本}。
+```
+
+数学表达式常使用`cancel`宏包：
+
+```latex
+\usepackage{cancel}
+
+$\cancel{x + 1}$
+```
+
+GitHub数学公式支持范围不是完整LaTeX环境，不能加载任意宏包；普通文本删除线应优先使用GFM的`~~文本~~`。
 
 ## 2.4 下划线和上划线
 
 ### 2.4.1 Markdown语法实现方式
 
-Markdown语法不支持下划线和上划线显示
+CommonMark和正式GFM都没有定义普通文本的下划线或上划线语法。
 
 ### 2.4.2 HTML标签实现方式
 
-**下划线语法：** Markdown自身没有实现下划线，但支持HTML的`<u>`标签来实现。
-
-然而，传统的Markdown下划线语法`<u>`标签在GitHub的Markdown文件中不生效，应该使用`<ins>`标签或者LaTeX公式实现。
+HTML可以使用`<u>`表示无语义下划线，使用`<ins>`表示插入的内容。GitHub会对原始HTML进行过滤，跨平台文档更推荐使用`<ins>`并实际预览。
 
 <br/>
 
@@ -288,7 +324,7 @@ Markdown语法不支持下划线和上划线显示
 # 方法二
 这是 <ins>下划线</ins> 使用`<ins>`标签
 
-注意：GFM只支持方法二来显示下划线
+注意：这些写法属于HTML，不属于GFM语法。
 ```
 <br/>
 
@@ -302,7 +338,7 @@ Markdown语法不支持下划线和上划线显示
 
 <br/>
 
-### 2.4.3 LaTeX公式实现方式
+### 2.4.3 LaTeX实现方式
 
 LaTeX公式使用 `$\underline{}` 和 `$\overline{}` 实现下划线和上划线的渲染。
 
@@ -328,7 +364,7 @@ LaTeX公式使用 `$\underline{}` 和 `$\overline{}` 实现下划线和上划线
 
 1. 在使用 `LaTeX` 的 `\underline{}` 和 `\overline{}` 命令来显示下划线和上划线时，可能会出现划线不完整的显示异常；
 
-2. 在 GitHub Flavored Markdown (GFM) 中使用 `LaTeX` 时，某些需要额外 `LaTeX` 包的划线命令无法正常渲染，例如 `\underbracket{}` 命令需要mathtools包, 但是GFM不支持；
+2. GitHub数学渲染仅支持部分LaTeX数学命令，不能加载`mathtools`等任意宏包；
 
 <br/>
 
@@ -368,6 +404,8 @@ $$\underline{\text{这是下划线公式}}$$
 ## 2.5 上下标
 
 ### 2.5.1 Markdown语法实现方式
+
+CommonMark和正式GFM没有定义`^上标^`或`~下标~`语法，下面的写法仅在Typora等部分编辑器中有效。
 
 案例：
 
@@ -413,7 +451,7 @@ HTML中使用`<sup>`标签来实现上标、使用`<sub>`标签来实现下标�
 <br/>
 
 
-### 2.5.3 LaTeX公式实现方式
+### 2.5.3 LaTeX实现方式
 
 
 LaTeX中使用`^{text}`命令来实现上标显示，使用`_{text}`命令来实现下标显示
@@ -478,7 +516,7 @@ HTML中使用 `<hr>` 标签来实现分割线，hr全程为（Horizontal Rule，
 > <hr>
 > 段落B
 
-### 2.6.3 LaTeX公式实现方式
+### 2.6.3 LaTeX实现方式
 
 LaTeX中使用`\rule`命令来绘制分割线
 
@@ -521,7 +559,7 @@ $\rule{33cm}{0.5pt}$
 
 ### 2.7.1 Markdown语法实现方式
 
-Markdown 没有官方统一的脚注标准，但绝大多数主流编辑器 / 平台（如 Typora、GitHub、VS Code）都支持 GFM (GitHub Flavored Markdown) 风格的脚注语法，核心是「脚注标记 + 脚注内容」的组合。GFM支持这种渲染。
+CommonMark和正式GFM规范都没有定义脚注语法，但GitHub平台、Typora和部分编辑器支持相似的脚注扩展，核心是「脚注标记 + 脚注内容」的组合。
 
 <br/>
 
@@ -549,7 +587,7 @@ Markdown 没有官方统一的脚注标准，但绝大多数主流编辑器 / �
 
 ### 2.7.2 HTML标签实现方式
 
-HTML 主要通过 `<sup>`（上标）+ 锚点链接 `<a>` 实现脚注，分「正文标记」和「脚注内容」两部分。GFM支持这种渲染。
+HTML可以通过`<sup>`和锚点链接`<a>`手动实现脚注，分为正文标记和脚注内容两部分。这是HTML实现方式，不属于正式GFM脚注语法。
 
 
 ```markdown
@@ -590,27 +628,23 @@ HTML 主要通过 `<sup>`（上标）+ 锚点链接 `<a>` 实现脚注，分「�
 
 <br/>
 
-### 2.7.3 LaTeX公式实现方式
+### 2.7.3 LaTeX实现方式
 
-LaTeX 提供原生的 `\footnote{}` 命令，用法最简单，编译后会自动编号并将脚注放在当前页面底部。但是GFM不支持渲染。
+完整LaTeX文档提供原生的`\footnote{}`命令，编译后会自动编号并将脚注放在页面底部。GitHub数学公式不会执行正文脚注命令。
 
 案例：
 
-```markdown
-地铁车厢里的大风主要来自隧道活塞效应$\footnote{活塞效应指列车在隧道中高速行驶时，像活塞一样挤压空气形成的强气流，是车厢大风的核心来源。}$，其次是空调通风系统$\footnote{空调系统会持续向车厢送入新风，形成稳定的背景风，风感相对柔和。}$。
+```latex
+地铁车厢里的大风主要来自隧道活塞效应\footnote{活塞效应是车厢大风的核心来源。}，其次是空调通风系统\footnote{空调系统会形成稳定的背景风。}。
 ```
-
-显示效果如下：
-
-> 地铁车厢里的大风主要来自隧道活塞效应$\footnote{活塞效应指列车在隧道中高速行驶时，像活塞一样挤压空气形成的强气流，是车厢大风的核心来源。}$，其次是空调通风系统$\footnote{空调系统会持续向车厢送入新风，形成稳定的背景风，风感相对柔和。}$。
 
 <br/>
 
 ## 2.8 高亮
 
-Markdown 本身没有官方的「文本高亮」语法，但不同平台（如 GitHub、Typora、Obsidian）有通用的扩展语法；代码块高亮则是 GFM（GitHub Flavored Markdown）的核心特性。
+CommonMark和正式GFM都没有定义普通文本高亮语法。`==文本==`是部分编辑器扩展；围栏代码块的语法高亮则由GitHub等渲染平台根据语言标识符提供。
 
-## 2.8.1 Markdown语法实现方式
+### 2.8.1 Markdown语法实现方式
 
 主流平台通用的是 ==高亮文本== 语法
 
@@ -627,7 +661,7 @@ Markdown 本身没有官方的「文本高亮」语法，但不同平台（如 G
 <br/>
 
 
-## 2.8.2 HTML标签实现方式
+### 2.8.2 HTML标签实现方式
 
 HTML中使用`<mark>`标签来实现高亮。
 
@@ -644,19 +678,19 @@ HTML中使用`<mark>`标签来实现高亮。
 <br/>
 
 
-## 2.8.3 LaTeX公式实现方式
+### 2.8.3 LaTeX实现方式
 
-LaTeX中的文本高亮依赖 `soul` 宏包（\hl{}）, 但GFM不支持。
+完整LaTeX文档可以使用`soul`宏包的`\hl{}`命令高亮普通文本。
 
 案例：
 
-```markdown
-这是$\hl{高亮文本}$
+```latex
+\usepackage{soul}
+
+这是\hl{高亮文本}。
 ```
 
-显示效果如下：
-
-> 这是$\hl{高亮文本}$
+GitHub数学公式不能加载`soul`宏包，因此该示例不适用于GitHub正文。
 
 <br/>
 
@@ -696,9 +730,17 @@ HTML中使用 `<code>` 标签包裹代码来实现行内代码
 
 <br/>
 
-### 2.9.3 LaTeX公式实现方式
+### 2.9.3 LaTeX实现方式
 
-LaTeX中存在`\texttt{}`，`\verb{}`命令来区别其他文本，但无法达到上述效果的行内代码标记渲染。
+LaTeX可以使用`\texttt{}`或`\verb`显示行内代码。
+
+```latex
+调用\texttt{print()}函数。
+
+运行命令\verb|git status|查看状态。
+```
+
+`\verb`适合包含大量特殊字符的短代码，但不能直接出现在某些命令参数中。
 
 <br/>
 
@@ -817,38 +859,26 @@ HTML使用 `<blockquote>` 标签包裹内容（可嵌套）来实现块引用
 
 <br/>
 
-### 2.10.3 LaTeX公式实现方式
+### 2.10.3 LaTeX实现方式
 
-LaTeX使用`quote`，`quotation`来实现块引用，但GFM不支持。
+完整LaTeX文档使用`quote`或`quotation`环境实现块引用。它们是正文环境，不能放在数学公式分隔符`$$...$$`内部。
 
 案例：
 
-```markdown
+```latex
 % 基础引用
-$$\begin{quote}
+\begin{quote}
 地铁活塞效应：列车在隧道中高速行驶时，像活塞一样挤压空气形成强气流。
-\end{quote}$$
+\end{quote}
 
 % 嵌套引用
-$$\begin{quotation}
+\begin{quotation}
 核心结论：活塞效应是车厢大风的主要来源。
 \begin{quote}补充：风速可达列车速度的0.6~0.8倍。\end{quote}
-\end{quotation}$$
+\end{quotation}
 ```
 
-
-显示效果如下：
-
-> % 基础引用
-> $$\begin{quote}
-> 地铁活塞效应：列车在隧道中高速行驶时，像活塞一样挤压空气形成强气流。
-> \end{quote}$$
->
-> % 嵌套引用
-> $$\begin{quotation}
-> 核心结论：活塞效应是车厢大风的主要来源。
-> \begin{quote}补充：风速可达列车速度的0.6~0.8倍。\end{quote}
-> \end{quotation}$$
+GitHub数学公式不会渲染这些正文环境。
 
 <br/>
 
@@ -917,9 +947,18 @@ HTML使用`<pre>+<code>` 标签组合实现代码块渲染
 
 <br/>
 
-### 2.11.3 LaTeX公式实现方式
+### 2.11.3 LaTeX实现方式
 
-LaTeX中存在`verbatim`来实现代码块，但GFM不支持。
+LaTeX使用`verbatim`环境显示保留空格和特殊字符的代码块。
+
+```latex
+\begin{verbatim}
+def hello():
+    print("Hello, world!")
+\end{verbatim}
+```
+
+需要语法高亮时可以使用`listings`或`minted`宏包。GitHub代码块应使用Markdown围栏语法。
 
 ## 2.12 字体颜色
 
@@ -976,7 +1015,7 @@ rgb颜色: 例如rgb(255, 0, 0)
 
 <br/>
 
-### 2.12.3 LaTeX公式实现方式
+### 2.12.3 LaTeX实现方式
 
 LaTeX支持使用`color`或`textcolor`命令来实现文本颜色
 
@@ -1062,7 +1101,21 @@ HTML中存在多种样式来显示字体背景颜色：
 > 这是<mark style="background-color: #ff4444; color: #ffffff;">背景为红色</mark>
 
 
-注意：在HTML中支持对mark进行背景和字体颜色进行修改，但是GFM似乎采用默认的样式，无法进行配置。
+注意：独立HTML页面可以通过CSS修改颜色，但GitHub会过滤`style`等属性。GitHub文档中不应依赖自定义前景色或背景色。
+
+### 2.13.3 LaTeX实现方式
+
+完整LaTeX文档可以使用`xcolor`宏包的`\colorbox`或`\fcolorbox`设置文本背景。
+
+```latex
+\usepackage{xcolor}
+
+这是\colorbox{yellow}{黄色背景}。
+
+这是\fcolorbox{red}{yellow}{红色边框和黄色背景}。
+```
+
+GitHub不允许在Markdown中加载`xcolor`宏包，因此该方式主要适用于独立LaTeX文档。
 
 
 <br/>

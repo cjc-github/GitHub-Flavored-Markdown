@@ -117,9 +117,21 @@ HTML使用`<h1>`到`<h6>`标签来实现不同的标题等级。
 > <h5>五级标题</h5>
 > <h6>六级标题</h6>
 
-### 1.1.3 LaTeX公式实现方式
+### 1.1.3 LaTeX实现方式
 
 LaTeX中存在多种章节标签来定义文档的结构，常见的命令有`\chapter{}`, `\section{}`, `\subsection{}`, `\subsubsection{}`, `\paragraph{}`, `\subparagraph{}`, `\part{}`等。
+
+```latex
+\documentclass{report}
+
+\begin{document}
+\chapter{一级结构}
+\section{二级结构}
+\subsection{三级结构}
+\subsubsection{四级结构}
+\paragraph{段落标题}
+\end{document}
+```
 
 注意：在GFM中不支持这种实现方式。
 
@@ -213,3 +225,41 @@ LaTeX中存在多种章节标签来定义文档的结构，常见的命令有`\c
 > 输入 `Create Table of Contents` 生成目录图片：
 >
 > ![image-20251221123741190](../README.assets/image-20251221123741190.png)
+
+### 1.2.2 HTML标签实现方式
+
+HTML可以使用导航列表和显式`id`属性制作目录。与GitHub自动生成的标题锚点相比，显式`id`更容易保持长期稳定。
+
+```html
+<nav aria-label="文档目录">
+  <ul>
+    <li><a href="#overview">概述</a></li>
+    <li><a href="#usage">使用方法</a></li>
+  </ul>
+</nav>
+
+<h2 id="overview">概述</h2>
+<h2 id="usage">使用方法</h2>
+```
+
+GitHub会过滤部分HTML属性；在GitHub文档中通常仍建议使用Markdown标题和锚点链接。
+
+### 1.2.3 LaTeX实现方式
+
+完整LaTeX文档可以使用`\tableofcontents`根据章节命令自动生成目录。
+
+```latex
+\documentclass{article}
+
+\begin{document}
+\tableofcontents
+
+\section{概述}
+正文内容。
+
+\section{使用方法}
+正文内容。
+\end{document}
+```
+
+通常需要编译两次，目录页码和章节引用才会更新。GitHub数学公式渲染器不会执行`\tableofcontents`。

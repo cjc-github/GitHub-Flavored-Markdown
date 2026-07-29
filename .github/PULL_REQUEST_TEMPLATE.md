@@ -12,6 +12,7 @@
 
 ## 验证
 
+- [ ] 新增功能已覆盖Markdown/GFM、HTML和LaTeX，或明确说明不适用
 - [ ] `python material/parser_entities.py --check`
 - [ ] `python scripts/check_local_links.py`
 - [ ] `python -m unittest discover -s tests -v`
