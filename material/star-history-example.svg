@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420" role="img" aria-labelledby="title description">
+  <title id="title">Star History静态示例图</title>
+  <desc id="description">一张展示Star数量随时间增长的静态示例折线图，不代表仓库实时数据。</desc>
+  <rect width="800" height="420" rx="16" fill="#ffffff"/>
+  <rect x="1" y="1" width="798" height="418" rx="15" fill="none" stroke="#d0d7de" stroke-width="2"/>
+  <text x="48" y="52" fill="#1f2328" font-family="Arial, sans-serif" font-size="24" font-weight="700">Star History</text>
+  <text x="48" y="80" fill="#656d76" font-family="Arial, sans-serif" font-size="14">静态示例图 · 非实时仓库数据</text>
+  <line x1="82" y1="330" x2="748" y2="330" stroke="#8c959f" stroke-width="2"/>
+  <line x1="82" y1="110" x2="82" y2="330" stroke="#8c959f" stroke-width="2"/>
+  <g stroke="#d8dee4" stroke-width="1">
+    <line x1="82" y1="275" x2="748" y2="275"/>
+    <line x1="82" y1="220" x2="748" y2="220"/>
+    <line x1="82" y1="165" x2="748" y2="165"/>
+    <line x1="82" y1="110" x2="748" y2="110"/>
+  </g>
+  <g fill="#656d76" font-family="Arial, sans-serif" font-size="12">
+    <text x="58" y="334">0</text>
+    <text x="52" y="279">2</text>
+    <text x="52" y="224">4</text>
+    <text x="52" y="169">6</text>
+    <text x="52" y="114">8</text>
+    <text x="74" y="360">Jan</text>
+    <text x="205" y="360">Mar</text>
+    <text x="338" y="360">May</text>
+    <text x="471" y="360">Jul</text>
+    <text x="604" y="360">Sep</text>
+    <text x="727" y="360">Nov</text>
+  </g>
+  <polyline points="82,330 215,302 348,275 481,220 614,165 748,110" fill="none" stroke="#0969da" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#0969da" stroke="#ffffff" stroke-width="3">
+    <circle cx="82" cy="330" r="6"/>
+    <circle cx="215" cy="302" r="6"/>
+    <circle cx="348" cy="275" r="6"/>
+    <circle cx="481" cy="220" r="6"/>
+    <circle cx="614" cy="165" r="6"/>
+    <circle cx="748" cy="110" r="6"/>
+  </g>
+  <text x="400" y="397" text-anchor="middle" fill="#656d76" font-family="Arial, sans-serif" font-size="13">真实图表应从Star History导出后替换此文件</text>
+</svg>

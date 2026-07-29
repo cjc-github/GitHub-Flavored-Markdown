@@ -436,13 +436,17 @@ Star History可以查询GitHub仓库的Star数量变化。旧版匿名SVG接口�
 
 [查看本仓库的Star历史](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&Date)
 
-静态导出图案例：
+仓库内静态图案例：
 
 ```markdown
-[![Star历史图](../README.assets/star-history.svg)](https://www.star-history.com/)
+[![Star History静态示例图](../material/star-history-example.svg)](https://www.star-history.com/)
 ```
 
-其中`star-history.svg`需要先从图表服务导出并保存到仓库；不要直接复制已经失效的旧匿名API地址。
+显示效果如下：
+
+[![Star History静态示例图](../material/star-history-example.svg)](https://www.star-history.com/)
+
+本仓库中的图片是用于验证GitHub显示效果的静态示例，不代表实时Star数据。实际项目应从图表服务导出最新SVG或PNG并替换该文件；不要直接复制已经失效的旧匿名API地址。
 
 <br/>
 

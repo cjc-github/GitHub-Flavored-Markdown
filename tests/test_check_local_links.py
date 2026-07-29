@@ -6,6 +6,7 @@ from scripts.check_local_links import (
     check_file,
     document_anchors,
     github_slug,
+    is_invalid_local_target,
     normalize_reference_label,
     split_target,
 )
@@ -26,6 +27,11 @@ class LinkCheckerTests(unittest.TestCase):
 
     def test_reference_labels_ignore_case_and_repeated_spaces(self):
         self.assertEqual("my label", normalize_reference_label(" My   Label "))
+
+    def test_invalid_local_target_is_platform_independent(self):
+        self.assertTrue(is_invalid_local_target("bad<name.md"))
+        self.assertTrue(is_invalid_local_target("bad\x00name.md"))
+        self.assertFalse(is_invalid_local_target("docs/guide.md"))
 
     def test_check_file_reports_missing_anchor_and_file(self):
         with tempfile.TemporaryDirectory() as directory:

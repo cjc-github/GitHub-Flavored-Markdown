@@ -15,6 +15,7 @@ HTML_ANCHOR = re.compile(r"\b(?:id|name)=[\"']([^\"']+)[\"']", re.IGNORECASE)
 INLINE_CODE = re.compile(r"(`+).*?\1")
 HTML_TAG = re.compile(r"<[^>]+>")
 ATX_HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*#*\s*$")
+INVALID_LOCAL_TARGET = re.compile(r"[\x00-\x1f<>]")
 EXTERNAL_PREFIXES = ("http://", "https://", "mailto:", "data:", "tel:")
 
 
@@ -82,6 +83,10 @@ def is_external_target(target: str) -> bool:
     return target.startswith(EXTERNAL_PREFIXES)
 
 
+def is_invalid_local_target(target: str) -> bool:
+    return bool(INVALID_LOCAL_TARGET.search(target))
+
+
 def normalize_reference_label(label: str) -> str:
     return " ".join(label.split()).casefold()
 
@@ -95,10 +100,12 @@ def check_target(
     target_path, fragment = split_target(raw_target)
     if is_external_target(target_path):
         return []
+    if is_invalid_local_target(target_path):
+        return [(line_number, raw_target, "本地目标格式无效")]
 
     try:
         resolved = source_path if not target_path else (source_path.parent / target_path).resolve()
-    except OSError:
+    except (OSError, ValueError):
         return [(line_number, raw_target, "本地目标格式无效")]
     if not resolved.exists():
         return [(line_number, raw_target, "本地目标不存在")]
