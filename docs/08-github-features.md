@@ -417,22 +417,32 @@ github-repo-blue?logo=github
 
 ### 8.4.1 star历史图
 
-GitHub仓库的star历史可以已有的网站：https://star-history.com/
+Star History可以查询GitHub仓库的Star数量变化。旧版匿名SVG接口可能返回HTTP 500或因GitHub API限制而无法生成图片，因此不应把未经验证的`api.star-history.com`地址直接嵌入README。
 
 使用方法：
-在上述网址中，输入需要显示star历史的git仓库地址，然后复制生成的链接即可。
 
-案例：
+1. 打开Star History网站并输入`owner/repository`。
+2. 如果网站要求GitHub访问令牌，按照页面提示授权；不要把令牌写入Markdown、图片URL或Git历史。
+3. 需要长期稳定展示时，将生成的图表导出为SVG或PNG并提交到仓库，然后使用相对路径引用。
+4. 不需要在README中直接显示图表时，使用普通链接跳转到Star History页面。
+
+普通链接案例：
 
 ```markdown
-[![Star History Chart](https://api.star-history.com/svg?repos=cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)
+[查看本仓库的Star历史](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&Date)
 ```
-
-<br/>
 
 显示效果如下：
 
-> [![Star History Chart](https://api.star-history.com/svg?repos=cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&type=timeline&logscale&legend=top-left)
+[查看本仓库的Star历史](https://www.star-history.com/#cjc-github/GitHub-Flavored-Markdown&Date)
+
+静态导出图案例：
+
+```markdown
+[![Star历史图](../README.assets/star-history.svg)](https://www.star-history.com/)
+```
+
+其中`star-history.svg`需要先从图表服务导出并保存到仓库；不要直接复制已经失效的旧匿名API地址。
 
 <br/>
 
