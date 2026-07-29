@@ -10,6 +10,9 @@
 - 不要把特定编辑器扩展描述为GFM标准语法。
 - 新增功能章节时，尽量同时说明Markdown/CommonMark、正式GFM或GitHub平台、HTML和LaTeX实现。
 - 某种载体没有等价语法时，应明确写为“无原生实现”或“不适用”，并给出最接近的替代方案，不要保留“暂无”占位。
+- 对GitHub不能渲染的源码示例，必须在示例之前明确标注“GitHub不支持”，不能用“显示效果如下”暗示其会生效。
+- GitHub平台功能应注明适用位置，例如仓库Markdown文件、Issue、Pull Request、Discussion或评论；不确定时使用保守表述并链接官方文档。
+- HTML示例应区分“独立HTML页面可用”和“GitHub Markdown会过滤”，LaTeX示例应区分“完整LaTeX文档”和“GitHub数学公式”。
 
 ## 本地检查
 

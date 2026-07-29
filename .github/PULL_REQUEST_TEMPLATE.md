@@ -13,6 +13,8 @@
 ## 验证
 
 - [ ] 新增功能已覆盖Markdown/GFM、HTML和LaTeX，或明确说明不适用
+- [ ] 已标注GitHub是否支持以及适用的页面范围，不会将第三方扩展误写为GFM
+- [ ] 不受GitHub支持的HTML或LaTeX示例已明确标为独立环境用法
 - [ ] `python material/parser_entities.py --check`
 - [ ] `python scripts/check_local_links.py`
 - [ ] `python -m unittest discover -s tests -v`

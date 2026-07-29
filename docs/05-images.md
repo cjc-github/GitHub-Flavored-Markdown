@@ -2,7 +2,7 @@
 
 [返回文档首页](../README.md)
 
-在Markdown中，除了用`![alt](url)`语法插入静态图片外，GitHub平台还可以渲染Mermaid、GeoJSON、TopoJSON和ASCII STL代码块。
+在Markdown中，除了用`![alt](url)`语法插入静态图片外，GitHub平台还可以在Markdown文件、Issue、Pull Request、Discussion等受支持位置渲染Mermaid、GeoJSON、TopoJSON和ASCII STL代码块。这些图表属于GitHub平台功能，不是正式GFM扩展。
 
 ## 5.1 插入静态图片
 
@@ -71,7 +71,9 @@ Mermaid是文本化图表语言。GitHub可以识别带有`mermaid`语言标识�
 
 <br/>
 
-安装步骤：
+GitHub网页端无需安装插件即可渲染受支持的Mermaid代码块。以下步骤只用于需要在VS Code本地预览图表的场景：
+
+本地预览插件安装步骤：
 
 1. 打开VS Code
 2. 进入扩展市场（快捷键：Ctrl+Shift+X）
@@ -82,7 +84,7 @@ Mermaid是文本化图表语言。GitHub可以识别带有`mermaid`语言标识�
 
 ![image-20251222155818507](../README.assets/image-20251222155818507.png)
 
-此外，还有一些图也支持，例如flow流程图。
+第三方编辑器还可能支持其他图表代码块，但不能据此判断GitHub也支持。
 
 <br/>
 
@@ -328,7 +330,9 @@ stateDiagram
 
 ### 5.2.7 flow流程图
 
-Mermaid不支持下面语法，但是部分Markdown编辑器支持，例如Typora。
+`flow`代码块是部分第三方Markdown编辑器提供的扩展，不属于Mermaid、CommonMark、正式GFM或GitHub图表功能。
+
+**GitHub不支持：** 在GitHub上下面的内容只会作为代码块显示，不会生成流程图。面向GitHub的文档应改写为`mermaid`流程图，或插入导出的SVG/PNG图片。
 
 案例：
 
@@ -346,7 +350,7 @@ cond(no)->sub1(right)->op
 ```
 ````
 
-显示效果如下：
+在GitHub上的效果是保留为代码块：
 
 ```flow
 st=>start: 开始框

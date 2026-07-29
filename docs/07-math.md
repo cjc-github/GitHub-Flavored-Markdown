@@ -2,7 +2,7 @@
 
 [返回文档首页](../README.md)
 
-Markdown和正式GFM规范本身没有定义数学公式。GitHub平台使用美元符号分隔数学内容，并解析其中受支持的LaTeX数学命令。
+Markdown和正式GFM规范本身没有定义数学公式。GitHub平台使用MathJax渲染受支持的LaTeX数学命令，可用于仓库Markdown文件、Issue、Pull Request、Discussion和Wiki。该能力不是完整LaTeX编译环境。
 
 ## 7.1 行内公式
 
@@ -86,97 +86,29 @@ $$
 
 ## 7.4 公式编号
 
-GitHub数学渲染不提供完整LaTeX文档的公式编号和交叉引用能力。`\tag{}`、`\label{}`和`\hfill`的表现可能受限；`&&`和`\hspace{}`只能用于视觉对齐，不能建立真正的编号引用关系。
+GitHub数学渲染不提供完整LaTeX文档那样稳定的自动编号、`\label`和`\ref`交叉引用流程。即使某个MathJax命令当前能够显示，也不应把它等同于完整LaTeX环境中的编号系统。
 
-案例：
+面向GitHub的文档可以使用普通文本手工编号，并通过Markdown标题链接建立稳定引用：
 
 ```markdown
-公式1: `\tag{}` 会乱码
-
-$$E = mc^2  \tag{1} $$
-
-公式2: `\tag{}` 会乱码
+### 公式 1
 
 $$
-\begin{align}
-f'(x) = 2ax + b \tag{2} \\
-\end{align}
+E = mc^2 \qquad (1)
 $$
 
-公式3: `\label{}` 在GitHub上不显示
-
-$$
-\begin{align}
-y5=x5+z5 \label{Za}\\
-y6=x6+z6 \notag \\
-y7=x7+z7 \label{Zb}
-\end{align}
-$$
-
-公式4: `&&` 来间隔公式，GitHub支持; `\hfill`在GitHub不支持
-
-$$
-\begin{align*}
-f(x) &= ax^2 + bx + c && \text{（二次函数）} \\
-f'(x) &= 2ax + b \hfill && \text{（一阶导数）} \\
-f''(x) &= 2a && \text{（二阶导数）}
-\end{align*}
-$$
-
-公式5: `\hspace{}`来间隔2个文本，GitHub支持，但不推荐
-
-$$
-\begin{align*}
-f(x) &= ax^2 + bx + c \hspace{5cm} \text{（二次函数）} \\
-f'(x) &= 2ax + b \hspace{5cm} \text{（一阶导数）} \\
-f''(x) &= 2a \hspace{5cm} \text{（二阶导数）}
-\end{align*}
-$$
+[参见公式 1](#公式-1)
 ```
 
 显示效果如下：
 
-> 公式1: `\tag{}` 会乱码
->
-> $$E = mc^2  \tag{1} $$
->
-> 公式2: `\tag{}` 会乱码
->
-> $$
-> \begin{align}
-> f'(x) = 2ax + b \tag{2} \\
-> \end{align}
-> $$
->
-> 公式3: `\label{}` 在GitHub上不显示
->
-> $$
-> \begin{align}
-> y5=x5+z5 \label{Za}\\
-> y6=x6+z6 \notag \\
-> y7=x7+z7 \label{Zb}
-> \end{align}
-> $$
->
-> 公式4: `&&` 来间隔公式，GitHub支持; `\hfill`在GitHub不支持
->
-> $$
-> \begin{align*}
-> f(x) &= ax^2 + bx + c && \text{（二次函数）} \\
-> f'(x) &= 2ax + b \hfill && \text{（一阶导数）} \\
-> f''(x) &= 2a && \text{（二阶导数）}
-> \end{align*}
-> $$
->
-> 公式5: `\hspace{}`来间隔2个文本，GitHub支持，但不推荐
->
-> $$
-> \begin{align*}
-> f(x) &= ax^2 + bx + c \hspace{5cm} \text{（二次函数）} \\
-> f'(x) &= 2ax + b \hspace{5cm} \text{（一阶导数）} \\
-> f''(x) &= 2a \hspace{5cm} \text{（二阶导数）}
-> \end{align*}
-> $$
+### 公式 1
+
+$$
+E = mc^2 \qquad (1)
+$$
+
+[参见公式 1](#公式-1)
 
 <br/>
 
