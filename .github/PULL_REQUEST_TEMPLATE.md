@@ -15,7 +15,7 @@
 - [ ] `python material/parser_entities.py --check`
 - [ ] `python scripts/check_local_links.py`
 - [ ] `python -m unittest discover -s tests -v`
-- [ ] `npx --yes markdownlint-cli2@0.18.1 README.md CONTRIBUTING.md "docs/*.md" "material/*.md"`
+- [ ] `npx --yes markdownlint-cli2@0.18.1 README.md CONTRIBUTING.md "docs/*.md" "material/**/*.md"`
 
 ## 来源
 

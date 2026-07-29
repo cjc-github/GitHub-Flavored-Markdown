@@ -212,11 +212,11 @@ HTML也可以实现上述效果，`<b>`标签和`<strong>`标签效果相同，�
 显示效果如下：
 
 > 这是<b>粗体文本</b>
-> 
+>
 > 这是<strong>粗体文本</strong>
 >
 > 这是<i>斜体文本</i>
-> 
+>
 > 这是<em>斜体文本</em>
 >
 > 这是<b><i>粗斜体文本</i></b>
@@ -407,7 +407,7 @@ HTML中使用`<sup>`标签来实现上标、使用`<sub>`标签来实现下标�
 
 
 > 这是<sup>上标</sup>显示
-> 
+>
 > 这是<sub>下标</sub>显示
 
 <br/>
@@ -454,9 +454,9 @@ ___
 显示效果如下：
 
 > ---
-> 
+>
 > ***
-> 
+>
 > ___
 
 
@@ -484,7 +484,7 @@ LaTeX中使用`\rule`命令来绘制分割线
 
 `\rule`命令的格式如下：
 
-```
+```text
 \rule[lift]{width}{height}
 lift‌（可选）：指定矩形基线相对于当前文本基线的垂直偏移量。正值向上抬升，负值向下降低。默认为 0pt。
 ‌width‌：矩形的宽度。
@@ -540,7 +540,7 @@ Markdown 没有官方统一的脚注标准，但绝大多数主流编辑器 / �
 显示效果如下：
 
 > 这是一个脚注[^note]。
-> 
+>
 > [^note]: 这是带标签的脚注内容。
 >    脚注内容可以有多行，需要缩进。
 >    这是脚注的第二行。
@@ -738,29 +738,29 @@ GitHub提供了基于块引用的Alerts扩展，用于高亮提示、警告和�
 案例：
 
 ```markdown
-> [!NOTE]  
+> [!NOTE]
 > Highlights information that users should take into account, even when skimming.
-> 
+>
 > 突出显示用户应该考虑的信息，即使在略读时也是如此。
 
 > [!TIP]
 > Optional information to help a user be more successful.
-> 
+>
 > 可选信息，帮助用户更成功。
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Crucial information necessary for users to succeed.
-> 
+>
 > 用户成功所需的关键信息。
 
-> [!WARNING]  
+> [!WARNING]
 > Critical content demanding immediate user attention due to potential risks.
-> 
+>
 > 由于潜在风险需要用户立即关注的关键内容。
 
 > [!CAUTION]
 > Negative potential consequences of an action.
-> 
+>
 > 一个动作的负面潜在后果。
 ```
 
@@ -768,29 +768,29 @@ GitHub提供了基于块引用的Alerts扩展，用于高亮提示、警告和�
 
 显示效果如下：
 
-> [!NOTE]  
+> [!NOTE]
 > Highlights information that users should take into account, even when skimming.
-> 
+>
 > 突出显示用户应该考虑的信息，即使在略读时也是如此。
 
 > [!TIP]
 > Optional information to help a user be more successful.
-> 
+>
 > 可选信息，帮助用户更成功。
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > Crucial information necessary for users to succeed.
-> 
+>
 > 用户成功所需的关键信息。
 
-> [!WARNING]  
+> [!WARNING]
 > Critical content demanding immediate user attention due to potential risks.
-> 
+>
 > 由于潜在风险需要用户立即关注的关键内容。
 
 > [!CAUTION]
 > Negative potential consequences of an action.
-> 
+>
 > 一个动作的负面潜在后果。
 
 <br/>
@@ -879,7 +879,7 @@ printf("hello world!");
 显示效果如下：
 
 > 普通代码块
-> ```
+> ```text
 > 这是代码块
 > ```
 >
@@ -967,7 +967,7 @@ rgb颜色: 例如rgb(255, 0, 0)
 显示效果如下：
 
 > 这是<font color="red">红色</font>
-> 
+>
 > 这是<span style="color:rgb(255, 0, 0)">红色</span>
 >
 > <div style="color: red;">
@@ -991,7 +991,7 @@ LaTeX支持使用`color`或`textcolor`命令来实现文本颜色
 显示效果如下：
 
 > 这是 $\color{#FF0000}{\mathtt{红色}}$
-> 
+>
 > 这是 $\textcolor{red}{\mathtt{红色}}$
 
 <br/>

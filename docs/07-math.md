@@ -65,7 +65,7 @@ $$
 显示效果如下：
 
 > align
-> 
+>
 > $$
 > \begin{align}
 >   f(x) &= ax^2 + bx + c \\
@@ -73,9 +73,9 @@ $$
 >   f''(x)  &= 2a
 >   \end{align}
 > $$
-> 
+>
 > equation
-> 
+>
 > $$
 > \begin{equation}
 > E = mc^2

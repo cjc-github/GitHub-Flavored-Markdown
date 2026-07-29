@@ -50,7 +50,7 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 
 在GFM中，我们可以通过以下方式来插入一个diff代码块：
 1. 使用三个反引号（```）开始一个代码块，然后在反引号后面写上“diff”
-2. 在代码块内部，我们可以按照diff的格式来编写，diff格式如下: 
+2. 在代码块内部，我们可以按照diff的格式来编写，diff格式如下:
     - “+”开头的行表示增加, 显示的颜色为绿色（ #116329 ）
     - “-”开头的行表示删除, 显示的颜色为红色（ #82071E ）
     - “!”开头的行表示修改, 显示的颜色为橙色（ #953800 ）
@@ -68,7 +68,7 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 - 夜静春山空。
 ! 月出惊山鸟，
 # 时鸣春涧中。
-@@ -1,5 +1,5 @@ 
+@@ -1,5 +1,5 @@
 ```
 ````
 
@@ -80,7 +80,7 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 > - 夜静春山空。
 > ! 月出惊山鸟，
 > # 时鸣春涧中。
-> @@ -1,5 +1,5 @@ 
+> @@ -1,5 +1,5 @@
 > ```
 
 <br/>
@@ -109,7 +109,7 @@ GFM中特有的语法，制作徽章的网址：
 > 基础徽章
 >
 > ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github)
-> 
+>
 >
 > 为徽章添加 img.shield.io 链接
 >
@@ -131,7 +131,7 @@ GFM中特有的语法，制作徽章的网址：
 
 ### 8.3.1 构建与集成状态
 
-在 `shield.io` 网址中, 
+在 `shield.io` 网址中,
 + 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的GitHub仓库数据徽章制作方式
 
 <br/>
@@ -170,7 +170,7 @@ GFM中特有的语法，制作徽章的网址：
 
 ### 8.3.2 测试覆盖率与质量
 
-在 `shield.io` 网址中, 
+在 `shield.io` 网址中,
 + 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的GitHub仓库数据徽章制作方式
 
 案例：
@@ -194,7 +194,7 @@ github-repo-blue?logo=github
 
 ### 8.3.3 版本与发布信息
 
-在 `shield.io` 网址中, 
+在 `shield.io` 网址中,
 + 点击 `Badges` -> `License`，在这个列表中可以看到对应的GitHub仓库数据徽章制作方式
 + 点击 `Badges` -> `Funding` -> `GitHub Sponsors`，在这个页面可以看到对应的GitHub仓库贡献者数量徽章制作方法
 
@@ -205,160 +205,6 @@ github-repo-blue?logo=github
 + user: cjc-github
 + repo: GitHub-Flavored-Markdown
 + org: cjc-github
-
-然后输入 `cjc-github/GitHub-Flavored-Markdown` 获取生成的Markdown语法，复制到MD文件中。
-
-<br/>
-
-案例：
-
-```markdown
-Thanks to all contributors:
-
-<a href="https://github.com/cjc-github/GitHub-Flavored-Markdown/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" />
-</a>
-```
-
-显示效果如下：
-
-> Thanks to all contributors:
-> 
-> <a href="https://github.com/cjc-github/GitHub-Flavored-Markdown/graphs/contributors">
->   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" />
-> </a>
-
-注意：这个贡献图会自动跳转到GitHub仓库的 `/graphs/contributors` 路径
-
-<br/>
-
-## 8.5 折叠
-
-折叠作为一种常见的UI交互模式，指的是通过交互控制部分内容的显示与隐藏。Markdown中虽然不支持，但可以使用HTML语言中的`<details>`标签实现折叠功能。可以将非核心内容默认隐藏，使界面更简洁，非常适合FAQ、长文档、设置面板等场景。
-
-案例：
-
-```html
-<details>
-<summary>问题1: 折叠功能如何使用？</summary>
-
- 回答：
-
- 就是这么使用的
-</details>
-```
-
-显示效果如下：
-
-> <details>
-> <summary>问题1: 折叠功能如何使用？</summary>
-> 
->  回答：
-> 
->  就是这么使用的
-> </details>
-
-<br/>
-
-## 8.6 视频
-
-### 8.6.1 GitHub上传视频
-
-在GitHub上将文件上传到md, issues, pull requests, comments时，实际会将文件上传到Amazon S3 bucket, 并提供一个URL（URL格式: `https://github.com/user-attachments/assets/<ID>`）以供访问，而GFM支持嵌入这种形式的视频。
-
-案例：
-
-```markdown
-https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
-```
-
-显示效果如下：
-
-> https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
-
-操作步骤的动画:
-
-![操作动画](../material/save_mp4.gif)
-
-<br/>
-
-### 8.6.2 HTML的视频标签
-
-HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不支持，一些Markdown编辑器（如Typora）支持。
-
-注意：GFM不支持
-
-案例：
-
-```markdown
-<video controls width="600">
-  <source src="../material/test.mp4" type="video/mp4">
-  您的浏览器不支持HTML5 video标签。
-</video>
-```
-
-显示效果如下：
-
-> 显示
->
-> <video controls width="600">
->   <source src="../material/test.mp4" type="video/mp4">
->   您的浏览器不支持HTML5 video标签。
-> </video>
-
-<br/>
-
-## 8.7 音频
-
-### 8.7.1 GitHub上传音频
-
-GitHub虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，而是以文件链接的形式展示。
-
-**注意：**
-如果想展示音频组件的话，可以考虑上传包含调用音频的HTML文件，或者将音频文件转换为视频文件，然后采用上述方式来展示。
-
-案例：
-
-```markdown
-[test.mp3](../material/test.mp3)
-```
-
-显示效果如下：
-
-[test.mp3](../material/test.mp3)
-
-操作步骤的动画:
-
-![操作动画](../material/save_mp3.gif)
-
-<br/>
-
-### 8.7.2 HTML的音频标签
-
-HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不支持，一些Markdown编辑器（如Typora）支持。
-
-注意：GFM不支持
-
-案例：
-
-```markdown
-<audio controls>
-  <source src="../material/test.mp3" type="audio/mpeg">
-  您的浏览器不支持HTML5 audio标签。
-</audio>
-```
-
-显示效果如下：
-
-> 显示 
-> 
-> <audio controls>
->   <source src="../material/test.mp3" type="audio/mpeg">
->   您的浏览器不支持HTML5 audio标签。
-> </audio>
-
-<br/>
-
 
 然后获取生成的Markdown语法，复制到MD文件中。
 
@@ -461,7 +307,7 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org)
 
 # 各个版本的兼容性
-[![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)]()
+![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)
 ```
 
 显示效果如下：
@@ -469,7 +315,7 @@ HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不�
 > ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django)
 > [![Node.js Version](https://img.shields.io/badge/node-%3E%3D12.0.0-brightgreen.svg)](https://nodejs.org)
 > [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org)
-> [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)]()
+> ![Platform](https://img.shields.io/badge/platform-linux%20%7C%20windows%20%7C%20macos-lightgrey.svg)
 
 <br/>
 
@@ -602,3 +448,156 @@ GitHub仓库的contribution贡献可以已有的网站：https://contrib.rocks/
 + user: cjc-github
 + repo: GitHub-Flavored-Markdown
 + org: cjc-github
+
+然后输入 `cjc-github/GitHub-Flavored-Markdown` 获取生成的Markdown语法，复制到MD文件中。
+
+<br/>
+
+案例：
+
+```markdown
+Thanks to all contributors:
+
+<a href="https://github.com/cjc-github/GitHub-Flavored-Markdown/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" alt="项目贡献者头像拼图" />
+</a>
+```
+
+显示效果如下：
+
+> Thanks to all contributors:
+>
+> <a href="https://github.com/cjc-github/GitHub-Flavored-Markdown/graphs/contributors">
+>   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" alt="项目贡献者头像拼图" />
+> </a>
+
+注意：这个贡献图会自动跳转到GitHub仓库的 `/graphs/contributors` 路径
+
+<br/>
+
+## 8.5 折叠
+
+折叠作为一种常见的UI交互模式，指的是通过交互控制部分内容的显示与隐藏。Markdown中虽然不支持，但可以使用HTML语言中的`<details>`标签实现折叠功能。可以将非核心内容默认隐藏，使界面更简洁，非常适合FAQ、长文档、设置面板等场景。
+
+案例：
+
+```html
+<details>
+<summary>问题1: 折叠功能如何使用？</summary>
+
+ 回答：
+
+ 就是这么使用的
+</details>
+```
+
+显示效果如下：
+
+> <details>
+> <summary>问题1: 折叠功能如何使用？</summary>
+>
+>  回答：
+>
+>  就是这么使用的
+> </details>
+
+<br/>
+
+## 8.6 视频
+
+### 8.6.1 GitHub上传视频
+
+在GitHub上将文件上传到md, issues, pull requests, comments时，实际会将文件上传到Amazon S3 bucket, 并提供一个URL（URL格式: `https://github.com/user-attachments/assets/<ID>`）以供访问，而GFM支持嵌入这种形式的视频。
+
+案例：
+
+```markdown
+https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
+```
+
+显示效果如下：
+
+> https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
+
+操作步骤的动画:
+
+![操作动画](../material/save_mp4.gif)
+
+<br/>
+
+### 8.6.2 HTML的视频标签
+
+HTML中的`<video>`标签, 可以实现在HTML中嵌入视频如MP4，但GFM不支持，一些Markdown编辑器（如Typora）支持。
+
+注意：GFM不支持
+
+案例：
+
+```markdown
+<video controls width="600">
+  <source src="../material/test.mp4" type="video/mp4">
+  您的浏览器不支持HTML5 video标签。
+</video>
+```
+
+显示效果如下：
+
+> 显示
+>
+> <video controls width="600">
+>   <source src="../material/test.mp4" type="video/mp4">
+>   您的浏览器不支持HTML5 video标签。
+> </video>
+
+<br/>
+
+## 8.7 音频
+
+### 8.7.1 GitHub上传音频
+
+GitHub虽然支持8.6.1这种的方式上传音频，但不支持嵌入音频，而是以文件链接的形式展示。
+
+**注意：**
+如果想展示音频组件的话，可以考虑上传包含调用音频的HTML文件，或者将音频文件转换为视频文件，然后采用上述方式来展示。
+
+案例：
+
+```markdown
+[test.mp3](../material/test.mp3)
+```
+
+显示效果如下：
+
+[test.mp3](../material/test.mp3)
+
+操作步骤的动画:
+
+![操作动画](../material/save_mp3.gif)
+
+<br/>
+
+### 8.7.2 HTML的音频标签
+
+HTML中的`<audio>`标签, 可以实现在HTML中嵌入音频如MP3，但GFM不支持，一些Markdown编辑器（如Typora）支持。
+
+注意：GFM不支持
+
+案例：
+
+```markdown
+<audio controls>
+  <source src="../material/test.mp3" type="audio/mpeg">
+  您的浏览器不支持HTML5 audio标签。
+</audio>
+```
+
+显示效果如下：
+
+> 显示
+>
+> <audio controls>
+>   <source src="../material/test.mp3" type="audio/mpeg">
+>   您的浏览器不支持HTML5 audio标签。
+> </audio>
+
+<br/>

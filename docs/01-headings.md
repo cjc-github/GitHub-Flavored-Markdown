@@ -200,7 +200,7 @@ LaTeX中存在多种章节标签来定义文档的结构，常见的命令有`\c
 3. 输入 `Create Table of Contents` 并选择该命令
 4. 插件会在当前光标位置自动生成目录
 
-`Markdown All in One` 支持修改文档标题后，目录会自动同步更新。 
+`Markdown All in One` 支持修改文档标题后，目录会自动同步更新。
 
 <br/>
 

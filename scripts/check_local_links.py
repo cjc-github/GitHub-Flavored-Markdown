@@ -7,7 +7,9 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)\n]+)\)")
+REFERENCE_LINK = re.compile(r"!?\[([^\]]+)\]\[([^\]]*)\]")
 REFERENCE_DEFINITION = re.compile(r"^\s{0,3}\[(?!\^)[^\]]+\]:\s*(\S+)")
+REFERENCE_LABEL = re.compile(r"^\s{0,3}\[(?!\^)([^\]]+)\]:")
 HTML_LINK = re.compile(r"\b(?:href|src)=[\"']([^\"']+)[\"']", re.IGNORECASE)
 HTML_ANCHOR = re.compile(r"\b(?:id|name)=[\"']([^\"']+)[\"']", re.IGNORECASE)
 INLINE_CODE = re.compile(r"(`+).*?\1")
@@ -80,6 +82,10 @@ def is_external_target(target: str) -> bool:
     return target.startswith(EXTERNAL_PREFIXES)
 
 
+def normalize_reference_label(label: str) -> str:
+    return " ".join(label.split()).casefold()
+
+
 def check_target(
     source_path: Path,
     line_number: int,
@@ -90,7 +96,10 @@ def check_target(
     if is_external_target(target_path):
         return []
 
-    resolved = source_path if not target_path else (source_path.parent / target_path).resolve()
+    try:
+        resolved = source_path if not target_path else (source_path.parent / target_path).resolve()
+    except OSError:
+        return [(line_number, raw_target, "本地目标格式无效")]
     if not resolved.exists():
         return [(line_number, raw_target, "本地目标不存在")]
 
@@ -106,14 +115,27 @@ def check_file(path: Path, anchor_cache: Dict[Path, Set[str]] = None) -> List[Fa
     failures = []
     text = path.read_text(encoding="utf-8")
     anchor_cache = anchor_cache if anchor_cache is not None else {}
+    content = list(content_without_fences(text))
+    definitions = set()
 
-    for line_number, line in content_without_fences(text):
+    for _, line in content:
+        label = REFERENCE_LABEL.match(INLINE_CODE.sub("", line))
+        if label:
+            definitions.add(normalize_reference_label(label.group(1)))
+
+    for line_number, line in content:
         line_without_code = INLINE_CODE.sub("", line)
         targets = MARKDOWN_LINK.findall(line_without_code)
         targets.extend(HTML_LINK.findall(line_without_code))
         reference = REFERENCE_DEFINITION.match(line_without_code)
         if reference:
             targets.append(reference.group(1))
+
+        if not reference:
+            for text_label, explicit_label in REFERENCE_LINK.findall(line_without_code):
+                label = explicit_label or text_label
+                if normalize_reference_label(label) not in definitions:
+                    failures.append((line_number, label, "引用式链接未定义"))
 
         for raw_target in targets:
             failures.extend(check_target(path, line_number, raw_target, anchor_cache))

@@ -236,20 +236,50 @@ classDiagram
         +login()
         +logout()
     }
-    
+
     class 管理员 {
         -权限等级: int
         +管理用户()
         +删除内容()
     }
-    
+
     class 订单 {
         -订单号: string
         -金额: float
         +创建订单()
         +取消订单()
     }
-    
+
+    用户 <|-- 管理员 : 继承
+    用户 "1" --> "*" 订单 : 拥有
+```
+````
+
+显示效果如下：
+
+```mermaid
+classDiagram
+    class 用户 {
+        -id: int
+        -username: string
+        -password: string
+        +login()
+        +logout()
+    }
+
+    class 管理员 {
+        -权限等级: int
+        +管理用户()
+        +删除内容()
+    }
+
+    class 订单 {
+        -订单号: string
+        -金额: float
+        +创建订单()
+        +取消订单()
+    }
+
     用户 <|-- 管理员 : 继承
     用户 "1" --> "*" 订单 : 拥有
 ```
@@ -386,34 +416,3 @@ endsolid triangle
 ```
 
 图片说明应准确描述图片内容，避免使用“图片”“截图”等无信息量文本。
-
-        -权限等级: int
-        +管理用户()
-        +删除内容()
-    }
-    
-    class 订单 {
-        -订单号: string
-        -金额: float
-        +创建订单()
-        +取消订单()
-    }
-    
-    用户 <|-- 管理员 : 继承
-    用户 "1" --> "*" 订单 : 拥有
-```
-````
-
-显示效果如下：
-
-```mermaid
-classDiagram
-    class 用户 {
-        -id: int
-        -username: string
-        -password: string
-        +login()
-        +logout()
-    }
-    
-    class 管理员 {

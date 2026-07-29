@@ -1,0 +1,87 @@
+# HTML实体：T
+
+[返回实体索引](../entities.md)
+
+| 实体写法 | 显示字符 | Unicode码点 |
+| --- | --- | --- |
+| `&THORN` | Þ | `U+00DE` |
+| `&THORN;` | Þ | `U+00DE` |
+| `&TRADE;` | ™ | `U+2122` |
+| `&TSHcy;` | Ћ | `U+040B` |
+| `&TScy;` | Ц | `U+0426` |
+| `&Tab;` | 	 | `U+0009` |
+| `&Tau;` | Τ | `U+03A4` |
+| `&Tcaron;` | Ť | `U+0164` |
+| `&Tcedil;` | Ţ | `U+0162` |
+| `&Tcy;` | Т | `U+0422` |
+| `&Tfr;` | 𝔗 | `U+1D517` |
+| `&Therefore;` | ∴ | `U+2234` |
+| `&Theta;` | Θ | `U+0398` |
+| `&ThickSpace;` |    | `U+205F U+200A` |
+| `&ThinSpace;` |   | `U+2009` |
+| `&Tilde;` | ∼ | `U+223C` |
+| `&TildeEqual;` | ≃ | `U+2243` |
+| `&TildeFullEqual;` | ≅ | `U+2245` |
+| `&TildeTilde;` | ≈ | `U+2248` |
+| `&Topf;` | 𝕋 | `U+1D54B` |
+| `&TripleDot;` | ⃛ | `U+20DB` |
+| `&Tscr;` | 𝒯 | `U+1D4AF` |
+| `&Tstrok;` | Ŧ | `U+0166` |
+| `&target;` | ⌖ | `U+2316` |
+| `&tau;` | τ | `U+03C4` |
+| `&tbrk;` | ⎴ | `U+23B4` |
+| `&tcaron;` | ť | `U+0165` |
+| `&tcedil;` | ţ | `U+0163` |
+| `&tcy;` | т | `U+0442` |
+| `&tdot;` | ⃛ | `U+20DB` |
+| `&telrec;` | ⌕ | `U+2315` |
+| `&tfr;` | 𝔱 | `U+1D531` |
+| `&there4;` | ∴ | `U+2234` |
+| `&therefore;` | ∴ | `U+2234` |
+| `&theta;` | θ | `U+03B8` |
+| `&thetasym;` | ϑ | `U+03D1` |
+| `&thetav;` | ϑ | `U+03D1` |
+| `&thickapprox;` | ≈ | `U+2248` |
+| `&thicksim;` | ∼ | `U+223C` |
+| `&thinsp;` |   | `U+2009` |
+| `&thkap;` | ≈ | `U+2248` |
+| `&thksim;` | ∼ | `U+223C` |
+| `&thorn` | þ | `U+00FE` |
+| `&thorn;` | þ | `U+00FE` |
+| `&tilde;` | ˜ | `U+02DC` |
+| `&times` | × | `U+00D7` |
+| `&times;` | × | `U+00D7` |
+| `&timesb;` | ⊠ | `U+22A0` |
+| `&timesbar;` | ⨱ | `U+2A31` |
+| `&timesd;` | ⨰ | `U+2A30` |
+| `&tint;` | ∭ | `U+222D` |
+| `&toea;` | ⤨ | `U+2928` |
+| `&top;` | ⊤ | `U+22A4` |
+| `&topbot;` | ⌶ | `U+2336` |
+| `&topcir;` | ⫱ | `U+2AF1` |
+| `&topf;` | 𝕥 | `U+1D565` |
+| `&topfork;` | ⫚ | `U+2ADA` |
+| `&tosa;` | ⤩ | `U+2929` |
+| `&tprime;` | ‴ | `U+2034` |
+| `&trade;` | ™ | `U+2122` |
+| `&triangle;` | ▵ | `U+25B5` |
+| `&triangledown;` | ▿ | `U+25BF` |
+| `&triangleleft;` | ◃ | `U+25C3` |
+| `&trianglelefteq;` | ⊴ | `U+22B4` |
+| `&triangleq;` | ≜ | `U+225C` |
+| `&triangleright;` | ▹ | `U+25B9` |
+| `&trianglerighteq;` | ⊵ | `U+22B5` |
+| `&tridot;` | ◬ | `U+25EC` |
+| `&trie;` | ≜ | `U+225C` |
+| `&triminus;` | ⨺ | `U+2A3A` |
+| `&triplus;` | ⨹ | `U+2A39` |
+| `&trisb;` | ⧍ | `U+29CD` |
+| `&tritime;` | ⨻ | `U+2A3B` |
+| `&trpezium;` | ⏢ | `U+23E2` |
+| `&tscr;` | 𝓉 | `U+1D4C9` |
+| `&tscy;` | ц | `U+0446` |
+| `&tshcy;` | ћ | `U+045B` |
+| `&tstrok;` | ŧ | `U+0167` |
+| `&twixt;` | ≬ | `U+226C` |
+| `&twoheadleftarrow;` | ↞ | `U+219E` |
+| `&twoheadrightarrow;` | ↠ | `U+21A0` |
