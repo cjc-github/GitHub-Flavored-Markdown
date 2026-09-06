@@ -944,6 +944,13 @@ print("hello world!")
 > ~~~python
 > print("hello world!")
 > ~~~
+>
+> 代码内容不会解析Markdown语法，而是原样显示：
+> ```text
+> # 这不是标题
+> [这不是链接](https://example.com)
+> <span>这不是HTML标签</span>
+> ```
 
 <br/>
 
