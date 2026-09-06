@@ -539,9 +539,9 @@ const message = "hello";
 
 > <details open>
 > <summary>默认展开的内容</summary>
-> 
+>
 > 这里可以继续使用 **Markdown**，也可以放置代码块：
-> 
+>
 > ```text
 > const message = "hello";
 > ```
@@ -644,7 +644,7 @@ GitHub 会把部分特定格式识别为仓库对象引用或用户提及，并�
 - **属于 GFM 规范的**：裸 URL、`www.` 开头的地址、邮箱地址，会被自动识别为链接。
 - **属于 GitHub 平台扩展的（不在 CommonMark，也不在 GFM 规范内）**：Issue / Pull Request 引用、Commit SHA 引用、`@` 提及、自定义自动链接。它们是否被转换，取决于当前页面上下文、被引用对象是否真实存在，以及访问者是否具备相应权限。同一段 Markdown 在其他平台或本地渲染器中，通常只会显示为普通文本。
 
-**生效范围**：自动链接引用只在会话（conversation）类场景中生成，例如 Issue、Pull Request、Discussion、评论、提交信息、发布说明等。**不会在 wiki 页面和仓库内的文件（如 README.md）中生成**。此外，写在行内代码或围栏代码块中的 `#123`、SHA、`@用户名` 都不会被转换——这也是抑制自动引用的常用手法。
+**生效范围**：自动链接引用主要出现在会话（conversation）类场景，例如 Issue、Pull Request、Discussion、评论、提交信息和发布说明。不同页面类型的支持可能不同，Wiki 页面和仓库内文件（如 README.md）应以目标页面的实际渲染结果为准。写在行内代码或围栏代码块中的 `#123`、SHA、`@用户名` 不会被当作普通文本引用转换。
 
 ### 8.8.1 Issue 和 Pull Request 引用
 

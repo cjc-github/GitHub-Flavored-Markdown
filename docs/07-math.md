@@ -74,6 +74,10 @@ $$E = mc^2$$
 
 $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 
+使用 `math` 围栏时，GitHub会将下面的内容按数学公式渲染：
+
+$$E = mc^2$$
+
 <br/>
 
 ## 7.3 多行公式
