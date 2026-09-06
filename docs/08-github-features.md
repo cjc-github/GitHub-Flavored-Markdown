@@ -495,6 +495,8 @@ Thanks to all contributors:
 
 折叠作为一种常见的UI交互模式，指的是通过交互控制部分内容的显示与隐藏。Markdown中虽然不支持，但可以使用HTML语言中的`<details>`标签实现折叠功能。可以将非核心内容默认隐藏，使界面更简洁，非常适合FAQ、长文档、设置面板等场景。
 
+`<details>` 默认折叠；添加 `open` 属性可以让内容默认展开。`<summary>` 用于设置用户点击的标题，内部可以放置普通Markdown、代码块、图片等内容。
+
 案例：
 
 ```html
@@ -518,6 +520,33 @@ Thanks to all contributors:
 > </details>
 
 <br/>
+
+默认展开示例：
+
+````html
+<details open>
+<summary>默认展开的内容</summary>
+
+这里可以继续使用 **Markdown**，也可以放置代码块：
+
+```text
+const message = "hello";
+```
+</details>
+````
+
+显示效果如下：
+
+> <details open>
+> <summary>默认展开的内容</summary>
+> 
+> 这里可以继续使用 **Markdown**，也可以放置代码块：
+> 
+> ```text
+> const message = "hello";
+> ```
+> </details>
+
 
 ## 8.6 视频
 
@@ -559,6 +588,8 @@ https://github.com/user-attachments/assets/3297aadd-456a-47ce-b21f-1edbecd8cfbc
 GitHub渲染本页时不会显示上述播放器；独立HTML页面中的效果应在浏览器中验证。
 
 <br/>
+
+
 
 ## 8.7 音频
 
@@ -603,3 +634,97 @@ GitHub可以在部分评论和Discussion上下文中接收受支持的音频附�
 GitHub渲染本页时不会显示上述播放器；独立HTML页面中的效果应在浏览器中验证。
 
 <br/>
+
+### 8.8 GitHub 自动引用与提及
+
+GitHub 会把部分特定格式识别为仓库对象引用或用户提及，并自动生成跳转链接，这类能力称为**自动链接引用（autolinked references）**。
+
+需要区分两件事：
+
+- **属于 GFM 规范的**：裸 URL、`www.` 开头的地址、邮箱地址，会被自动识别为链接。
+- **属于 GitHub 平台扩展的（不在 CommonMark，也不在 GFM 规范内）**：Issue / Pull Request 引用、Commit SHA 引用、`@` 提及、自定义自动链接。它们是否被转换，取决于当前页面上下文、被引用对象是否真实存在，以及访问者是否具备相应权限。同一段 Markdown 在其他平台或本地渲染器中，通常只会显示为普通文本。
+
+**生效范围**：自动链接引用只在会话（conversation）类场景中生成，例如 Issue、Pull Request、Discussion、评论、提交信息、发布说明等。**不会在 wiki 页面和仓库内的文件（如 README.md）中生成**。此外，写在行内代码或围栏代码块中的 `#123`、SHA、`@用户名` 都不会被转换——这也是抑制自动引用的常用手法。
+
+### 8.8.1 Issue 和 Pull Request 引用
+
+在支持的上下文中，可以使用以下形式引用**当前仓库**的 Issue 或 Pull Request：
+
+```markdown
+#123
+GH-123
+```
+
+引用**其他仓库**需要使用仓库全名：
+
+```markdown
+octo-org/example-repo#123
+```
+
+其中 `123` 是 Issue 或 Pull Request 编号。注意：
+
+- 同一仓库中 Issue 与 Pull Request 共用一套连续编号，因此 `#123` 写法本身**不区分对象类型**，GitHub 按编号解析到实际存在的那个对象，不能假定它一定指向 Issue。
+- 引用只有在编号对应的对象真实存在、且当前页面上下文支持自动链接时才会生效；否则会原样显示为普通文本。
+- 它**不是**普通 Markdown 锚点，不要拿它来做页内跳转。
+
+也可以直接粘贴 Issue 或 Pull Request URL：
+
+```markdown
+https://github.com/octo-org/example-repo/issues/123
+https://github.com/octo-org/example-repo/pull/456
+```
+
+裸 URL 的自动链接属于 GFM 规范的扩展自动链接行为，因此在本地 GFM 渲染器中同样有效；而链接最终显示为完整地址还是缩短形式，由 GitHub 页面决定。
+
+**用关键字关闭 Issue**：在 Pull Request 描述或提交信息中使用 `Closes #123`、`Fixes octo-org/example-repo#123` 这类写法，PR 合并时会自动关闭对应 Issue。可用的关键字为 `close` / `closes` / `closed`、`fix` / `fixes` / `fixed`、`resolve` / `resolves` / `resolved`。在 Issue 评论中使用这些关键字不会触发关闭。
+
+**自定义自动链接**：仓库可以配置自定义自动链接前缀（例如让 `JIRA-123` 指向外部 Jira 工单），命中后同样会转成短链接。这是仓库级配置能力，不是 GitHub 原生语法，换一个仓库就未必生效。
+
+### 8.8.2 Commit 引用
+
+GitHub 可以识别当前仓库的完整 Commit SHA 或缩写 SHA，也可以引用其他仓库的 Commit：
+
+```markdown
+0123456789abcdef0123456789abcdef01234567
+0123456
+octo-org/example-repo@0123456
+```
+
+规则与限制：
+
+- 缩写 SHA **至少需要 7 个字符**（示例中的 `0123456` 正好 7 位）。
+- 跨仓库引用支持 `owner/repo@sha` 与 `user@sha` 两种形式。
+- SHA 必须对应 GitHub 上**实际存在**的提交，示例中的占位 SHA 不会生成有效链接。
+- 在提交信息中引用**私有仓库**的 Commit 时，只有该提交的作者或提交者对所引用的 Commit 至少具备读权限，才会生成短链接。
+
+也可以直接粘贴 Commit URL：
+
+```markdown
+https://github.com/octo-org/example-repo/commit/0123456789abcdef0123456789abcdef01234567
+```
+
+### 8.8.3 用户和团队提及
+
+使用 `@` 加用户名可以提及用户，使用 `@组织/团队` 可以提及组织团队：
+
+```markdown
+@octocat
+@octo-org/docs-team
+```
+
+要点：
+
+- 被提及的对象必须是 GitHub 上真实存在的用户或团队，并生成指向其个人页或团队页的链接。
+- **提交信息中的 `@` 提及不会触发通知**（也不会像会话中那样生效），需要通知应写在 Issue、PR、Discussion 或评论里。
+- 被提及者需要对仓库有**读权限**才会收到通知；若仓库属于某个组织，该用户还必须是组织成员。
+- **编辑**已有评论时补上的提及，同样会触发通知。
+- 提及**父团队**时，其子团队成员也会收到通知，适合一次通知多个小组。
+- 提及自动补全只提示**仓库协作者和当前会话的参与者**，不会列出所有 GitHub 用户。
+
+### 8.8.4 需要稳定显示文本与目标地址时
+
+上述写法都依赖 GitHub 平台解析，不能替代普通 Markdown 链接。需要稳定显示文本和目标地址时，应使用标准链接语法：
+
+```markdown
+[项目文档](https://github.com/octo-org/example-repo)
+```
