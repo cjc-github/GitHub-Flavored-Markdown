@@ -38,6 +38,8 @@ GitHub上的Alerts、脚注、数学公式、Mermaid图表、GeoJSON、TopoJSON�
 
 连续内容缩进四个空格可以形成缩进代码块。与围栏式代码块相比，它不能直接指定语言标识符，因此通常推荐使用三个反引号。
 
+围栏代码块的完整语法和示例见[代码块](02-text-format.md#211-代码块)章节。围栏可以使用三个或更多反引号或波浪线，开始和结束围栏必须使用相同字符，且结束围栏不能短于开始围栏。
+
 ```markdown
     const message = "hello";
     console.log(message);
@@ -91,3 +93,4 @@ title textarea style xmp iframe noembed noframes script plaintext
 ```
 
 除了GFM规范中的禁止标签，GitHub平台还会执行额外的HTML清理，因此应避免依赖未经官方文档确认的HTML行为。
+
