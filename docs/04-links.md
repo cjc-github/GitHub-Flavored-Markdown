@@ -50,6 +50,13 @@ GitHub会过滤不安全的URL协议和事件属性，不应使用`javascript:`�
 
 GitHub数学公式渲染器不会加载`hyperref`，在GitHub文档正文中应使用Markdown链接。
 
+> **路径与大小写敏感提示**：
+> - `./file.md`、`../README.md` 和 `/README.md` 路径含义不同
+> - GitHub 和 Linux 对文件名大小写敏感
+> - Windows 本地环境可能对大小写不敏感，导致跨平台问题时需注意
+
+<br/>
+
 ## 4.2 文件链接
 
 ### 4.2.1 Markdown与GFM实现方式

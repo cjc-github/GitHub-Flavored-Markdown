@@ -2,7 +2,15 @@
 
 [返回文档首页](../README.md)
 
+> **支持层级**：GitHub 平台专属功能（不属于 CommonMark 或正式 GFM）
+
 Markdown 和正式 GFM 规范本身没有定义数学公式。GitHub 平台会渲染受支持的 LaTeX 数学命令，可用于仓库 Markdown 文件、Issue、Pull Request、Discussion 和 Wiki，但这不是完整的 LaTeX 编译环境。
+
+> **限制说明**：
+> - GitHub 数学公式不是完整 LaTeX 环境
+> - `align`、`equation` 等环境不能简单等同于完整 LaTeX 编译结果
+> - `\text{}`、中文和复杂宏可能存在渲染差异
+> - 普通美元符号 `$` 需要转义，避免和公式分隔符冲突
 
 ## 7.1 行内公式
 
