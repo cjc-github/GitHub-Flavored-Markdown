@@ -8,10 +8,14 @@
 
 | 功能 | Markdown/GitHub | HTML替代 | LaTeX/PDF替代 |
 | --- | --- | --- | --- |
-| Emoji和字符引用 | Emoji短代码、Unicode、HTML字符引用 | Unicode或字符引用 | 直接输入Unicode，或使用符号宏包 |
+| Emoji和字符引用 | Emoji短代码、Unicode、HTML 字符引用 | Unicode或字符引用 | 直接输入Unicode，或使用符号宏包 |
 | 徽章和数据图 | 图片加链接 | `<a>`包裹`<img>` | `\href`包裹`\includegraphics` |
 | 折叠 | 使用允许的`<details>`标签 | `<details>`和`<summary>` | 无原生交互折叠，可改用附录或分节 |
 | 视频和音频 | GitHub附件或普通文件链接 | `<video>`、`<audio>` | 通常使用外部链接或静态封面，不建议嵌入多媒体 |
+
+> **第三方服务说明**：本章涉及的 shields.io、contrib.rocks、star-history.com 等第三方服务可能变更接口、访问较慢或失效。关键内容建议使用仓库内静态资源，第三方服务仅作为示例。
+
+<br/>
 
 ## 8.1 表情和符号
 
@@ -25,11 +29,11 @@ GitHub的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 
 具体每一个表情的符号码，可以查询GitHub的官方网页<http://www.emoji-cheat-sheet.com>。
 
-但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看[emoji](../material/emoji.md)。
+如果访问较慢，也可以查看本仓库整理的[emoji](../material/emoji.md)。
 
 <br/>
 
-### 8.1.2 HTML字符
+### 8.1.2 HTML 字符
 
 GitHub的Markdown语法支持添加HTML支持的字符引用
 
@@ -37,7 +41,7 @@ GitHub的Markdown语法支持添加HTML支持的字符引用
 
 来源：[参考网址](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references)
 
-但是这个网页每次都打开奇慢。。所以我整理到了本repo中，大家可以直接在此查看[entities](../material/entities.md)。
+如果访问较慢，也可以查看本仓库整理的[entities](../material/entities.md)。
 
 <br/>
 
@@ -89,7 +93,9 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 
 <br/>
 
-## 8.3 徽章
+## 8.3 徽章与动态数据图
+
+> **第三方服务提示**：徽章、数据图等服务可能变更接口、访问较慢或失效。长期稳定展示的关键图片建议导出并保存到仓库。
 
 徽章不是GFM特有语法。它通常是第三方服务生成的图片，再通过普通Markdown图片或图片链接语法嵌入。能否显示还取决于外部图片服务、网络策略和链接是否长期有效。
 
@@ -136,7 +142,7 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 ### 8.3.1 构建与集成状态
 
 在 `shield.io` 网址中,
-+ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的GitHub仓库数据徽章制作方式
++ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的GitHub 仓库数据徽章制作方式
 
 <br/>
 
@@ -175,7 +181,7 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 ### 8.3.2 测试覆盖率与质量
 
 在 `shield.io` 网址中,
-+ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的GitHub仓库数据徽章制作方式
++ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的GitHub 仓库数据徽章制作方式
 
 案例：
 
@@ -199,8 +205,8 @@ github-repo-blue?logo=github
 ### 8.3.3 版本与发布信息
 
 在 `shield.io` 网址中,
-+ 点击 `Badges` -> `License`，在这个列表中可以看到对应的GitHub仓库数据徽章制作方式
-+ 点击 `Badges` -> `Funding` -> `GitHub Sponsors`，在这个页面可以看到对应的GitHub仓库贡献者数量徽章制作方法
++ 点击 `Badges` -> `License`，在这个列表中可以看到对应的GitHub 仓库数据徽章制作方式
++ 点击 `Badges` -> `Funding` -> `GitHub Sponsors`，在这个页面可以看到对应的GitHub 仓库贡献者数量徽章制作方法
 
 <br/>
 
@@ -236,9 +242,9 @@ github-repo-blue?logo=github
 
 <br/>
 
-### 8.3.4 GitHub仓库数据
+### 8.3.4 GitHub 仓库数据
 
-在 `shield.io` 网址中，点击 `Badges` -> `Social`，在这个列表中可以看到对应的GitHub仓库数据徽章制作方式
+在 `shield.io` 网址中，点击 `Badges` -> `Social`，在这个列表中可以看到对应的GitHub 仓库数据徽章制作方式
 
 以 <https://github.com/cjc-github/GitHub-Flavored-Markdown> 为例，各个参数为：
 
@@ -296,7 +302,7 @@ github-repo-blue?logo=github
 
 ### 8.3.5 兼容性信息
 
-直观展示该Git仓库的一些软件或者系统的兼容性。
+直观展示该Git 仓库的一些软件或者系统的兼容性。
 
 案例：
 
@@ -325,7 +331,7 @@ github-repo-blue?logo=github
 
 ### 8.3.6 文档与聊天渠道
 
-在 GitHub 的 Markdown 中使用社交媒体与社区徽章的核心作用是通过视觉化徽章引导用户进入项目社区，从而提高该Git仓库参与度和社区活跃度。这些徽章不仅仅是装饰，而是关键的聊天入口。
+在 GitHub 的 Markdown 中使用社交媒体与社区徽章的核心作用是通过视觉化徽章引导用户进入项目社区，从而提高该Git 仓库参与度和社区活跃度。这些徽章不仅仅是装饰，而是关键的聊天入口。
 
 案例：
 
@@ -419,7 +425,7 @@ github-repo-blue?logo=github
 
 ### 8.4.1 star历史图
 
-Star History可以查询GitHub仓库的Star数量变化。旧版匿名SVG接口可能返回HTTP 500或因GitHub API限制而无法生成图片，因此不应把未经验证的`api.star-history.com`地址直接嵌入README。
+Star History可以查询GitHub 仓库的Star数量变化。旧版匿名SVG接口可能返回HTTP 500或因GitHub API限制而无法生成图片，因此不应把未经验证的`api.star-history.com`地址直接嵌入README。
 
 使用方法：
 
@@ -454,7 +460,7 @@ Star History可以查询GitHub仓库的Star数量变化。旧版匿名SVG接口�
 
 ### 8.4.2 contribution贡献图
 
-GitHub仓库的contribution贡献可以已有的网站：https://contrib.rocks/
+GitHub 仓库的contribution贡献可以已有的网站：https://contrib.rocks/
 
 使用方法：
 在上述网址中，输入需要显示 `user/repo` 的github仓库地址，然后复制生成的链接即可。
@@ -489,7 +495,7 @@ Thanks to all contributors:
 >   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" alt="项目贡献者头像拼图" />
 > </a>
 
-注意：这个贡献图会自动跳转到GitHub仓库的 `/graphs/contributors` 路径
+注意：这个贡献图会自动跳转到GitHub 仓库的 `/graphs/contributors` 路径
 
 <br/>
 

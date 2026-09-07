@@ -2,6 +2,9 @@
 
 [返回文档首页](../README.md)
 
+
+> **显示效果说明**：以下示例中的 `>` 块引用仅为排版用途，实际使用时不需要添加 `>`。
+
 在Markdown中，除了用`![alt](url)`语法插入静态图片外，GitHub平台还可以在Markdown文件、Issue、Pull Request、Discussion等受支持位置渲染Mermaid、GeoJSON、TopoJSON和ASCII STL代码块。这些图表属于GitHub平台功能，不是正式GFM扩展。
 
 ## 5.1 插入静态图片
