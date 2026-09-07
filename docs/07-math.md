@@ -2,7 +2,7 @@
 
 [返回文档首页](../README.md)
 
-Markdown和正式GFM规范本身没有定义数学公式。GitHub平台使用MathJax渲染受支持的LaTeX数学命令，可用于仓库Markdown文件、Issue、Pull Request、Discussion和Wiki。该能力不是完整LaTeX编译环境。
+Markdown 和正式 GFM 规范本身没有定义数学公式。GitHub 平台会渲染受支持的 LaTeX 数学命令，可用于仓库 Markdown 文件、Issue、Pull Request、Discussion 和 Wiki，但这不是完整的 LaTeX 编译环境。
 
 ## 7.1 行内公式
 
@@ -42,7 +42,7 @@ Markdown和正式GFM规范本身没有定义数学公式。GitHub平台使用Mat
 
 ## 7.2 块级公式
 
-块级公式使用双美元符号 `$$` 包围，公式会独立成行并居中显示
+块级公式使用双美元符号 `$$` 包围，通常会独立成行显示
 
 案例：
 

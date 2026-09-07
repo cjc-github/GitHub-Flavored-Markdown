@@ -1,4 +1,4 @@
-# 五、图片
+# 五、图片与图表
 
 [返回文档首页](../README.md)
 
@@ -47,9 +47,11 @@
 
 可以使用`width`、`height`、`scale`和`angle`等参数控制尺寸与旋转。GitHub数学公式不会执行`\includegraphics`，GitHub文档应继续使用Markdown或HTML图片语法。
 
-## 5.2 插入动态图片
+## 5.2 插入图表和可视化内容
 
-Mermaid是文本化图表语言。GitHub可以识别带有`mermaid`语言标识符的围栏代码块并渲染图表，但Mermaid不属于CommonMark或正式GFM规范。
+> **支持层级**：GitHub 平台专属功能（不属于 CommonMark 或正式 GFM）
+
+Mermaid 是文本化图表语言。GitHub 可以识别带有 `mermaid` 语言标识符的围栏代码块并渲染图表，但 Mermaid 不属于 CommonMark 或正式 GFM 规范。
 
 不同载体的实现方式如下：
 
@@ -68,6 +70,7 @@ Mermaid是文本化图表语言。GitHub可以识别带有`mermaid`语言标识�
 - **类图** (Class Diagram) - 面向对象系统结构
 - **状态图** (State Diagram) - 系统状态转换
 - 更多图表类型详见 5.2.1-5.2.6 节
+- 这些图表属于 GitHub 平台功能，不是正式 GFM 语法。
 
 <br/>
 
@@ -135,9 +138,9 @@ sequenceDiagram
         activate z
         Note left of z: 想了一下
         alt 还没呢
-            z-xl: 还没呢，正准备打开 CODING
+            z->>l: 还没呢，正准备打开 CODING
         else 敲了，正遛弯儿呢
-            z-xl: 我也敲了，哈哈
+            z->>l: 我也敲了，哈哈
         end
         opt 大过年的
             l-->z: 祝您新年好啊
@@ -158,9 +161,9 @@ sequenceDiagram
         activate z
         Note left of z: 想了一下
         alt 还没呢
-            z-xl: 还没呢，正准备打开 CODING
+            z->>l: 还没呢，正准备打开 CODING
         else 敲了，正遛弯儿呢
-            z-xl: 我也敲了，哈哈
+            z->>l: 我也敲了，哈哈
         end
         opt 大过年的
             l-->z: 祝您新年好啊

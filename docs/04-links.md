@@ -6,7 +6,7 @@
 
 ### 4.1.1 Markdown与GFM实现方式
 
-CommonMark使用`[链接文本](URL "title")`创建链接，`title`为可选的悬停提示。
+CommonMark 使用 `[链接文本](URL "title")` 创建链接，`title` 为可选的悬停提示。
 
 ```markdown
 [百度一下](https://www.baidu.com "悬停显示：百度一下")
@@ -16,7 +16,7 @@ CommonMark使用`[链接文本](URL "title")`创建链接，`title`为可选的�
 
 > [百度一下](https://www.baidu.com "悬停显示：百度一下")
 
-正式GFM还支持扩展自动链接，可以识别部分裸URL、`www`网址和Email地址。
+正式 GFM 还支持扩展自动链接，可以识别部分裸 URL、`www` 网址和 Email 地址。
 
 ```markdown
 <https://www.baidu.com>

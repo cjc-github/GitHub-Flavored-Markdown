@@ -2,6 +2,8 @@
 
 [返回文档首页](../README.md)
 
+> **支持层级**：本章内容多属于 GitHub 平台专属功能或第三方扩展，不属于 CommonMark 或正式 GFM。
+
 本章介绍GitHub平台常见组件，其中很多内容不属于CommonMark或正式GFM。对于HTML和LaTeX没有等价交互能力的功能，应使用静态图片、普通链接或文字说明替代。
 
 | 功能 | Markdown/GitHub | HTML替代 | LaTeX/PDF替代 |
