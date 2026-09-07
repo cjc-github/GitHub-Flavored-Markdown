@@ -27,7 +27,7 @@ GitHub的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 
 比如 `:blush:`，可以显示 :blush:。
 
-具体每一个表情的符号码，可以查询GitHub的官方网页<http://www.emoji-cheat-sheet.com>。
+具体每一个表情的符号码，可以查询 GitHub 的官方网页<http://www.emoji-cheat-sheet.com>。
 
 如果访问较慢，也可以查看本仓库整理的[emoji](../material/emoji.md)。
 
@@ -142,7 +142,7 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 ### 8.3.1 构建与集成状态
 
 在 `shield.io` 网址中,
-+ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的GitHub 仓库数据徽章制作方式
++ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的 GitHub 仓库数据徽章制作方式
 
 <br/>
 
@@ -181,7 +181,7 @@ Markdown还支持其他的特殊符号，这个可以在一些提供特殊符号
 ### 8.3.2 测试覆盖率与质量
 
 在 `shield.io` 网址中,
-+ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的GitHub 仓库数据徽章制作方式
++ 点击 `Badges` -> `Static Badge`，在这个列表中可以看到对应的 GitHub 仓库数据徽章制作方式
 
 案例：
 
@@ -205,8 +205,8 @@ github-repo-blue?logo=github
 ### 8.3.3 版本与发布信息
 
 在 `shield.io` 网址中,
-+ 点击 `Badges` -> `License`，在这个列表中可以看到对应的GitHub 仓库数据徽章制作方式
-+ 点击 `Badges` -> `Funding` -> `GitHub Sponsors`，在这个页面可以看到对应的GitHub 仓库贡献者数量徽章制作方法
++ 点击 `Badges` -> `License`，在这个列表中可以看到对应的 GitHub 仓库数据徽章制作方式
++ 点击 `Badges` -> `Funding` -> `GitHub Sponsors`，在这个页面可以看到对应的 GitHub 仓库贡献者数量徽章制作方法
 
 <br/>
 
@@ -244,7 +244,7 @@ github-repo-blue?logo=github
 
 ### 8.3.4 GitHub 仓库数据
 
-在 `shield.io` 网址中，点击 `Badges` -> `Social`，在这个列表中可以看到对应的GitHub 仓库数据徽章制作方式
+在 `shield.io` 网址中，点击 `Badges` -> `Social`，在这个列表中可以看到对应的 GitHub 仓库数据徽章制作方式
 
 以 <https://github.com/cjc-github/GitHub-Flavored-Markdown> 为例，各个参数为：
 
@@ -302,7 +302,7 @@ github-repo-blue?logo=github
 
 ### 8.3.5 兼容性信息
 
-直观展示该Git 仓库的一些软件或者系统的兼容性。
+直观展示该 Git 仓库的一些软件或者系统的兼容性。
 
 案例：
 
@@ -331,7 +331,7 @@ github-repo-blue?logo=github
 
 ### 8.3.6 文档与聊天渠道
 
-在 GitHub 的 Markdown 中使用社交媒体与社区徽章的核心作用是通过视觉化徽章引导用户进入项目社区，从而提高该Git 仓库参与度和社区活跃度。这些徽章不仅仅是装饰，而是关键的聊天入口。
+在 GitHub 的 Markdown 中使用社交媒体与社区徽章的核心作用是通过视觉化徽章引导用户进入项目社区，从而提高该 Git 仓库参与度和社区活跃度。这些徽章不仅仅是装饰，而是关键的聊天入口。
 
 案例：
 
@@ -425,7 +425,7 @@ github-repo-blue?logo=github
 
 ### 8.4.1 star历史图
 
-Star History可以查询GitHub 仓库的Star数量变化。旧版匿名SVG接口可能返回HTTP 500或因GitHub API限制而无法生成图片，因此不应把未经验证的`api.star-history.com`地址直接嵌入README。
+Star History可以查询 GitHub 仓库的Star数量变化。旧版匿名SVG接口可能返回HTTP 500或因GitHub API限制而无法生成图片，因此不应把未经验证的`api.star-history.com`地址直接嵌入README。
 
 使用方法：
 
@@ -495,7 +495,7 @@ Thanks to all contributors:
 >   <img src="https://contrib.rocks/image?repo=cjc-github/GitHub-Flavored-Markdown" alt="项目贡献者头像拼图" />
 > </a>
 
-注意：这个贡献图会自动跳转到GitHub 仓库的 `/graphs/contributors` 路径
+注意：这个贡献图会自动跳转到 GitHub 仓库的 `/graphs/contributors` 路径
 
 <br/>
 
@@ -606,7 +606,7 @@ GitHub渲染本页时不会显示上述播放器；独立HTML页面中的效果�
 GitHub可以在部分评论和Discussion上下文中接收受支持的音频附件，但通常将其作为附件链接，而不是在Markdown正文中提供通用音频播放器。仓库内已有的音频文件也应使用普通链接。
 
 **注意：**
-如果需要在GitHub页面中提供音频，推荐链接音频附件或外部播放页面。仓库中的独立HTML文件通常以源码形式查看，不应把它当作GitHub Markdown内嵌播放器的替代方案。
+如果需要在 GitHub 页面中提供音频，推荐链接音频附件或外部播放页面。仓库中的独立HTML文件通常以源码形式查看，不应把它当作GitHub Markdown内嵌播放器的替代方案。
 
 案例：
 
